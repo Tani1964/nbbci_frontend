@@ -9,7 +9,7 @@ function Deaconate() {
       title: "Deaconess",
       description:
         "Mrs. Ifegebesan Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut massa mi, aliquam id hendrerit lorem. Pellentesque et sem sapien fringilla maximus...",
-      imageUrl: One, // Replace with actual image paths
+      imageUrl: Two, // Replace with actual image paths
     },
     {
       name: "Mrs. Gaddi",
@@ -23,7 +23,7 @@ function Deaconate() {
       title: "Deacon",
       description:
         "Mr. Adeoye Rotimi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut massa mi, aliquam id hendrerit lorem. Pellentesque et sem sapien fringilla maximus...",
-      imageUrl: Two, // Replace with actual image paths
+      imageUrl: One, // Replace with actual image paths
     },
   ];
 

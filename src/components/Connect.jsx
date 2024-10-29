@@ -27,10 +27,10 @@ const Connect = () => {
         </Link>
 
         {/* WhatsApp */}
-        <Link href="tel:+2348034188260">
+        <Link href="tel:+2348081494141 ">
           <Flex direction="row" align="center" gap={4} alignItems={'center'}>
             <Icon as={SiWhatsapp} boxSize={8} color="green.500" />
-            <Text mt={2}>+234 803 418 8260</Text>
+            <Text mt={2}>+234 808 149 4141 </Text>
           </Flex>
         </Link>
 
@@ -59,7 +59,7 @@ const Connect = () => {
         </Link>
 
         {/* YouTube */}
-        <Link href="https://youtube.com/nbbcil" isExternal>
+        <Link href="http://www.youtube.com/@newbirthbaptistchurchikoro7592" isExternal>
           <Flex direction="row" align="center" gap={4} alignItems={'center'}>
             <Icon as={FaYoutube} boxSize={8} color="red.600" />
             <Text mt={2}>YouTube</Text>

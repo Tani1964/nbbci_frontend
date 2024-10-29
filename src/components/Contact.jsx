@@ -39,7 +39,7 @@ const Contact = () => {
               {/* Phone */}
               <Flex align="center">
                 <Icon as={FaPhoneAlt} color="#A8518A" boxSize={5} mr={3} />
-                <Text color="gray.700">+234 803 418 8260</Text>
+                <Text color="gray.700">+234 808 149 4141 or +234 906 802 2226 </Text>
               </Flex>
 
               {/* Email */}
@@ -52,7 +52,7 @@ const Contact = () => {
               <Flex align="center">
                 <Icon as={FaMapMarkerAlt} color="#A8518A" boxSize={5} mr={3} />
                 <Text color="gray.700">
-                  5, Olutaiwo Street, Haruna Bus-stop, Ikorodu, Lagos, Nigeria
+                  5, Olutaiwo Street, Haruna Bus-stop, Lagos, Nigeria
                 </Text>
               </Flex>
             </Stack>

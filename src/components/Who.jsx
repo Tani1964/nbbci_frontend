@@ -14,13 +14,9 @@ const Who = () => {
         <Box bgColor={"#F4F7FA"} p={20}>
           <Heading mb={10}>Who are we...</Heading>
           <Text>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
-            quaerat accusantium esse commodi similique itaque? Illum fugiat, qui
-            accusamus expedita facere autem. Sint voluptas eius doloribus
-            quisquam molestiae omnis culpa. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Consequatur tempora eveniet quisquam
-            voluptatum quia at neque vel aperiam architecto. Vel, nihil hic id
-            minus at inventore eum. Illum, aliquid ad.
+          Welcome to New Birth Baptist Church (NBBC) Ikorodu, a vibrant community of believers passionate about raising fruitful disciples for Christ. Our slogan, "Raising Fruitful Disciples" (John 15:16), embodies our commitment to nurturing followers of Jesus who bear lasting fruit.
+
+
           </Text>
         </Box>
       </Flex>
