@@ -1,6 +1,7 @@
 import { Box, Text, VStack, Button, Collapse, Image } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 // Motion component for animation
 const MotionBox = motion(Box);
@@ -52,8 +53,21 @@ const Ministries = () => {
         const { title, description, image, childrenMinistries } = ministry;
         const isOpen = openIndex === index;
 
+        // Use the useInView hook to detect when the ministry is in view
+        const { ref, inView } = useInView({ threshold: 0.1 });
+
         return (
-          <MotionBox key={index} mb={6} borderWidth={1} borderRadius="md" p={4}>
+          <MotionBox
+            key={index}
+            ref={ref}
+            mb={6}
+            borderWidth={1}
+            borderRadius="md"
+            p={4}
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.5 }}
+          >
             <VStack align="start" spacing={2}>
               <Text fontSize="xl" fontWeight="bold">{title}</Text>
               <Text>{description}</Text>
