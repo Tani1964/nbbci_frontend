@@ -27,7 +27,7 @@ const Mission = () => {
           <Text fontSize="md" lineHeight="tall">
             Empowered by the Holy Spirit, we exist to:
           </Text>
-          <ul style={{}}>
+          <ul style={{"paddingLeft":"20px", "listStyleType":"disc"}}>
             <li>Win Souls</li>
             <li>Make True Worshippers</li>
             <li>Integrate into the Family</li>

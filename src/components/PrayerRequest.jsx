@@ -1,5 +1,5 @@
 import { Box, Flex, Text, Button, Input, Textarea } from "@chakra-ui/react";
-import Bg from "../assets/Bg.png";
+import Bg from "../assets/BG.png";
 
 const PrayerRequest = () => {
   return (
