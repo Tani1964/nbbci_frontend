@@ -27,20 +27,16 @@ const Mission = () => {
           <Text fontSize="md" lineHeight="tall">
             Empowered by the Holy Spirit, we exist to:
           </Text>
-          <ol>
+          <ul>
             <li>Win Souls</li>
-            <li>Make True Worshippers 
-            </li>
-            <li>Integrate into the Family
-            </li>
-            <li>Train into Maturity
-            </li>
-            <li>
-            Equip for Service
-
-            </li>
-          </ol>
-          <Text>Acronym <bold>W.M.I.T.E</bold></Text>
+            <li>Make True Worshippers</li>
+            <li>Integrate into the Family</li>
+            <li>Train into Maturity</li>
+            <li>Equip for Service</li>
+          </ul>
+          <Text>
+            Acronym <bold>W.M.I.T.E</bold>
+          </Text>
         </Box>
 
         {/* Our Vision */}

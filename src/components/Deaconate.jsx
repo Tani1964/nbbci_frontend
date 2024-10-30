@@ -5,24 +5,24 @@ import One from "../assets/456607803_923813013106075_8066032512367024936_n (1).p
 function Deaconate() {
   const members = [
     {
-      name: "Mrs. Ifegebesan",
+      name: "DEACONNESS ADEBISI ATINUKE IFEGBESAN",
       title: "Deaconess",
       description:
-        "Mrs. Ifegebesan Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut massa mi, aliquam id hendrerit lorem. Pellentesque et sem sapien fringilla maximus...",
+        "Dns. Ifegbesan joined New Birth Baptist Church in 2006, where she served in various roles.Currently, She serves as a dedicated Deacon, overseeing the Welfare & Service group. This encompasses various MDCs, including medical, visitation, security, empowerment, welfare, building, utility, sanctuary keeper, beautification and community impact.",
       imageUrl: Two, // Replace with actual image paths
     },
     {
-      name: "Mrs. Gaddi",
+      name: "DEACONNESS MARIA DOOM GAADI",
       title: "Deaconess",
       description:
-        "Mrs. Gadidi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut massa mi, aliquam id hendrerit lorem. Pellentesque et sem sapien fringilla maximus...",
+        "Dns. Gaadi joined New Birth Baptist Church in 2007 and served as Church Secretary, Personnel Committee Chairperson, Teens Ministry Coordinator, Visitation/Follow-Up Coordinator, Discipleship Coordinator, Sunday School Teacher/Secretary, and Prayer Ministry Member.Currently, she coordinates the Fellowship and Education Ministry of New Birth Baptist Church, overseeing the following MDCs: Teens Fellowship, Children's Church, Youth Fellowship, Couples Fellowship, Singles Fellowship, Home Fellowship, Baptismal Class, Discipleship Ministry and Sunday School Department",
       imageUrl: "path-to-placeholder-image", // Use a placeholder for now
     },
     {
-      name: "Mr. Adeoye Rotimi",
+      name: "DEACON ROTIMI ADEBOWALE ADEOYE",
       title: "Deacon",
       description:
-        "Mr. Adeoye Rotimi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut massa mi, aliquam id hendrerit lorem. Pellentesque et sem sapien fringilla maximus...",
+        "Dn. Adeoye joined New Birth Baptist Church, Ikorodu in 2014 and has since served in various capacities.In the past, he chaired the Community Impact Committee, led the ad-hoc committee for the Community Hymn Singing program. He has also been actively involved in Sunday School and planned the Church's Annual Thanksgiving Celebrations. In terms of Leadership Roles, Dn. Adeoye has served as Home Fellowship Leader, Coordinator and Director, Nominating Committee Chairman and currently as Personnel Chairman. Currently, as a deacon he oversees the Worship Ministry, which comprises various departments including Media, Drama, Music, Ushering and Protocol, Praise Team, Prayer and Deliverance, and Counselling and Follow-up Ministries.",
       imageUrl: One, // Replace with actual image paths
     },
   ];
