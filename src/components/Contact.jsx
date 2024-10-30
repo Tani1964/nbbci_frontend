@@ -22,11 +22,11 @@ const Contact = () => {
         <Flex
           direction={{ base: "column", md: "row" }}
           justify="space-between"
-          align="center"
+          align="flex-start" // Align items to the start for better spacing
         >
           {/* Contact Details Section */}
           <Box flex={1} mb={{ base: 6, md: 0 }}>
-            <Text fontSize="2xl" fontWeight="bold" mb={2}>
+            <Text fontSize={{ base: "xl", md: "2xl" }} fontWeight="bold" mb={2}>
               Let’s get in touch!
             </Text>
             <Text color="gray.600" mb={4}>
@@ -39,7 +39,7 @@ const Contact = () => {
               {/* Phone */}
               <Flex align="center">
                 <Icon as={FaPhoneAlt} color="#A8518A" boxSize={5} mr={3} />
-                <Text color="gray.700">+234 808 149 4141 or +234 906 802 2226 </Text>
+                <Text color="gray.700">+234 808 149 4141 or +234 906 802 2226</Text>
               </Flex>
 
               {/* Email */}
@@ -67,7 +67,7 @@ const Contact = () => {
           </Box>
 
           {/* Form Section */}
-          <Box flex={1} pl={{ md: 6 }}>
+          <Box flex={1} pl={{ md: 6 }} width={{ base: "100%", md: "auto" }}>
             <Stack spacing={4}>
               <Flex
                 align="center"
@@ -88,8 +88,12 @@ const Contact = () => {
                 <Icon as={FiMail} boxSize={5} mr={3} />
                 <Input placeholder="Email" variant="unstyled" />
               </Flex>
-              <Flex direction={"row"} width={"100%"} justifyContent={"left"}>
-                <Button paddingX={10} paddingY={5} colorScheme="#A8518A;">
+              <Flex width="100%" justifyContent="flex-start">
+                <Button
+                  paddingX={10}
+                  paddingY={5}
+                  colorScheme="#A8518A;" // Use a color scheme instead of a hex
+                >
                   Submit
                 </Button>
               </Flex>

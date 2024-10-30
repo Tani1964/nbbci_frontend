@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom"; // Import useLocation for getting the current path
+import { useLocation } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
 // Motion components
@@ -26,7 +26,7 @@ const MotionButton = motion(Button);
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const location = useLocation(); // Get current location
+  const location = useLocation();
 
   const linkAnimation = {
     initial: { y: -20, opacity: 0 },
@@ -35,7 +35,7 @@ const Header = () => {
   };
 
   return (
-    <Box bg={useColorModeValue("white", "gray.800")} px={20}>
+    <Box bg={useColorModeValue("white", "gray.800")} px={{ base: 4, md: 20 }}>
       <Flex alignItems="center" justifyContent="space-between" py={5}>
         {/* Logo */}
         <MotionBox
@@ -64,17 +64,14 @@ const Header = () => {
           {["Home", "About Us", "Ministries", "Resources", "Media"].map(
             (label) => {
               const path = `/${label.toLowerCase().replace(/\s/g, "-")}`;
-              const isActive = location.pathname === path; // Check if the link is active
+              const isActive = location.pathname === path;
               return (
-                <MotionBox
-                  key={label}
-                  {...linkAnimation}
-                >
+                <MotionBox key={label} {...linkAnimation}>
                   <Link
                     href={path}
                     fontSize="md"
                     fontWeight="bold"
-                    color={isActive ? "#A8518A" : "inherit"} // Change color if active
+                    color={isActive ? "#A8518A" : "inherit"}
                   >
                     {label}
                   </Link>
@@ -84,24 +81,16 @@ const Header = () => {
           )}
         </HStack>
 
-        {/* Offering Button on Desktop */}
+        {/* Offering Button in Desktop */}
         <MotionButton
-          colorScheme="#A8518A"
+          colorScheme="#A8518A;" // Use a color scheme for consistency
           size="md"
           padding="10px"
-          width={150}
+          display={{ base: "none", md: "inline-flex" }} // Hide on mobile
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-         <Button
-          colorScheme=" #A8518A;
-"
-          size="md"
-          padding={"10px"}
-          width={150}
-        >
           Offering
-        </Button>
         </MotionButton>
       </Flex>
 
@@ -114,20 +103,17 @@ const Header = () => {
             {["Home", "About Us", "Ministries", "Resources", "Media"].map(
               (label) => {
                 const path = `/${label.toLowerCase().replace(/\s/g, "-")}`;
-                const isActive = location.pathname === path; // Check if the link is active
+                const isActive = location.pathname === path;
                 return (
-                  <MotionBox
-                    key={label}
-                    {...linkAnimation}
-                  >
+                  <MotionBox key={label} {...linkAnimation}>
                     <Link
                       href={path}
                       fontSize="md"
                       fontWeight="bold"
                       display="block"
                       my={2}
-                      color={isActive ? "#A8518A" : "inherit"} // Change color if active
-                      onClick={onClose} // Close drawer on link click
+                      color={isActive ? "#A8518A" : "inherit"}
+                      onClick={onClose}
                     >
                       {label}
                     </Link>
@@ -139,10 +125,10 @@ const Header = () => {
           <DrawerFooter>
             {/* Offering Button in the Drawer */}
             <MotionButton
-              colorScheme="#A8518A"
+              colorScheme="#A8518A;" // Use a color scheme for consistency
               size="md"
               padding="10px"
-              width={150}
+              width="100%" // Full width in drawer
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               onClick={onClose}
