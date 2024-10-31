@@ -26,9 +26,10 @@ const ministriesData = [
     description: 'This is the description for the Evangelism Ministry.',
     image: 'path_to_evangelism_ministry_image.jpg', // Add your image path here
     childrenMinistries: [
-      { title: 'Street Evangelism', description: 'This is the description for Street Evangelism.' },
-      { title: 'Online Outreach', description: 'This is the description for Online Outreach.' },
-      { title: 'Community Events', description: 'This is the description for Community Events.' },
+      { title: "MENS' MISSIONARY UNION", description: 'This is the description for Street Evangelism.' },
+      { title: "WOMENS' MISSIONARY UNION ", description: 'This is the description for Online Outreach.' },
+      { title: 'PREACHING STATIONS', description: 'This is the description for Community Events.' },
+      { title: 'EVANGELISM TEAM', description: 'This is the description for Community Events.' },
     ],
   },
   {
@@ -36,9 +37,12 @@ const ministriesData = [
     description: 'This is the description for the Discipleship Ministry.',
     image: 'path_to_discipleship_ministry_image.jpg', // Add your image path here
     childrenMinistries: [
-      { title: 'Bible Study Groups', description: 'This is the description for Bible Study Groups.' },
-      { title: 'Mentorship Programs', description: 'This is the description for Mentorship Programs.' },
-      { title: 'Prayer Meetings', description: 'This is the description for Prayer Meetings.' },
+      { title: 'CHILDREN CHURCH', description: 'This is the description for Bible Study Groups.' },
+      { title: 'TEENS FELLOWSHIP', description: 'This is the description for Bible Study Groups.' },
+      { title: 'YOUTH FELLOWSHIP', description: 'This is the description for Mentorship Programs.' },
+      { title: "SINGLE'S FELLOWSHIP", description: 'This is the description for Prayer Meetings.' },
+      { title: "COUPLE'S FELLOWSHIP", description: 'This is the description for Prayer Meetings.' },
+      { title: "HOME FELLOWSHIP", description: 'This is the description for Prayer Meetings.' },
     ],
   },
   {
@@ -46,9 +50,9 @@ const ministriesData = [
     description: 'This is the description for the Discipleship Ministry.',
     image: 'path_to_discipleship_ministry_image.jpg', // Add your image path here
     childrenMinistries: [
-      { title: 'Bible Study Groups', description: 'This is the description for Bible Study Groups.' },
-      { title: 'Mentorship Programs', description: 'This is the description for Mentorship Programs.' },
-      { title: 'Prayer Meetings', description: 'This is the description for Prayer Meetings.' },
+      { title: 'SUNDAY SCHOOL', description: 'This is the description for Bible Study Groups.' },
+      { title: 'BAPTISMAL CLASS', description: 'This is the description for Mentorship Programs.' },
+      { title: 'DISCIPLESHIP', description: 'This is the description for Prayer Meetings.' },
     ],
   },
   {
@@ -56,9 +60,15 @@ const ministriesData = [
     description: 'This is the description for the Discipleship Ministry.',
     image: 'path_to_discipleship_ministry_image.jpg', // Add your image path here
     childrenMinistries: [
-      { title: 'Bible Study Groups', description: 'This is the description for Bible Study Groups.' },
-      { title: 'Mentorship Programs', description: 'This is the description for Mentorship Programs.' },
-      { title: 'Prayer Meetings', description: 'This is the description for Prayer Meetings.' },
+      { title: 'FINANCE', description: 'This is the description for Bible Study Groups.' },
+      { title: 'AUDIT', description: 'This is the description for Mentorship Programs.' },
+      { title: 'MEMBERSHIP', description: 'This is the description for Prayer Meetings.' },
+      { title: 'SECRETARIAT', description: 'This is the description for Prayer Meetings.' },
+      { title: 'ASSET MANAGEMENT', description: 'This is the description for Prayer Meetings.' },
+      { title: 'EMPOWERMENT', description: 'This is the description for Prayer Meetings.' },
+      { title: 'LEGAL', description: 'This is the description for Prayer Meetings.' },
+      { title: 'HISTORY & LITERATURE', description: 'This is the description for Prayer Meetings.' },
+      { title: 'PERSONNEL', description: 'This is the description for Prayer Meetings.' },
     ],
   },
   {
@@ -66,9 +76,15 @@ const ministriesData = [
     description: 'This is the description for the Discipleship Ministry.',
     image: 'path_to_discipleship_ministry_image.jpg', // Add your image path here
     childrenMinistries: [
-      { title: 'Bible Study Groups', description: 'This is the description for Bible Study Groups.' },
-      { title: 'Mentorship Programs', description: 'This is the description for Mentorship Programs.' },
-      { title: 'Prayer Meetings', description: 'This is the description for Prayer Meetings.' },
+      { title: 'MEDICAL', description: 'This is the description for Bible Study Groups.' },
+      { title: 'VISITATION', description: 'This is the description for Mentorship Programs.' },
+      { title: 'SECURITY ', description: 'This is the description for Prayer Meetings.' },
+      { title: 'CARE & WELFARE', description: 'This is the description for Prayer Meetings.' },
+      { title: 'BUILDING', description: 'This is the description for Prayer Meetings.' },
+      { title: 'UTILITY', description: 'This is the description for Prayer Meetings.' },
+      { title: 'SANCTUARY KEEPER', description: 'This is the description for Prayer Meetings.' },
+      { title: 'BEAUTIFICATION', description: 'This is the description for Prayer Meetings.' },
+      { title: 'COMMUNITY IMPACT', description: 'This is the description for Prayer Meetings.' },
     ],
   },
   // Add more ministries as needed
