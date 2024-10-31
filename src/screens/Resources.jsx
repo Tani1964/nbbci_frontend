@@ -7,7 +7,7 @@ const Resources = () => {
   return (
     <Box>
       <PrayerRequest />
-      <Catchup/>
+      {/* <Catchup/> */}
       <Accounts/>
     </Box>
   );
