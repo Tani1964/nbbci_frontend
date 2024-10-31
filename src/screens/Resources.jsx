@@ -1,6 +1,6 @@
 import PrayerRequest from "../components/PrayerRequest";
 import { Box } from "@chakra-ui/react";
-import Accounts from "../components/Accounts"
+import Accounts2 from "../components/Accounts2"
 import Catchup from "../components/CatchUp";
 
 const Resources = () => {
@@ -8,7 +8,7 @@ const Resources = () => {
     <Box>
       <PrayerRequest />
       {/* <Catchup/> */}
-      <Accounts/>
+      <Accounts2/>
     </Box>
   );
 };

@@ -73,7 +73,7 @@ return (
           color="black"
         >
           <Text fontSize="xl" fontWeight="bold" mb={4}>
-            Account Details
+          General Account: Offering & Tithe
           </Text>
           <VStack spacing={4}>
             <Box w="100%">
