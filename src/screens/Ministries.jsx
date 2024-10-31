@@ -8,17 +8,21 @@ const MotionBox = motion(Box);
 
 const ministriesData = [
   {
-    title: 'Music Ministry',
+    title: 'Worship Ministry',
     description: 'This is the description for the Music Ministry.',
     image: 'path_to_music_ministry_image.jpg', // Add your image path here
     childrenMinistries: [
-      { title: 'Choir', description: 'This is the description for the Choir.' },
-      { title: 'Band', description: 'This is the description for the Band.' },
-      { title: 'Worship Team', description: 'This is the description for the Worship Team.' },
+      { title: 'MEDIA', description: 'This is the description for the Choir.' },
+      { title: 'DRAMA', description: 'This is the description for the Band.' },
+      { title: 'MUSIC', description: 'This is the description for the Worship Team.' },
+      { title: 'USHERING /PROTOCOL', description: 'This is the description for the Worship Team.' },
+      { title: 'PRAISE TEAM', description: 'This is the description for the Worship Team.' },
+      { title: 'PRAYER & DELIVERANCE', description: 'This is the description for the Worship Team.' },
+      { title: 'COUNSELLING & FOLLOW UP', description: 'This is the description for the Worship Team.' },
     ],
   },
   {
-    title: 'Evangelism Ministry',
+    title: 'Missions & Outreaches',
     description: 'This is the description for the Evangelism Ministry.',
     image: 'path_to_evangelism_ministry_image.jpg', // Add your image path here
     childrenMinistries: [
@@ -28,7 +32,37 @@ const ministriesData = [
     ],
   },
   {
-    title: 'Discipleship Ministry',
+    title: 'Fellowship Ministry',
+    description: 'This is the description for the Discipleship Ministry.',
+    image: 'path_to_discipleship_ministry_image.jpg', // Add your image path here
+    childrenMinistries: [
+      { title: 'Bible Study Groups', description: 'This is the description for Bible Study Groups.' },
+      { title: 'Mentorship Programs', description: 'This is the description for Mentorship Programs.' },
+      { title: 'Prayer Meetings', description: 'This is the description for Prayer Meetings.' },
+    ],
+  },
+  {
+    title: 'Education Ministry',
+    description: 'This is the description for the Discipleship Ministry.',
+    image: 'path_to_discipleship_ministry_image.jpg', // Add your image path here
+    childrenMinistries: [
+      { title: 'Bible Study Groups', description: 'This is the description for Bible Study Groups.' },
+      { title: 'Mentorship Programs', description: 'This is the description for Mentorship Programs.' },
+      { title: 'Prayer Meetings', description: 'This is the description for Prayer Meetings.' },
+    ],
+  },
+  {
+    title: 'Secretariat/Administration',
+    description: 'This is the description for the Discipleship Ministry.',
+    image: 'path_to_discipleship_ministry_image.jpg', // Add your image path here
+    childrenMinistries: [
+      { title: 'Bible Study Groups', description: 'This is the description for Bible Study Groups.' },
+      { title: 'Mentorship Programs', description: 'This is the description for Mentorship Programs.' },
+      { title: 'Prayer Meetings', description: 'This is the description for Prayer Meetings.' },
+    ],
+  },
+  {
+    title: 'Welfare & Services',
     description: 'This is the description for the Discipleship Ministry.',
     image: 'path_to_discipleship_ministry_image.jpg', // Add your image path here
     childrenMinistries: [
@@ -71,7 +105,7 @@ const Ministries = () => {
             <VStack align="start" spacing={2}>
               <Text fontSize="xl" fontWeight="bold">{title}</Text>
               <Text>{description}</Text>
-              {image && <Image src={image} alt={title} boxSize="150px" objectFit="cover" />}
+              {/* {image && <Image src={image} alt={title} boxSize="150px" objectFit="cover" />} */}
               <Button
                 onClick={() => handleToggle(index)}
                 variant="outline"
