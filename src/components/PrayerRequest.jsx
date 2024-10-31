@@ -1,20 +1,21 @@
-import { Box, Flex, Text, Button, Input, Textarea } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Textarea } from "@chakra-ui/react";
 import Bg from "../assets/BG.png";
 
 const PrayerRequest = () => {
   return (
     <Box
       position="relative"
-      h="80vh"
-      backgroundImage={Bg}
+      minH="80vh"
+      backgroundImage={`url(${Bg})`}
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
-      paddingX={"8%"}
-      paddingY={"8%"}
-      color={"white"}
-      display={'flex'}
-      justifyContent={'space-between'}
+      px={{ base: "5%", md: "8%" }}
+      py={{ base: "10%", md: "8%" }}
+      color="white"
+      display="flex"
+      flexDirection={{ base: "column", md: "row" }}
+      justifyContent="space-between"
       gap={10}
     >
       {/* Overlay */}
@@ -25,15 +26,21 @@ const PrayerRequest = () => {
         right="0"
         bottom="0"
         bg="rgba(0, 0, 0, 0.5)"
-        zIndex={1}  
+        zIndex={1}
       />
 
       {/* Content */}
-      <Box textAlign="left" maxW="600px" mb={6} zIndex={2} color="white"> {/* Higher zIndex for content */}
-        <Text fontSize="2xl" fontWeight="bold" color="white">
+      <Box
+        textAlign="left"
+        maxW={{ base: "100%", md: "600px" }}
+        mb={6}
+        zIndex={2}
+        position="relative"
+      >
+        <Text fontSize={{ base: "xl", md: "2xl" }} fontWeight="bold">
           Let’s help you to grow?
         </Text>
-        <Text fontSize="lg" mt={2} color="white">
+        <Text fontSize={{ base: "md", md: "lg" }} mt={2}>
           Need guidance or a listening ear? Our pastoral counseling team is here
           to support you through life’s challenges. Schedule a confidential
           session today, and let us walk with you on your journey of faith and
@@ -44,25 +51,27 @@ const PrayerRequest = () => {
       {/* Form Content */}
       <Flex
         as="form"
-        width="80%"
-        justifyContent={"space-between"}
-        alignItems={"start"}
-        flexDirection={'column'}
-        zIndex={2} 
+        width={{ base: "100%", md: "80%" }}
+        justifyContent="space-between"
+        alignItems="start"
+        flexDirection="column"
+        zIndex={2}
+        position="relative"
       >
-        <Flex direction={"column"}>
+        <Flex direction="column" width="100%" mb={{ base: 4, md: 0 }}>
           <label>Message:</label>
           <Textarea
-            mb={4}
             bg="white"
             color="black"
-            width={"40vw"}
-            height={"40vh"}
+            width="100%"
+            height={{ base: "20vh", md: "40vh" }}
             _placeholder={{ color: "gray.500" }}
+            mb={4}
           />
         </Flex>
-        <Flex direction={"row"} width={"100%"} justifyContent={"right"}>
-          <Button paddingX={10} paddingY={5} colorScheme="#A8518A;">
+        
+        <Flex width="100%" justifyContent={{ base: "center", md: "right" }}>
+          <Button px={10} py={5} colorScheme="#A8518A;">
             Submit
           </Button>
         </Flex>
