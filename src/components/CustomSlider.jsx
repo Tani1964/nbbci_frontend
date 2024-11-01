@@ -59,6 +59,7 @@ const NextArrow = (props) => {
       aria-label="Next Slide"
       bg="white"
       boxShadow="md"
+      p={4}
       _hover={{ bg: "gray.300" }}
     />
   );
@@ -78,6 +79,7 @@ const PrevArrow = (props) => {
       onClick={onClick}
       aria-label="Previous Slide"
       bg="white"
+      p={4}
       boxShadow="md"
       _hover={{ bg: "gray.300" }}
     />
