@@ -1,9 +1,14 @@
+import { useForm } from '@formspree/react';
 import { Box, Flex, Text, Button, Input, Textarea } from "@chakra-ui/react";
 import Bg from "../assets/BG.png";
 
 const Help = () => {
+  const [state, handleSubmit] = useForm("YOUR_FORM_ID"); // Replace with your actual form ID
+
   return (
     <Box
+    as="form"
+        onSubmit={handleSubmit}
       position="relative"
       minH="fit"
       backgroundImage={`url(${Bg})`}
@@ -46,7 +51,7 @@ const Help = () => {
 
       {/* Form Content */}
       <Flex
-        as="form"
+         // Ensure this is set
         direction={{ base: "column", md: "row" }}
         width="100%"
         justifyContent="space-between"
@@ -59,30 +64,49 @@ const Help = () => {
           <label style={{ color: "white" }}>Email:</label>
           <Input
             type="email"
+            name="email" // Add name attribute for Formspree
             mb={4}
             bg="white"
             color="black"
             _placeholder={{ color: "gray.500" }}
+            required // Make it required
           />
         </Flex>
 
         <Flex direction="column" width={{ base: "100%", md: "45%" }}>
           <label style={{ color: "white" }}>Message:</label>
           <Textarea
+            name="message" // Add name attribute for Formspree
             mb={4}
             bg="white"
             color="black"
             height={{ base: "20vh", md: "40vh" }}
             _placeholder={{ color: "gray.500" }}
+            required // Make it required
           />
         </Flex>
       </Flex>
 
       <Flex width="100%" justifyContent={{ base: "center", md: "right" }} zIndex={2} position="relative">
-        <Button px={10} py={5} colorScheme="#A8518A;">
+        <Button
+          type="submit" // Ensure this is set
+          px={10}
+          py={5}
+          colorScheme="pink" // Make sure colorScheme is valid
+          disabled={state.submitting} // Disable button during submission
+        >
           Submit
         </Button>
       </Flex>
+
+      {/* Display success message */}
+      {state.succeeded && (
+        <Text color="green.500" textAlign="center" mt={4}>Thanks for your message!</Text>
+      )}
+      {/* Display validation errors */}
+      {/* {state.errors.length > 0 && (
+        <Text color="red.500" textAlign="center" mt={4}>Please correct the errors above.</Text>
+      )} */}
     </Box>
   );
 };

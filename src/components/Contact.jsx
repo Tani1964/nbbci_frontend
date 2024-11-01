@@ -1,3 +1,4 @@
+import { useForm, ValidationError } from '@formspree/react';
 import { Box, Flex, Text, Icon, Stack, Button, Input } from "@chakra-ui/react";
 import {
   FaPhoneAlt,
@@ -9,6 +10,8 @@ import { FiMail } from "react-icons/fi";
 import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xpwzpljq");
+
   return (
     <Flex justify="center" py={10} px={5} bg="gray.50">
       <Box
@@ -22,7 +25,7 @@ const Contact = () => {
         <Flex
           direction={{ base: "column", md: "row" }}
           justify="space-between"
-          align="flex-start" // Align items to the start for better spacing
+          align="flex-start"
         >
           {/* Contact Details Section */}
           <Box flex={1} mb={{ base: 6, md: 0 }}>
@@ -68,7 +71,7 @@ const Contact = () => {
 
           {/* Form Section */}
           <Box flex={1} pl={{ md: 6 }} width={{ base: "100%", md: "auto" }}>
-            <Stack spacing={4}>
+            <Stack as="form" onSubmit={handleSubmit} spacing={4}>
               <Flex
                 align="center"
                 borderWidth={1}
@@ -76,7 +79,12 @@ const Contact = () => {
                 borderRadius={20}
               >
                 <Icon as={FaUserAlt} boxSize={5} mr={3} />
-                <Input placeholder="Full Name" variant="unstyled" />
+                <Input 
+                  name="fullName" 
+                  placeholder="Full Name" 
+                  variant="unstyled" 
+                  required
+                />
               </Flex>
 
               <Flex
@@ -86,17 +94,49 @@ const Contact = () => {
                 borderRadius={20}
               >
                 <Icon as={FiMail} boxSize={5} mr={3} />
-                <Input placeholder="Email" variant="unstyled" />
+                <Input 
+                  name="email" 
+                  placeholder="Email" 
+                  variant="unstyled" 
+                  required
+                />
               </Flex>
+              
+              <Flex
+                align="center"
+                borderWidth={1}
+                padding={4}
+                borderRadius={20}
+              >
+                <Input 
+                  name="message" 
+                  placeholder="Message" 
+                  variant="unstyled" 
+                  required 
+                  as="textarea" 
+                  rows={3} 
+                />
+              </Flex>
+
               <Flex width="100%" justifyContent="flex-start">
                 <Button
+                  type="submit"
                   paddingX={10}
                   paddingY={5}
                   colorScheme="#A8518A;" // Use a color scheme instead of a hex
+                  disabled={state.submitting} // Disable button during submission
                 >
                   Submit
                 </Button>
               </Flex>
+              {/* Display success message */}
+              {state.succeeded && (
+                <Text color="green.500">Thanks for contacting us!</Text>
+              )}
+              {/* Display validation errors */}
+              {/* {state.errors?.length > 0 && (
+                <Text color="red.500">Please correct the errors above.</Text>
+              )} */}
             </Stack>
           </Box>
         </Flex>
