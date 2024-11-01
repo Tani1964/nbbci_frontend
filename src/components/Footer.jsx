@@ -15,7 +15,7 @@ export default function Footer() {
         spacing={4} // Add spacing for better separation
       >
         <Text mb={{ base: 2, md: 0 }} mr={{ base: 0, md: 8 }}>
-          5, Oloteru Street, Haruna Bus-stop, Lagos, Nigeria
+          5, Olateru Street, Haruna Bus-stop, Lagos, Nigeria
         </Text>
         <Text mb={{ base: 2, md: 0 }} mr={{ base: 0, md: 8 }}>
           Phone: +234 808 149 4141 or +234 906 802 2226
