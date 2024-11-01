@@ -133,7 +133,7 @@ const Header = () => {
               whileTap={{ scale: 0.95 }}
               onClick={onClose}
             >
-              Offering
+              Give
             </MotionButton>
           </DrawerFooter>
         </DrawerContent>
