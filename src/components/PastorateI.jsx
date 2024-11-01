@@ -61,7 +61,7 @@ const PastorateI = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Rev. Oyerinde Adegbogla
+            Rev. Dr. Oyerinde Adegbogla
           </MotionText>
           <MotionText
             fontSize="lg"
@@ -79,20 +79,20 @@ const PastorateI = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Rev. Oyerinde Emmanuel Adegbola serves as the Resident Pastor of New
+            Rev. Dr. Oyerinde Emmanuel Adegbola serves as the Resident Pastor of New
             Birth Baptist Church, Ikorodu, Lagos State. He brings a wealth of
             experience and passion to his role, guiding the church community
             toward spiritual growth and development.
             <br />
             <br />
-            Rev. Oyerinde is blessed with a loving family. He is married to Sis.
+            Rev. Dr. Oyerinde is blessed with a loving family. He is married to Sis.
             Adebola Adegbola, and together they have two beautiful daughters.
             <br />
             <br />
-            As Resident Pastor, Rev. Oyerinde provides leadership to various
+            As Resident Pastor, Rev. Dr. Oyerinde provides leadership to various
             aspects of church life. He leads the Family Meeting and Church in
             Council, chairs the Pastoral Ministry and Pastorate, and oversees
-            the Administration and Secretariat group. Through these roles, Rev.
+            the Administration and Secretariat group. Through these roles, Rev. Dr.
             Oyerinde fosters a sense of community and ensures the smooth
             operation of church activities.
           </MotionText>
