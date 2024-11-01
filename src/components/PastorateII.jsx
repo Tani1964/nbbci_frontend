@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text, VStack, Divider } from "@chakra-ui/react";
 import SecondaryImg from '../assets/457098549_923812929772750_5850151176424433790_n.png';
 import PrimaryImg from '../assets/_DSC0758.png';
 import { motion } from "framer-motion";
@@ -13,6 +13,13 @@ const PastorateII = () => {
         <Heading fontSize="3xl" fontWeight="bold" mb={4}>
           Our Pastoral Team
         </Heading>
+        <Divider
+          orientation="horizontal"
+          borderColor="#A8518A"
+          borderWidth="2px"
+          width="150px"
+          mx="auto"
+        />
       </Box>
 
       {/* Pastor Section 1 */}

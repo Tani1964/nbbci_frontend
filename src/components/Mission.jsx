@@ -12,7 +12,7 @@ const Mission = () => {
           orientation="horizontal"
           borderColor="#A8518A"
           borderWidth="2px"
-          width="100px"
+          width="150px"
           mx="auto"
         />
       </Box>
@@ -21,7 +21,7 @@ const Mission = () => {
       <VStack align="start" spacing={10}>
         {/* Our Mission */}
         <Box>
-          <Heading as="h3" fontSize="2xl" fontWeight="bold" mb={4}>
+          <Heading as="h3" fontSize="4xl" fontWeight="bold" mb={4}>
             Our Mission
           </Heading>
           <Text fontSize="md" lineHeight="tall">
@@ -41,7 +41,7 @@ const Mission = () => {
 
         {/* Our Vision */}
         <Box>
-          <Heading as="h3" fontSize="2xl" fontWeight="bold" mb={4}>
+          <Heading as="h3" fontSize="4xl" fontWeight="bold" mb={4}>
             Our Vision
           </Heading>
           <Text fontSize="md" lineHeight="tall">
