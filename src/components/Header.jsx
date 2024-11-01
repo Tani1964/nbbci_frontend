@@ -17,16 +17,16 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
-// Motion components
 const MotionBox = motion(Box);
 const MotionButton = motion(Button);
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const linkAnimation = {
     initial: { y: -20, opacity: 0 },
@@ -34,25 +34,23 @@ const Header = () => {
     transition: { duration: 0.6, ease: "easeOut" },
   };
 
+  const navItems = [
+    { label: "Home", path: "/" },
+    { label: "About Us", path: "/about-us" },
+    { label: "Ministries", path: "/ministries" },
+    { label: "Resources", path: "/resources" },
+    { label: "Media", path: "/media" },
+  ];
+
   return (
     <Box bg={useColorModeValue("white", "gray.800")} px={{ base: 4, md: 20 }}>
       <Flex alignItems="center" justifyContent="space-between" py={5}>
         {/* Logo */}
-        {/* Logo */}
-        <MotionBox
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <Image
-            src={Logo}
-            alt="NBBC logo"
-            width={{ base: "40px", md: "60px" }}  // Adjust sizes as needed
-            height="auto"
-          />
+        <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+          <Image src={Logo} alt="NBBC logo" w={{ base: "40px", md: "60px" }} />
         </MotionBox>
 
-        {/* Hamburger Menu for Mobile View */}
+        {/* Hamburger Menu for Mobile */}
         <IconButton
           icon={<HamburgerIcon />}
           aria-label="Open Menu"
@@ -62,82 +60,73 @@ const Header = () => {
         />
 
         {/* Desktop Navigation Links */}
-        <HStack
-          spacing={8}
-          alignItems="center"
-          display={{ base: "none", md: "flex" }}
-        >
-          {["Home", "About Us", "Ministries", "Resources", "Media"].map(
-            (label) => {
-              const path = `/${label.toLowerCase().replace(/\s/g, "-")}`;
-              const isActive = location.pathname === path;
-              return (
-                <MotionBox key={label} {...linkAnimation}>
-                  <Link
-                    href={path}
-                    fontSize="md"
-                    fontWeight="bold"
-                    color={isActive ? "#A8518A" : "inherit"}
-                  >
-                    {label}
-                  </Link>
-                </MotionBox>
-              );
-            }
-          )}
+        <HStack spacing={8} alignItems="center" display={{ base: "none", md: "flex" }}>
+          {navItems.map(({ label, path }) => (
+            <MotionBox key={label} {...linkAnimation}>
+              <Link
+                href={path}
+                fontSize="md"
+                fontWeight="bold"
+                color={location.pathname === path ? "#A8518A" : "inherit"}
+                _hover={{ color: "#A8518A", textDecoration: "underline" }}
+              >
+                {label}
+              </Link>
+            </MotionBox>
+          ))}
         </HStack>
 
-        {/* Offering Button in Desktop */}
+        {/* Offering Button (Desktop) */}
         <MotionButton
-          colorScheme="#A8518A;" // Use a color scheme for consistency
+          colorScheme="#A8518A;"
           size="md"
-          padding="10px"
-          display={{ base: "none", md: "inline-flex" }} // Hide on mobile
+          paddingX={'5%'}
+          display={{ base: "none", md: "inline-flex" }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => navigate("/resources")}
+          as="a"
+          
         >
-          Offering
+          Give
         </MotionButton>
       </Flex>
 
-      {/* Sidebar/Drawer for Mobile View */}
+      {/* Sidebar/Drawer for Mobile */}
       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent>
           <DrawerHeader borderBottomWidth="1px">Menu</DrawerHeader>
           <DrawerBody>
-            {["Home", "About Us", "Ministries", "Resources", "Media"].map(
-              (label) => {
-                const path = `/${label.toLowerCase().replace(/\s/g, "-")}`;
-                const isActive = location.pathname === path;
-                return (
-                  <MotionBox key={label} {...linkAnimation}>
-                    <Link
-                      href={path}
-                      fontSize="md"
-                      fontWeight="bold"
-                      display="block"
-                      my={2}
-                      color={isActive ? "#A8518A" : "inherit"}
-                      onClick={onClose}
-                    >
-                      {label}
-                    </Link>
-                  </MotionBox>
-                );
-              }
-            )}
+            {navItems.map(({ label, path }) => (
+              <MotionBox key={label} {...linkAnimation}>
+                <Link
+                  href={path}
+                  fontSize="md"
+                  fontWeight="bold"
+                  display="block"
+                  my={2}
+                  color={location.pathname === path ? "#A8518A" : "inherit"}
+                  _hover={{ color: "#A8518A", textDecoration: "underline" }}
+                  onClick={onClose}
+                >
+                  {label}
+                </Link>
+              </MotionBox>
+            ))}
           </DrawerBody>
           <DrawerFooter>
-            {/* Offering Button in the Drawer */}
             <MotionButton
-              colorScheme="#A8518A;" // Use a color scheme for consistency
+              colorScheme="#A8518A;"
               size="md"
-              padding="10px"
-              width="100%" // Full width in drawer
+              paddingX={'5%'}
+              width="100%"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              onClick={onClose}
+              onClick={() => {
+                navigate("/resources");
+                onClose();
+              }}
             >
               Give
             </MotionButton>

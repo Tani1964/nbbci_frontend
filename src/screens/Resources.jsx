@@ -6,9 +6,9 @@ import Catchup from "../components/CatchUp";
 const Resources = () => {
   return (
     <Box>
+      <Accounts2/>
       <PrayerRequest />
       {/* <Catchup/> */}
-      <Accounts2/>
     </Box>
   );
 };
