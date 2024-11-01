@@ -52,7 +52,7 @@ const Contact = () => {
               <Flex align="center">
                 <Icon as={FaMapMarkerAlt} color="#A8518A" boxSize={5} mr={3} />
                 <Text color="gray.700">
-                  5, Olutaiwo Street, Haruna Bus-stop, Lagos, Nigeria
+                  5, Olateru Street, Haruna Bus-stop, Lagos, Nigeria
                 </Text>
               </Flex>
             </Stack>
