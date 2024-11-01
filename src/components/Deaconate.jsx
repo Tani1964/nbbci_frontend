@@ -1,6 +1,7 @@
 import { Box, Flex, Image, Text, VStack } from "@chakra-ui/react";
 import Two from "../assets/456603820_923813556439354_7572768511064555920_n.png";
 import One from "../assets/456607803_923813013106075_8066032512367024936_n (1).png";
+import Three from "../assets/gaadi.jpg";
 
 function Deaconate() {
   const members = [
@@ -16,7 +17,7 @@ function Deaconate() {
       title: "Deaconess",
       description:
         "Dns. Gaadi joined New Birth Baptist Church in 2007 and served as Church Secretary, Personnel Committee Chairperson, Teens Ministry Coordinator, Visitation/Follow-Up Coordinator, Discipleship Coordinator, Sunday School Teacher/Secretary, and Prayer Ministry Member.Currently, she coordinates the Fellowship and Education Ministry of New Birth Baptist Church, overseeing the following MDCs: Teens Fellowship, Children's Church, Youth Fellowship, Couples Fellowship, Singles Fellowship, Home Fellowship, Baptismal Class, Discipleship Ministry and Sunday School Department",
-      imageUrl: "path-to-placeholder-image", // Use a placeholder for now
+      imageUrl: Three, // Use a placeholder for now
     },
     {
       name: "DEACON ROTIMI ADEBOWALE ADEOYE",
