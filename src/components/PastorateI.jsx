@@ -70,7 +70,7 @@ const PastorateI = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Senior Pastor
+            Church Pastor
           </MotionText>
           <MotionText
             mt={4}
