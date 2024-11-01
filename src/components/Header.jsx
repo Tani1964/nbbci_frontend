@@ -114,8 +114,6 @@ const Header = () => {
                 </Link>
               </MotionBox>
             ))}
-          </DrawerBody>
-          <DrawerFooter>
             <MotionButton
               colorScheme="#A8518A;"
               size="md"
@@ -130,6 +128,9 @@ const Header = () => {
             >
               Give
             </MotionButton>
+          </DrawerBody>
+          <DrawerFooter>
+            
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
