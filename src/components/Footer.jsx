@@ -27,9 +27,9 @@ export default function Footer() {
       <Text textAlign="center" mt={4}>
         &copy; {currentYear} New Birth Baptist Church, Ikorodu, Lagos State.
       </Text>
-      <Text textAlign="center" mt={2} color="gray.500">
+      {/* <Text textAlign="center" mt={2} color="gray.500">
         Developed by RunIt Technologies
-      </Text>
+      </Text> */}
     </Box>
   );
 }

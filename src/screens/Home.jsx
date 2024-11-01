@@ -39,7 +39,7 @@ const Home = () => {
 
       {/* Announcements Section */}
       <MotionBox {...animationSettings}>
-        <Announcements />
+        <Announcements/>
       </MotionBox>
 
       {/* Who Section */}

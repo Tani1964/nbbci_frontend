@@ -13,12 +13,13 @@ const Accounts = () => {
 return (
   <Box
       position="relative"
-      h="100vh"
+      h="fit"
       backgroundImage={Bg}
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       px={{ base: 4, md: 10, lg: 78 }} // Responsive padding
+      py={{ base: 4, md: 10, lg: 78 }} // Responsive padding
     >
       {/* Overlay */}
       <Box

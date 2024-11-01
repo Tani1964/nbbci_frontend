@@ -6,13 +6,13 @@ const Accounts2 = () => {
   return (
     <Box
       position="relative"
-      minH="100vh"
+      minH="fit"
       backgroundImage={`url(${Bg})`}
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       px={{ base: 6, md: 10, lg: 20 }}
-      py={{ base: 10, md: 16 }}
+      py={{ base: 10, md: 16, lg:30 }}
     >
       {/* Overlay */}
       <Box
