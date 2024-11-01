@@ -38,12 +38,18 @@ const Header = () => {
     <Box bg={useColorModeValue("white", "gray.800")} px={{ base: 4, md: 20 }}>
       <Flex alignItems="center" justifyContent="space-between" py={5}>
         {/* Logo */}
+        {/* Logo */}
         <MotionBox
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <Image src={Logo} alt="NBBC logo" />
+          <Image
+            src={Logo}
+            alt="NBBC logo"
+            width={{ base: "40px", md: "60px" }}  // Adjust sizes as needed
+            height="auto"
+          />
         </MotionBox>
 
         {/* Hamburger Menu for Mobile View */}

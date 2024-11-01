@@ -28,7 +28,7 @@ const Accounts2 = () => {
       <Flex
         position="relative"
         align="center"
-        justify="space-between"
+        justify="space-around"
         height="100%"
         color="white"
         flexDirection={{ base: "column", lg: "row" }}
