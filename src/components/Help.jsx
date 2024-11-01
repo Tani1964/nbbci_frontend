@@ -3,7 +3,7 @@ import { Box, Flex, Text, Button, Input, Textarea } from "@chakra-ui/react";
 import Bg from "../assets/BG.png";
 
 const Help = () => {
-  const [state, handleSubmit] = useForm("YOUR_FORM_ID"); // Replace with your actual form ID
+  const [state, handleSubmit] = useForm("xvgokqba"); // Replace with your actual form ID
 
   return (
     <Box
