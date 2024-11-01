@@ -1,7 +1,10 @@
+import { useForm } from '@formspree/react';
 import { Box, Flex, Text, Button, Textarea } from "@chakra-ui/react";
 import Bg from "../assets/BG.png";
 
 const PrayerRequest = () => {
+  const [state, handleSubmit] = useForm("myzyepdq"); // Replace with your actual Formspree form ID
+
   return (
     <Box
       position="relative"
@@ -38,19 +41,24 @@ const PrayerRequest = () => {
         position="relative"
       >
         <Text fontSize={{ base: "xl", md: "2xl" }} fontWeight="bold">
-          Let’s help you to grow?
+          Submit Your Prayer Request
         </Text>
         <Text fontSize={{ base: "md", md: "lg" }} mt={2}>
-          Need guidance or a listening ear? Our pastoral counseling team is here
-          to support you through life’s challenges. Schedule a confidential
-          session today, and let us walk with you on your journey of faith and
-          healing.
+          We are here to pray with you. No matter what you’re going through, you
+          are not alone. Please share your prayer needs with us, and our team
+          will join you in prayer, lifting up your requests to God with faith
+          and compassion.
+        </Text>
+        <Text fontSize={{ base: "md", md: "lg" }} mt={2}>
+          Let us stand with you in this season. Just submit your request below,
+          and trust that our hearts and prayers are with you.
         </Text>
       </Box>
-      
+
       {/* Form Content */}
       <Flex
         as="form"
+        onSubmit={handleSubmit}
         width={{ base: "100%", md: "80%" }}
         justifyContent="space-between"
         alignItems="start"
@@ -59,23 +67,45 @@ const PrayerRequest = () => {
         position="relative"
       >
         <Flex direction="column" width="100%" mb={{ base: 4, md: 0 }}>
-          <label>Message:</label>
+          <label style={{ color: "white" }}>Your Prayer Request:</label>
           <Textarea
+            name="message"
             bg="white"
             color="black"
             width="100%"
             height={{ base: "20vh", md: "40vh" }}
+            placeholder="Share your prayer request here..."
             _placeholder={{ color: "gray.500" }}
             mb={4}
+            required
           />
         </Flex>
         
         <Flex width="100%" justifyContent={{ base: "center", md: "right" }}>
-          <Button px={10} py={5} colorScheme="#A8518A;">
+          <Button
+            type="submit"
+            px={10}
+            py={5}
+            colorScheme="pink"
+            disabled={state.submitting}
+          >
             Submit
           </Button>
         </Flex>
       </Flex>
+
+      {/* Display success message */}
+      {state.succeeded && (
+        <Text color="green.500" textAlign="center" mt={4}>
+          Thank you for sharing. We are praying with you.
+        </Text>
+      )}
+      {/* Display validation errors */}
+      {/* {state.errors.length > 0 && (
+        <Text color="red.500" textAlign="center" mt={4}>
+          Please correct the errors above.
+        </Text>
+      )} */}
     </Box>
   );
 };
