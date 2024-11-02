@@ -38,10 +38,10 @@ function Deaconate() {
               In 2006, her family relocated to Ikorodu, where the Lord guided them to New Birth Baptist Church. There, Dns. Ifegbesan continued her dedicated service, contributing as an usher, Sunday School teacher, part of the Protocol and Security team, Prayer Group member, Teenagers' Coordinator, and baptismal class teacher.
               <br />
               <br />
-              Currently, she serves as a dedicated Deacon at New Birth Baptist Church, overseeing the Welfare & Service group, which includes diverse ministries such as medical, visitation, security, empowerment, welfare, building, utility, sanctuary keeping, beautification, and community impact initiatives.
-              <br />
-              <br />
               Her commitment is marked by her participation in Class 101, 201, and 301 to glorify God. Her favorite Bible verse is Philippians 1:6 (NKJV): “Being confident of this very thing, that He who has begun a good work in you will complete it until the day of Jesus Christ.”
+              <br />
+              <br />
+              Currently, she serves as a dedicated Deacon at New Birth Baptist Church, overseeing the Welfare & Service group, which includes diverse ministries such as medical, visitation, security, empowerment, welfare, building, utility, sanctuary keeping, beautification, and community impact initiatives.
               <br />
               <br />
               Dns. Adebisi Ifegbesan married Bro. Opeoluwa Ifegbesan, and their union has been blessed with two children.
