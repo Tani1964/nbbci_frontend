@@ -48,22 +48,21 @@ const PastorateII = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Rev. Dr. Oyerinde Emmanuel Adegbola serves as the Resident Pastor of New
-            Birth Baptist Church, Ikorodu, Lagos State. He brings a wealth of
-            experience and passion to his role, guiding the church community
-            toward spiritual growth and development.
+            Rev. Dr. Emmanuel Oyerinde Adegbola is a trained Baptist pastor with a strong passion for discipleship and nurturing wholesome family life. He came to faith on November 30, 2007, and was baptized on March 8, 2008, at Ajegunle Baptist Church in Saki.
             <br />
             <br />
-            Rev. Dr. Oyerinde is blessed with a loving family. He is married to Sis.
-            Adebola Adegbola, and together they have two beautiful daughters.
+            Dr. Adegbola received his call to ministry in 2000, with a mandate rooted in Acts 26:18: “to open their eyes so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me.” He fulfills this mission through the transformative power of God’s Word.
+
             <br />
             <br />
-            As Resident Pastor, Rev. Dr. Oyerinde provides leadership to various
-            aspects of church life. He leads the Family Meeting and Church in
-            Council, chairs the Pastoral Ministry and Pastorate, and oversees
-            the Administration and Secretariat group. Through these roles, Rev. Dr.
-            Oyerinde fosters a sense of community and ensures the smooth
-            operation of church activities.
+            A Pastor-Teacher with a shepherd's heart, Dr. Adegbola is dedicated to helping people discover, develop, and deploy their God-given gifts. As a devoted worshipper, he served as the Music and Youth Minister for five years at First Baptist Church Aguda, Lagos, before joining the ministry of New Birth Baptist Church as Resident Pastor in 2011
+            <br />
+            <br />
+            Dr. Adegbola holds a Master of Arts degree in Social Ethics from Olabisi Onabanjo University, Ago-Ìwòye, and a Doctor of Philosophy in Religious Ethics from Crowther Theological Seminary, Abeokuta.
+            <br />
+            <br />
+            He is happily married to Victoria Adebola Adegbola, and their union is blessed with two daughters, EriOluwa and Erimipo.
+          
           </MotionText>
         </VStack>
       </Flex>
