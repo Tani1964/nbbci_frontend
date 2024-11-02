@@ -121,7 +121,7 @@ function Deaconate() {
               Currently, as Personnel Chairman and a Deacon, he oversees the Worship Ministry, which includes Media, Drama, Music, Ushering, Praise Team, Prayer and Deliverance, and Counselling Ministries, helping create an environment of worship and spiritual growth.
               <br />
               <br />
-              Dn. Adeoye is supported by his loving wife, Sis. Yemisi Adeoye, and their three children. Together, they continue to serve and inspire others within the church community.
+              Dn. Adeoye is supported by his loving wife, Sis. Yemisi Adeoye, and their three children. 
             </Text>
           </Box>
         </Flex>
