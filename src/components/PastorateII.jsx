@@ -39,7 +39,7 @@ const PastorateII = () => {
             Rev. Dr. Oyerinde Adegbola
           </Heading>
           <Text fontSize="lg" color="#A8518A">
-            Church Pastor
+            Our Pastor
           </Text>
           <MotionText
             mt={4}

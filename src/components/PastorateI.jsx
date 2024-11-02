@@ -44,7 +44,7 @@ const PastorateI = () => {
         >
           <MotionImage
             src={PrimaryImg}
-            alt="Church Pastor"
+            alt="Our Pastor"
             borderRadius="lg"
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
@@ -70,7 +70,7 @@ const PastorateI = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Church Pastor
+            Our Pastor
           </MotionText>
           <MotionText
             mt={4}
