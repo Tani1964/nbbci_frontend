@@ -32,7 +32,7 @@ function Deaconate() {
               Deaconess
             </Text>
             <Text mt={4} fontSize="md" color="gray.600">
-              Dns. Adebisi Ifegbesan gave her life to Christ in April 1988 at Adelabu Street Baptist Church, Adeniran Ogunsanya (now Good News Baptist Church) at Olufemi Street, Surulere. She went through water baptism by immersion and engaged in various church training programs such as Follow the Master, Master Life, Serve the Master, Experiencing God, In God's Presence, and other developmental programs. Dns. Ifegbesan actively participated in multiple church activities, serving as an usher, teacher in Sunday School, baptismal class teacher, member of the Evangelism Committee, and part of the Prayer Group.
+              <b>Dns. Adebisi Ifegbesan</b> gave her life to Christ in April 1988 at Adelabu Street Baptist Church, Adeniran Ogunsanya (now Good News Baptist Church) at Olufemi Street, Surulere. She went through water baptism by immersion and engaged in various church training programs such as Follow the Master, Master Life, Serve the Master, Experiencing God, In God's Presence, and other developmental programs. Dns. Ifegbesan actively participated in multiple church activities, serving as an usher, teacher in Sunday School, baptismal class teacher, member of the Evangelism Committee, and part of the Prayer Group.
               <br />
               <br />
               In 2006, her family relocated to Ikorodu, where the Lord guided them to New Birth Baptist Church. There, Dns. Ifegbesan continued her dedicated service, contributing as an usher, Sunday School teacher, part of the Protocol and Security team, Prayer Group member, Teenagers' Coordinator, and baptismal class teacher.
@@ -71,7 +71,7 @@ function Deaconate() {
               Deaconess
             </Text>
             <Text mt={4} fontSize="md" color="gray.600">
-              Dns. Gaadi gave her life to Christ in 1976 as a teenager at an open-air crusade in Kaduna and was baptized by immersion in 1977 in ECWA Church, also in Kaduna. She served as the coordinator of Air Force Secondary School Ikeja Staff and Students Fellowship.
+              <b>Dns. Maria Gaadi</b> gave her life to Christ in 1976 as a teenager at an open-air crusade in Kaduna and was baptized by immersion in 1977 in ECWA Church, also in Kaduna. She served as the coordinator of Air Force Secondary School Ikeja Staff and Students Fellowship.
               <br />
               <br />
               She joined New Estate Baptist Church, Surulere, in 1988 and served in various capacities, including Home Fellowship Leader, Odogbolu Home Fellowship Leader, Sunday School Teacher, member of the Socials Committee, and Teens Ministry Coordinator.
@@ -112,7 +112,7 @@ function Deaconate() {
               Deacon
             </Text>
             <Text mt={4} fontSize="md" color="gray.600">
-              Dn. Rotimi Adeoye joined New Birth Baptist Church, Ikorodu, in 2014, bringing a deep commitment to faith and service. His journey began in 1989 when he became born again, and he was baptized in 1993 at New Estate Baptist Church. Over the years, he has been an active leader, serving as the pioneer treasurer of New Port Baptist Church, Apapa, before moving to Ikorodu.
+              <b>Dn. Rotimi Adeoye</b> joined New Birth Baptist Church, Ikorodu, in 2014, bringing a deep commitment to faith and service. His journey began in 1989 when he became born again, and he was baptized in 1993 at New Estate Baptist Church. Over the years, he has been an active leader, serving as the pioneer treasurer of New Port Baptist Church, Apapa, before moving to Ikorodu.
               <br />
               <br />
               At New Birth, Dn. Adeoye has led and contributed to various ministries. He chaired the Community Impact Committee, organized the Community Hymn Singing program, and served as Chairman of the Annual Thanksgiving Committee in 2017 and 2018. In addition, he played key roles in the Home Fellowship Ministry, rising from Fellowship Leader to Director, and served as Chairman of the Nominating Committee in 2019.

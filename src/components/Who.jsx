@@ -25,7 +25,7 @@ const Who = () => {
           <Text fontSize={{ base: "sm", md: "md" }}>
             New Birth Baptist Church (NBBC) Ikorodu is a Vibrant Community Committed to Raising Fruitful Disciples
             <br /><br />
-            At New Birth Baptist Church (NBBC) Ikorodu, we are a vibrant, Spirit-filled community of believers passionately committed to making disciples for Christ. Our church slogan, "Raising Fruitful Disciples" (John 15:16), captures our unwavering focus and driving purpose - to nurture followers of Jesus who bear lasting spiritual fruit that glorifies God.
+            At New Birth Baptist Church (NBBC) Ikorodu, we are a enthusiastic, Spirit-filled community of believers passionately committed to making disciples for Christ. Our church slogan, "Raising Fruitful Disciples" (John 15:16), captures our unwavering focus and driving purpose - to nurture followers of Jesus who bear lasting spiritual fruit that glorifies God.
             <br /><br />
             Established decades ago in the heart of Ikorodu, NBBC has a rich history of ministry and impact in our local community and beyond. We are dedicated to fulfilling the Great Commission through our five key pillars: evangelism, worship, fellowship, discipleship, and ministry. Our diverse, multicultural congregation comes together with one accord to worship God, grow in faith, and serve our local and global communities.
           </Text>
