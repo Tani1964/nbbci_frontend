@@ -65,7 +65,7 @@ const Home = () => {
       <MotionBox
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <Upcoming />
