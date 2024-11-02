@@ -17,8 +17,9 @@ const PrayerRequest = () => {
       py={{ base: "10%", md: "8%" }}
       color="white"
       display="flex"
-      flexDirection={{ base: "column", md: "row" }}
+      flexDirection={{ base: "column", lg: "row" }}
       justifyContent="space-between"
+      alignItems="center"
       gap={10}
     >
       {/* Overlay */}
@@ -34,9 +35,9 @@ const PrayerRequest = () => {
 
       {/* Content */}
       <Box
-        textAlign="left"
+        textAlign={{ base: "center", md: "left" }}
         maxW={{ base: "100%", md: "600px" }}
-        mb={6}
+        mb={{ base: 6, lg: 0 }}
         zIndex={2}
         position="relative"
       >
@@ -59,33 +60,33 @@ const PrayerRequest = () => {
       <Flex
         as="form"
         onSubmit={handleSubmit}
-        width={{ base: "100%", md: "80%" }}
+        width={{ base: "100%", lg: "50%" }}
         justifyContent="space-between"
         alignItems="start"
         flexDirection="column"
         zIndex={2}
         position="relative"
       >
-        <Flex direction="column" width="100%" mb={{ base: 4, md: 0 }}>
+        <Flex direction="column" width="100%" mb={4}>
           <label style={{ color: "white" }}>Your Prayer Request:</label>
           <Textarea
             name="message"
             bg="white"
             color="black"
             width="100%"
-            height={{ base: "20vh", md: "40vh" }}
+            height={{ base: "20vh", md: "30vh" }}
             placeholder="Share your prayer request here..."
             _placeholder={{ color: "gray.500" }}
             mb={4}
             required
           />
         </Flex>
-        
-        <Flex width="100%" justifyContent={{ base: "center", md: "right" }}>
+
+        <Flex width="100%" justifyContent={{ base: "center", md: "flex-end" }}>
           <Button
             type="submit"
-            px={10}
-            py={5}
+            px={8}
+            py={4}
             colorScheme="pink"
             disabled={state.submitting}
           >
@@ -100,12 +101,6 @@ const PrayerRequest = () => {
           Thank you for sharing. We are praying with you.
         </Text>
       )}
-      {/* Display validation errors */}
-      {/* {state.errors.length > 0 && (
-        <Text color="red.500" textAlign="center" mt={4}>
-          Please correct the errors above.
-        </Text>
-      )} */}
     </Box>
   );
 };
