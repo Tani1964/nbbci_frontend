@@ -94,7 +94,7 @@ const Accounts2 = () => {
                 <Text mb={2} fontWeight="medium">
                   Account Number
                 </Text>
-                <Input value="0023471883" isReadOnly />
+                <Input value="0023417883" isReadOnly />
               </Box>
               <Box>
                 <Text mb={2} fontWeight="medium">

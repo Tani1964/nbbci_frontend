@@ -87,7 +87,7 @@ return (
               <Text mb={2} fontWeight="medium">
                 Account Number
               </Text>
-              <Input value="0023471883" isReadOnly />
+              <Input value="0023417883" isReadOnly />
             </Box>
             <Box w="100%">
               <Text mb={2} fontWeight="medium">
