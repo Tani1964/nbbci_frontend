@@ -89,7 +89,7 @@ const PastorateI = () => {
             A Pastor-Teacher with a shepherd's heart, Pst. Oyerinde is dedicated to helping people discover, develop, and deploy their God-given gifts. As a devoted worshipper, he served as the Music and Youth Minister for five years at First Baptist Church Aguda, Lagos, before joining the ministry of New Birth Baptist Church as Resident Pastor in 2011
             <br />
             <br />
-            He holds a Master of Arts degree in Social Ethics from Olabisi Onabanjo University, Ago-Ìwòye, and a Doctor of Philosophy in Religious Ethics from Crowther Theological Seminary, Abeokuta.
+            He holds a Master of Arts degree in Christian Ethics from Olabisi Onabanjo University, Ago-Ìwòye, and a Doctor of Philosophy in Religious Ethics from Crowther Theological Seminary, Abeokuta.
             <br />
             <br />
             Pastor Oyerinde is happily married to Victoria Adebola Adegbola, and their union is blessed with two daughters, EriOluwa and Erimipo.
