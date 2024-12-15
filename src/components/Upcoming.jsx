@@ -35,7 +35,7 @@ const Upcoming = () => {
       // week: "2nd WEEK",
       title: "Christmas Carol",
       // theme: "Contact Peace",
-      date: "22 December 2024",
+      date: "22nd December 2024",
       time: "08:30am",
       location: "Church Auditorium",
     },
