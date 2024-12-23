@@ -16,14 +16,6 @@ const Upcoming = () => {
       location: "Church Auditorium",
     },
     {
-      // week: "1st WEEK",
-      title: "Cross Over Night ",
-      // theme: "Testimonies of God’s Wonders. Psalm 126:3",
-      date: "25th Dec.",
-      time: "08:30am",
-      location: "Church Auditorium",
-    },
-    {
       // week: "2nd WEEK",
       title: "Cross Over Night",
       theme: "Strategic crossing",
