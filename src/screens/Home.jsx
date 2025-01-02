@@ -4,7 +4,7 @@ import {
   VStack 
 } from "@chakra-ui/react";
 import { motion } from "framer-motion"; // Import framer-motion
-import Banner from "../assets/417410835_784601697027208_943994521416332983_n.png";
+import Banner from "../assets/banner.png";
 import Announcements from "../components/Announcements";
 import Who from "../components/Who";
 import Connect from "../components/Connect";
