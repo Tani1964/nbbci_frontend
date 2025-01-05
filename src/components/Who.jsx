@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
-import Cong from "../assets/417508389_810293604458017_6989036223118530371_n (1).png";
+import Cong from "../assets/drone_view.jpg";
 
 const Who = () => {
   return (
