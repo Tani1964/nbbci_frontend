@@ -7,79 +7,135 @@ import {
 
 const Upcoming = () => {
   const activities = [
-    // {
-    //   week: "1st WEEK",
-    //   title: "Let My Gate Be Opened",
-    //   theme: "Continuous Praise. Psalm 34:1",
-    //   date: "1-3 December 2024",
-    //   time: "5:30 pm daily",
-    //   location: "Church Auditorium",
-    // },
-    // {
-    //   // week: "2nd WEEK",
-    //   title: "Cross Over Night",
-    //   theme: "Strategic crossing",
-    //   date: "31st Dec 2024",
-    //   time: "10:00 pm",
-    //   location: "Church Auditorium",
-    // },
-    // {
-    //   // week: "2nd WEEK",
-    //   title: "Christmas Carol",
-    //   // theme: "Contact Peace",
-    //   date: "22nd December 2024",
-    //   time: "08:30am",
-    //   location: "Church Auditorium",
-    // },
-    // {
-    //   // week: "3rd WEEK",
-    //   title: "Family Meeting ",
-    //   // theme: "Night Of Recovery. Gen 14:16",
-    //   date: "15th Dec. 2024",
-    //   time: "08:30 am",
-    //   location: "Church Auditorium",
-    // },
-    // {
-    //   // week: "3rd WEEK",
-    //   title: "Unveil 2025 ",
-    //   theme: "Lift Up Your Heads",
-    //   date: "8th - 14th Dec. 2024",
-    //   time: "05:30pm",
-    //   location: "Church Auditorium",
-    // },
-    // {
-    //   // week: "3rd WEEK",
-    //   title: "Singles & Useful Fellowship",
-    //   theme: "",
-    //   date: "8th Dec. 2024",
-    //   time: "12:00 noon",
-    //   location: "Church Auditorium",
-    // },
-    // {
-    //   week: "4th WEEK",
-    //   title: "Radiant Couple",
-    //   theme: "Contact the Coordinator",
-    //   date: "23 November 2024",
-    //   time: "12:00 noon",
-    //   location: "Church Auditorium",
-    // },
-    // {
-    //   week: "4th WEEK",
-    //   title: "Group Evangelism",
-    //   theme: "",
-    //   date: "24 November 2024",
-    //   time: "8:30 am",
-    //   location: "Church Auditorium",
-    // },
-    // {
-    //   week: "5th WEEK",
-    //   title: "Community Evangelism",
-    //   theme: "",
-    //   date: "29-30 November 2024",
-    //   time: "5:30 am / 8:00 am",
-    //   location: "Various Locations",
-    // },
-  ];
+    {
+      "week": "LAST WEEK OF MARCH",
+      "title": "Home Fellowship Meetings",
+      "theme": "Fellowship & Growth",
+      "date": "March 23, 2025",
+      "time": "Various Times",
+      "location": "All Fellowship Centres"
+    },
+    {
+      "week": "LAST WEEK OF MARCH",
+      "title": "Induction Service",
+      "theme": "Welcoming New Members",
+      "date": "March 30, 2025",
+      "time": "During Service",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "LAST WEEK OF MARCH",
+      "title": "Family Meeting",
+      "theme": "Church Administration",
+      "date": "March 30, 2025",
+      "time": "After Service",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "1ST WEEK",
+      "title": "Let My Gate Be Opened",
+      "theme": "Divine Escape. Psalm 91:3-4",
+      "date": "April 1-3, 2025",
+      "time": "5:30 PM Daily",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "1ST WEEK",
+      "title": "Pastor’s Convocation Ceremony",
+      "theme": "Celebration & Ordination",
+      "date": "April 4, 2025",
+      "time": "TBA",
+      "location": "Crowther Graduate Theological Seminary, Igbein, Abeokuta"
+    },
+    {
+      "week": "1ST WEEK",
+      "title": "Communion Service",
+      "theme": "Breaking of Bread",
+      "date": "April 6, 2025",
+      "time": "9:30 AM",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "2ND WEEK",
+      "title": "2025 Believers’ Congress",
+      "theme": "Alive in Christ",
+      "date": "April 11-12, 2025",
+      "time": "Friday – 5:00 PM | Saturday – 8:00 AM",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "2ND WEEK",
+      "title": "Baptismal Service",
+      "theme": "Faith & Commitment",
+      "date": "April 13, 2025",
+      "time": "7:30 AM",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "2ND WEEK",
+      "title": "Singles and Useful Fellowship",
+      "theme": "Growth & Connection",
+      "date": "April 13, 2025",
+      "time": "After Service",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "2ND WEEK",
+      "title": "Palm Sunday Celebration",
+      "theme": "Triumphant Entry",
+      "date": "April 13, 2025",
+      "time": "9:30 AM",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "3RD WEEK",
+      "title": "Good Friday Service",
+      "theme": "Christ’s Sacrifice",
+      "date": "April 18, 2025",
+      "time": "8:30 AM",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "3RD WEEK",
+      "title": "Easter Sunday Celebration",
+      "theme": "The Resurrection Power",
+      "date": "April 20, 2025",
+      "time": "During Service",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "3RD WEEK",
+      "title": "Easter Monday Picnic",
+      "theme": "Fellowship & Fun",
+      "date": "April 21, 2025",
+      "time": "TBA",
+      "location": "Organized by Home Fellowship"
+    },
+    {
+      "week": "4TH WEEK",
+      "title": "Victory Night – Bi-Monthly Vigil",
+      "theme": "Almighty God – Exodus 6:6",
+      "date": "April 25, 2025",
+      "time": "11:00 PM",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "4TH WEEK",
+      "title": "2025 NBC In Session",
+      "theme": "Entering Into Newness Through Fasting and Praying",
+      "date": "April 26 - May 1, 2025",
+      "time": "TBA",
+      "location": "Baptist International Convention Center, Lafuape"
+    },
+    {
+      "week": "4TH WEEK",
+      "title": "NBC Convention Sunday",
+      "theme": "Pulpit Exchange",
+      "date": "April 27, 2025",
+      "time": "During Service",
+      "location": "All NBC Churches"
+    }
+  ]
   
   return (
     <Box py={10} textAlign="center">
