@@ -7,54 +7,54 @@ import {
 
 const Upcoming = () => {
   const activities = [
-    {
-      week: "1st WEEK",
-      title: "Let My Gate Be Opened",
-      theme: "Continuous Praise. Psalm 34:1",
-      date: "1-3 December 2024",
-      time: "5:30 pm daily",
-      location: "Church Auditorium",
-    },
-    {
-      // week: "2nd WEEK",
-      title: "Cross Over Night",
-      theme: "Strategic crossing",
-      date: "31st Dec 2024",
-      time: "10:00 pm",
-      location: "Church Auditorium",
-    },
-    {
-      // week: "2nd WEEK",
-      title: "Christmas Carol",
-      // theme: "Contact Peace",
-      date: "22nd December 2024",
-      time: "08:30am",
-      location: "Church Auditorium",
-    },
-    {
-      // week: "3rd WEEK",
-      title: "Family Meeting ",
-      // theme: "Night Of Recovery. Gen 14:16",
-      date: "15th Dec. 2024",
-      time: "08:30 am",
-      location: "Church Auditorium",
-    },
-    {
-      // week: "3rd WEEK",
-      title: "Unveil 2025 ",
-      theme: "Lift Up Your Heads",
-      date: "8th - 14th Dec. 2024",
-      time: "05:30pm",
-      location: "Church Auditorium",
-    },
-    {
-      // week: "3rd WEEK",
-      title: "Singles & Useful Fellowship",
-      theme: "",
-      date: "8th Dec. 2024",
-      time: "12:00 noon",
-      location: "Church Auditorium",
-    },
+    // {
+    //   week: "1st WEEK",
+    //   title: "Let My Gate Be Opened",
+    //   theme: "Continuous Praise. Psalm 34:1",
+    //   date: "1-3 December 2024",
+    //   time: "5:30 pm daily",
+    //   location: "Church Auditorium",
+    // },
+    // {
+    //   // week: "2nd WEEK",
+    //   title: "Cross Over Night",
+    //   theme: "Strategic crossing",
+    //   date: "31st Dec 2024",
+    //   time: "10:00 pm",
+    //   location: "Church Auditorium",
+    // },
+    // {
+    //   // week: "2nd WEEK",
+    //   title: "Christmas Carol",
+    //   // theme: "Contact Peace",
+    //   date: "22nd December 2024",
+    //   time: "08:30am",
+    //   location: "Church Auditorium",
+    // },
+    // {
+    //   // week: "3rd WEEK",
+    //   title: "Family Meeting ",
+    //   // theme: "Night Of Recovery. Gen 14:16",
+    //   date: "15th Dec. 2024",
+    //   time: "08:30 am",
+    //   location: "Church Auditorium",
+    // },
+    // {
+    //   // week: "3rd WEEK",
+    //   title: "Unveil 2025 ",
+    //   theme: "Lift Up Your Heads",
+    //   date: "8th - 14th Dec. 2024",
+    //   time: "05:30pm",
+    //   location: "Church Auditorium",
+    // },
+    // {
+    //   // week: "3rd WEEK",
+    //   title: "Singles & Useful Fellowship",
+    //   theme: "",
+    //   date: "8th Dec. 2024",
+    //   time: "12:00 noon",
+    //   location: "Church Auditorium",
+    // },
     // {
     //   week: "4th WEEK",
     //   title: "Radiant Couple",
@@ -88,7 +88,7 @@ const Upcoming = () => {
         Upcoming Activities
       </Text>
       <Text fontSize="xl" color="#A8518A" mb={8}>
-        November
+        March
       </Text>
 
       {/* Activities Grid */}
