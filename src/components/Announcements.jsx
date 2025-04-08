@@ -20,15 +20,7 @@ const Announcement = () => {
         alignItems="center" // Center align items
         animation="scroll 30s linear infinite"
       >
-        <Text color="white" mx="1" lineHeight="1.2">
-          Home Fellowship Meetings || Date: March 23rd || Location: All Fellowship Centres,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          Induction Service || Date: March 30th || New members' official induction,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          Family Meeting || Date: March 30th || Heads of MDCs to submit reports,
-        </Text>
+        
         <Text color="white" mx="1" lineHeight="1.2">
           Let My Gate Be Opened || Date: April 1st – 3rd || Time: 5:30 PM Daily || Location: Church Auditorium || Theme: Divine Escape (Psalm 91:3-4),
         </Text>

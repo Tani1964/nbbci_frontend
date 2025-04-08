@@ -7,30 +7,7 @@ import {
 
 const Upcoming = () => {
   const activities = [
-    {
-      "week": "LAST WEEK OF MARCH",
-      "title": "Home Fellowship Meetings",
-      "theme": "Fellowship & Growth",
-      "date": "March 23, 2025",
-      "time": "Various Times",
-      "location": "All Fellowship Centres"
-    },
-    {
-      "week": "LAST WEEK OF MARCH",
-      "title": "Induction Service",
-      "theme": "Welcoming New Members",
-      "date": "March 30, 2025",
-      "time": "During Service",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "LAST WEEK OF MARCH",
-      "title": "Family Meeting",
-      "theme": "Church Administration",
-      "date": "March 30, 2025",
-      "time": "After Service",
-      "location": "Church Auditorium"
-    },
+    
     {
       "week": "1ST WEEK",
       "title": "Let My Gate Be Opened",
@@ -144,7 +121,7 @@ const Upcoming = () => {
         Upcoming Activities
       </Text>
       <Text fontSize="xl" color="#A8518A" mb={8}>
-        March
+        April
       </Text>
 
       {/* Activities Grid */}
