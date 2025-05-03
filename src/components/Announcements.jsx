@@ -22,44 +22,35 @@ const Announcement = () => {
       >
         
         <Text color="white" mx="1" lineHeight="1.2">
-          Let My Gate Be Opened || Date: April 1st – 3rd || Time: 5:30 PM Daily || Location: Church Auditorium || Theme: Divine Escape (Psalm 91:3-4),
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          Pastor’s Convocation Ceremony || Date: April 4th || Location: Crowther Graduate Theological Seminary, Igbein, Abeokuta,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          Communion Service || Date: April 6th || Time: 9:30 AM,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          2025 Believers’ Congress || Date: April 11th – 12th || Time: Friday – 5:00 PM | Saturday – 8:00 AM || Location: Church Auditorium || Theme: Alive in Christ,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          Baptismal Service || Date: April 13th || Time: 7:30 AM,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          Singles and Useful Fellowship || Date: April 13th || After the service,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          Palm Sunday Celebration || Date: April 13th || Time: 9:30 AM || Location: Church Auditorium,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          Good Friday Service || Date: April 18th || Time: 8:30 AM || Location: Church Auditorium,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          Easter Sunday Celebration || Date: April 20th || Location: Church Auditorium,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          Easter Monday Picnic || Date: April 21st || Organized by: Home Fellowship || Leaders and coordinators to prepare,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          Victory Night – Bi-Monthly Vigil || Date: April 25th || Time: 11:00 PM || Location: Church Auditorium || Theme: Almighty God – Exodus 6:6,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          2025 NBC In Session || Date: April 26th – May 1st || Location: Baptist International Convention Center, Lafuape || Theme: Entering Into Newness Through Fasting and Praying,
-        </Text>
-        <Text color="white" mx="1" lineHeight="1.2">
-          NBC Convention Sunday || Date: April 27th || Location: All NBC Churches || Special pulpit exchange in Ogun, Lagos, and Oyo States.
-        </Text>
+  Let My Gate Be Opened || Date: May 1st – 3rd || Time: 5:30 PM Daily || Location: Church Auditorium || Theme: Extravagant Grace (2 Cor 9:8),
+</Text>
+<Text color="white" mx="1" lineHeight="1.2">
+  Monthly Thanksgiving/Power Service || Date: May 4th || Time: 8:30 AM || Location: Church Auditorium || Theme: Prevailing Over Destiny Waster (John 10:10),
+</Text>
+<Text color="white" mx="1" lineHeight="1.2">
+  Women’s Conference || Date: May 10th || Time: 9:00 AM || Location: Church Auditorium || Theme: The Home Builders (Prov 14:1),
+</Text>
+<Text color="white" mx="1" lineHeight="1.2">
+  Mother's Day || Date: May 11th || Time: 9:30 AM || Location: Church Auditorium || Theme: Mothers As Home Builders (Prov 14:1; 31:10-31),
+</Text>
+<Text color="white" mx="1" lineHeight="1.2">
+  Single & Useful Fellowship || Date: May 11th || Time: 12:00 PM || Location: Church Auditorium,
+</Text>
+<Text color="white" mx="1" lineHeight="1.2">
+  Intercessory Night || Date: May 16th || Time: 5:30 PM || Location: Church Auditorium,
+</Text>
+<Text color="white" mx="1" lineHeight="1.2">
+  Evangel Baptist Association in Session || Date: May 17th || Time: 9:00 AM || Location: Good Tiding Baptist Church, Lawanson,
+</Text>
+<Text color="white" mx="1" lineHeight="1.2">
+  Radiant Couples Fellowship || Date: May 24th || Time: 10:00 AM || Location: Church Auditorium || Theme: Recalibrate Romance (Guests: Revd. Dr. Samson & Dr. Margaret Adedokun),
+</Text>
+<Text color="white" mx="1" lineHeight="1.2">
+  Children’s Day Service || Date: May 25th || Time: 9:30 AM || Location: Church Auditorium,
+</Text>
+<Text color="white" mx="1" lineHeight="1.2">
+  Faith of Our Fathers || Date: May 29th – 30th || Time: 9:00 AM || Location: New Heritage Baptist Church, Shomolu || Theme: Church Response to Contemporary Family Challenges,
+</Text>
 
       </Box>
 

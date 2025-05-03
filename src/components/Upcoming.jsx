@@ -7,112 +7,88 @@ import {
 
 const Upcoming = () => {
   const activities = [
-    
     {
       "week": "1ST WEEK",
       "title": "Let My Gate Be Opened",
-      "theme": "Divine Escape. Psalm 91:3-4",
-      "date": "April 1-3, 2025",
+      "theme": "Extravagant Grace. 2 Cor 9:8",
+      "date": "May 1-3, 2025",
       "time": "5:30 PM Daily",
       "location": "Church Auditorium"
     },
     {
       "week": "1ST WEEK",
-      "title": "Pastor’s Convocation Ceremony",
-      "theme": "Celebration & Ordination",
-      "date": "April 4, 2025",
-      "time": "TBA",
-      "location": "Crowther Graduate Theological Seminary, Igbein, Abeokuta"
-    },
-    {
-      "week": "1ST WEEK",
-      "title": "Communion Service",
-      "theme": "Breaking of Bread",
-      "date": "April 6, 2025",
-      "time": "9:30 AM",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "2ND WEEK",
-      "title": "2025 Believers’ Congress",
-      "theme": "Alive in Christ",
-      "date": "April 11-12, 2025",
-      "time": "Friday – 5:00 PM | Saturday – 8:00 AM",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "2ND WEEK",
-      "title": "Baptismal Service",
-      "theme": "Faith & Commitment",
-      "date": "April 13, 2025",
-      "time": "7:30 AM",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "2ND WEEK",
-      "title": "Singles and Useful Fellowship",
-      "theme": "Growth & Connection",
-      "date": "April 13, 2025",
-      "time": "After Service",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "2ND WEEK",
-      "title": "Palm Sunday Celebration",
-      "theme": "Triumphant Entry",
-      "date": "April 13, 2025",
-      "time": "9:30 AM",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "3RD WEEK",
-      "title": "Good Friday Service",
-      "theme": "Christ’s Sacrifice",
-      "date": "April 18, 2025",
+      "title": "Monthly Thanksgiving/Power Service",
+      "theme": "Prevailing Over Destiny Waster. John 10:10",
+      "date": "May 4, 2025",
       "time": "8:30 AM",
       "location": "Church Auditorium"
     },
     {
-      "week": "3RD WEEK",
-      "title": "Easter Sunday Celebration",
-      "theme": "The Resurrection Power",
-      "date": "April 20, 2025",
-      "time": "During Service",
+      "week": "2ND WEEK",
+      "title": "Women’s Conference",
+      "theme": "The Home Builders. Prov 14:1",
+      "date": "May 10, 2025",
+      "time": "9:00 AM",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "2ND WEEK",
+      "title": "Mother's Day",
+      "theme": "Mothers As Home Builders. Proverbs 14:1; 31:10-31",
+      "date": "May 11, 2025",
+      "time": "9:30 AM",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "2ND WEEK",
+      "title": "Single & Useful Fellowship",
+      "theme": "",
+      "date": "May 11, 2025",
+      "time": "12:00 PM",
       "location": "Church Auditorium"
     },
     {
       "week": "3RD WEEK",
-      "title": "Easter Monday Picnic",
-      "theme": "Fellowship & Fun",
-      "date": "April 21, 2025",
-      "time": "TBA",
-      "location": "Organized by Home Fellowship"
-    },
-    {
-      "week": "4TH WEEK",
-      "title": "Victory Night – Bi-Monthly Vigil",
-      "theme": "Almighty God – Exodus 6:6",
-      "date": "April 25, 2025",
-      "time": "11:00 PM",
+      "title": "Intercessory Night",
+      "theme": "",
+      "date": "May 16, 2025",
+      "time": "5:30 PM",
       "location": "Church Auditorium"
     },
     {
-      "week": "4TH WEEK",
-      "title": "2025 NBC In Session",
-      "theme": "Entering Into Newness Through Fasting and Praying",
-      "date": "April 26 - May 1, 2025",
-      "time": "TBA",
-      "location": "Baptist International Convention Center, Lafuape"
+      "week": "3RD WEEK",
+      "title": "Evangel Baptist Association in Session",
+      "theme": "",
+      "date": "May 17, 2025",
+      "time": "9:00 AM",
+      "location": "Good Tiding Baptist Church, Lawanson"
     },
     {
       "week": "4TH WEEK",
-      "title": "NBC Convention Sunday",
-      "theme": "Pulpit Exchange",
-      "date": "April 27, 2025",
-      "time": "During Service",
-      "location": "All NBC Churches"
+      "title": "Radiant Couples Fellowship",
+      "theme": "Recalibrate Romance",
+      "date": "May 24, 2025",
+      "time": "10:00 AM",
+      "location": "Church Auditorium (Guest: Revd. Dr. Samson & Dr. Margaret Adedokun)"
+    },
+    {
+      "week": "4TH WEEK",
+      "title": "Children’s Day Service",
+      "theme": "",
+      "date": "May 25, 2025",
+      "time": "9:30 AM",
+      "location": "Church Auditorium"
+    },
+    {
+      "week": "5TH WEEK",
+      "title": "Faith of Our Fathers",
+      "theme": "Church Response to Contemporary Family Challenges",
+      "date": "May 29-30, 2025",
+      "time": "9:00 AM",
+      "location": "New Heritage Baptist Church, Shomolu"
     }
   ]
+  
   
   return (
     <Box py={10} textAlign="center">
@@ -121,7 +97,7 @@ const Upcoming = () => {
         Upcoming Activities
       </Text>
       <Text fontSize="xl" color="#A8518A" mb={8}>
-        April
+        May
       </Text>
 
       {/* Activities Grid */}
