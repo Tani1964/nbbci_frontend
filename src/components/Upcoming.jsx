@@ -91,7 +91,7 @@ const Upcoming = () => {
   
   
   return (
-    <Box py={10} textAlign="center">
+    <Box className="mt-12 md:mt-64" py={10} textAlign="center">
       {/* Title Section */}
       <Text fontSize="3xl" fontWeight="bold">
         Upcoming Activities

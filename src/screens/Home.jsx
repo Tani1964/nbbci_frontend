@@ -14,6 +14,7 @@ import Story from "../components/Story";
 import Accounts from "../components/Accounts";
 import Contact from "../components/Contact";
 import Help from "../components/Help";
+import Bulletin from "../components/Bulletin"
 
 // Motion components
 const MotionBox = motion(Box);
@@ -29,7 +30,7 @@ const animationSettings = {
 
 const Home = () => {
   return (
-    <Box>
+    <Box className="flex flex-col gap-10">
       {/* Fade-in Image Animation */}
       <MotionImage
       width={'100vw'}
@@ -59,6 +60,10 @@ const Home = () => {
       {/* PastorateI Section */}
       <MotionBox {...animationSettings}>
         <PastorateI />
+      </MotionBox>
+
+       <MotionBox {...animationSettings} className={'max-h-[60vh]'}>
+        <Bulletin />
       </MotionBox>
 
       {/* Swipe-in Left for Upcoming Section */}
