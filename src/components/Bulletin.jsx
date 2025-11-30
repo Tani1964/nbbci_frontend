@@ -39,44 +39,44 @@ function Bulletin() {
   const arrowBg = useColorModeValue("white", "gray.700");
   const arrowHoverBg = useColorModeValue("gray.100", "gray.600");
 
-  const bulletinData = [
-    { 
-      image: Img1, 
-      title: "Latest Updates", 
-      description: "Stay informed with our latest news and announcements",
-      date: "May 22, 2025"
-    },
-    { 
-      image: Img2, 
-      title: "Important Notice", 
-      description: "Critical information for all community members",
-      date: "May 21, 2025"
-    },
-    { 
-      image: Img3, 
-      title: "Event Highlights", 
-      description: "Recap of recent events and upcoming activities",
-      date: "May 20, 2025"
-    },
-    { 
-      image: Img4, 
-      title: "Community News", 
-      description: "Updates from our vibrant community",
-      date: "May 19, 2025"
-    },
-    { 
-      image: Img5, 
-      title: "Achievements", 
-      description: "Celebrating our recent accomplishments",
-      date: "May 18, 2025"
-    },
-    { 
-      image: Img6, 
-      title: "Announcements", 
-      description: "Official announcements and communications",
-      date: "May 17, 2025"
-    }
-  ];
+ const bulletinData = [
+  { 
+    image: Img1, 
+    title: "Let My Gate Be Opened", 
+    description: "Step into December under the covering of divine favour. Theme: God's Favour",
+    date: "December 1-3, 2025"
+  },
+  { 
+    image: Img2, 
+    title: "2025 Minister's Leadership Retreat", 
+    description: "Times of Refreshing from the Presence of God - Acts 3:19",
+    date: "December 3-6, 2025"
+  },
+  { 
+    image: Img3, 
+    title: "Unveil 2026", 
+    description: "Go Up and Possess the Land - Deuteronomy 1:21",
+    date: "December 7-13, 2025"
+  },
+  { 
+    image: Img4, 
+    title: "Family Meeting", 
+    description: "Last Church-in-Conference for 2025. Time to review, rejoice, and reposition",
+    date: "December 14, 2025"
+  },
+  { 
+    image: Img5, 
+    title: "Christmas Carol Service", 
+    description: "Let worship usher the joy of Christ into your heart and home",
+    date: "December 21, 2025"
+  },
+  { 
+    image: Img6, 
+    title: "Cross-Over Service", 
+    description: "Crossing Over: Dispossess the Giant Nations - Step boldly into 2026",
+    date: "December 31, 2025"
+  }
+];
 
   // Handle image click
   const handleImageClick = (item) => {

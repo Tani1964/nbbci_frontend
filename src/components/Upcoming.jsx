@@ -6,89 +6,73 @@ import {
 } from "@chakra-ui/react";
 
 const Upcoming = () => {
-  const activities = [
-    {
-      "week": "1ST WEEK",
-      "title": "Let My Gate Be Opened",
-      "theme": "Extravagant Grace. 2 Cor 9:8",
-      "date": "May 1-3, 2025",
-      "time": "5:30 PM Daily",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "1ST WEEK",
-      "title": "Monthly Thanksgiving/Power Service",
-      "theme": "Prevailing Over Destiny Waster. John 10:10",
-      "date": "May 4, 2025",
-      "time": "8:30 AM",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "2ND WEEK",
-      "title": "Women’s Conference",
-      "theme": "The Home Builders. Prov 14:1",
-      "date": "May 10, 2025",
-      "time": "9:00 AM",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "2ND WEEK",
-      "title": "Mother's Day",
-      "theme": "Mothers As Home Builders. Proverbs 14:1; 31:10-31",
-      "date": "May 11, 2025",
-      "time": "9:30 AM",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "2ND WEEK",
-      "title": "Single & Useful Fellowship",
-      "theme": "",
-      "date": "May 11, 2025",
-      "time": "12:00 PM",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "3RD WEEK",
-      "title": "Intercessory Night",
-      "theme": "",
-      "date": "May 16, 2025",
-      "time": "5:30 PM",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "3RD WEEK",
-      "title": "Evangel Baptist Association in Session",
-      "theme": "",
-      "date": "May 17, 2025",
-      "time": "9:00 AM",
-      "location": "Good Tiding Baptist Church, Lawanson"
-    },
-    {
-      "week": "4TH WEEK",
-      "title": "Radiant Couples Fellowship",
-      "theme": "Recalibrate Romance",
-      "date": "May 24, 2025",
-      "time": "10:00 AM",
-      "location": "Church Auditorium (Guest: Revd. Dr. Samson & Dr. Margaret Adedokun)"
-    },
-    {
-      "week": "4TH WEEK",
-      "title": "Children’s Day Service",
-      "theme": "",
-      "date": "May 25, 2025",
-      "time": "9:30 AM",
-      "location": "Church Auditorium"
-    },
-    {
-      "week": "5TH WEEK",
-      "title": "Faith of Our Fathers",
-      "theme": "Church Response to Contemporary Family Challenges",
-      "date": "May 29-30, 2025",
-      "time": "9:00 AM",
-      "location": "New Heritage Baptist Church, Shomolu"
-    }
-  ]
-  
+const activities = [
+  {
+    week: "1ST WEEK",
+    title: "Let My Gate Be Opened",
+    theme: "God's Favour. Exodus 3:21",
+    date: "December 1-3, 2025",
+    time: "5:30 PM Daily",
+    location: "Church Auditorium"
+  },
+  {
+    week: "1ST WEEK",
+    title: "2025 Minister's Leadership Retreat",
+    theme: "Times of Refreshing from the Presence of God. Acts 3:19",
+    date: "December 3-6, 2025",
+    time: "Various",
+    location: "Christian Retreat Center, Ago Iwoye, Agric-Isawo Road, Ikorodu"
+  },
+  {
+    week: "2ND WEEK",
+    title: "Unveil 2026",
+    theme: "Go Up and Possess the Land. Deuteronomy 1:21",
+    date: "December 7-13, 2025",
+    time: "5:30 PM (Mon-Fri), 12:00 PM (Sat)",
+    location: "Church Auditorium"
+  },
+  {
+    week: "2ND WEEK",
+    title: "Family Meeting",
+    theme: "Last Church-in-Conference for 2025",
+    date: "December 14, 2025",
+    time: "5:30 PM",
+    location: "Church Auditorium"
+  },
+  {
+    week: "3RD WEEK",
+    title: "Church Council Meeting",
+    theme: "Leadership Alignment with God's Vision",
+    date: "December 18, 2025",
+    time: "5:30 PM",
+    location: "Church Auditorium"
+  },
+  {
+    week: "3RD WEEK",
+    title: "Christmas Carol Service",
+    theme: "Celebrating the Birth of Our Saviour",
+    date: "December 21, 2025",
+    time: "4:30 PM",
+    location: "Church Auditorium"
+  },
+  {
+    week: "4TH WEEK",
+    title: "Christmas Service",
+    theme: "His Coming is Our Hope and Victory",
+    date: "December 25, 2025",
+    time: "8:30 AM",
+    location: "Church Auditorium"
+  },
+  {
+    week: "5TH WEEK",
+    title: "Cross-Over Service",
+    theme: "Crossing Over: Dispossess the Giant Nations",
+    date: "December 31, 2025",
+    time: "9:00 PM",
+    location: "Church Auditorium"
+  }
+];
+
   
   return (
     <Box className="mt-12 md:mt-64" py={10} textAlign="center">
@@ -97,7 +81,7 @@ const Upcoming = () => {
         Upcoming Activities
       </Text>
       <Text fontSize="xl" color="#A8518A" mb={8}>
-        May
+        December
       </Text>
 
       {/* Activities Grid */}
