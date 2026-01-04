@@ -39,44 +39,57 @@ function Bulletin() {
   const arrowBg = useColorModeValue("white", "gray.700");
   const arrowHoverBg = useColorModeValue("gray.100", "gray.600");
 
- const bulletinData = [
+const bulletinData = [
   { 
     image: Img1, 
-    title: "Let My Gate Be Opened", 
-    description: "Step into December under the covering of divine favour. Theme: God's Favour",
-    date: "December 1-3, 2025"
+    title: "2026 Sunday School Annual Bible Study", 
+    description: "Character Study (Daniel 1–6) — A systematic study of Daniel’s life, convictions, and faithfulness to strengthen Christian character in challenging times.",
+    date: "Every Sunday in January 2026 | 8:30 AM – 9:25 AM"
   },
   { 
     image: Img2, 
-    title: "2025 Minister's Leadership Retreat", 
-    description: "Times of Refreshing from the Presence of God - Acts 3:19",
-    date: "December 3-6, 2025"
+    title: "Peniel 2026: 21 Days of Fasting & Prayer", 
+    description: "Theme: Next Level — A season of corporate seeking of God for direction, strength, and advancement in the new year.",
+    date: "January 5–24, 2026"
   },
   { 
     image: Img3, 
-    title: "Unveil 2026", 
-    description: "Go Up and Possess the Land - Deuteronomy 1:21",
-    date: "December 7-13, 2025"
+    title: "NBBC Workers’ Retreat 2026", 
+    description: "Theme: Transformational Worker – An Agent of Exponential Church Growth. A strategic gathering for renewal, alignment, and equipping of church workers.",
+    date: "Saturday, January 10, 2026 | 8:00 AM prompt"
   },
   { 
     image: Img4, 
-    title: "Family Meeting", 
-    description: "Last Church-in-Conference for 2025. Time to review, rejoice, and reposition",
-    date: "December 14, 2025"
+    title: "Lagos East Baptist Conference Workers’ Retreat", 
+    description: "Theme: Transformational Leaders – Becoming a Generous and Faithful Steward. Focused on leadership growth, stewardship, and kingdom responsibility.",
+    date: "January 2026 | 9:00 AM | Venue: FBC Ikorodu"
   },
   { 
     image: Img5, 
-    title: "Christmas Carol Service", 
-    description: "Let worship usher the joy of Christ into your heart and home",
-    date: "December 21, 2025"
+    title: "Deacons’ Appreciation & Ordination Service", 
+    description: "A special service to appreciate serving deacons and formally ordain new ones into the office.",
+    date: "January 18, 2026 | 9:30 AM"
   },
   { 
     image: Img6, 
-    title: "Cross-Over Service", 
-    description: "Crossing Over: Dispossess the Giant Nations - Step boldly into 2026",
-    date: "December 31, 2025"
+    title: "MMU & WMU Emphasis Sunday", 
+    description: "Theme: Restoring the Broken Walls Through the Fruit and Gifts of the Holy Spirit (Nehemiah 1–2; Isaiah 58:12; Acts 1:8).",
+    date: "January 25, 2026 | 9:30 AM"
+  },
+  { 
+    image: Img6, 
+    title: "Church Council Meeting", 
+    description: "A leadership meeting to review progress and set direction for church administration and ministry.",
+    date: "January 27, 2026 | 5:30 PM"
+  },
+  { 
+    image: Img6, 
+    title: "Radiant Couples Fellowship – Breakfast Fellowship", 
+    description: "A fellowship gathering for couples to connect, refresh, and strengthen marital bonds in a relaxed setting.",
+    date: "January 31, 2026 | Time: To Be Announced"
   }
 ];
+
 
   // Handle image click
   const handleImageClick = (item) => {
@@ -313,7 +326,7 @@ function Bulletin() {
                   left="0"
                   right="0"
                   height={{ base: "70%", md: "60%" }}
-                  bgGradient="linear(to-t, blackAlpha.900, blackAlpha.600, transparent)"
+                  bgGradient="linear(to-t, blacFkAlpha.900, blackAlpha.600, transparent)"
                   zIndex={1}
                 />
                 

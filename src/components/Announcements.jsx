@@ -16,43 +16,43 @@ const Announcement = () => {
     >
       <Box
         as="div"
-        display="flex" // Use flex for better alignment
-        alignItems="center" // Center align items
+        display="flex"
+        alignItems="center"
         animation="scroll 30s linear infinite"
       >
-        
         <Text color="white" mx="1" lineHeight="1.2">
-  Let My Gate Be Opened || Date: May 1st – 3rd || Time: 5:30 PM Daily || Location: Church Auditorium || Theme: Extravagant Grace (2 Cor 9:8),
-</Text>
-<Text color="white" mx="1" lineHeight="1.2">
-  Monthly Thanksgiving/Power Service || Date: May 4th || Time: 8:30 AM || Location: Church Auditorium || Theme: Prevailing Over Destiny Waster (John 10:10),
-</Text>
-<Text color="white" mx="1" lineHeight="1.2">
-  Women’s Conference || Date: May 10th || Time: 9:00 AM || Location: Church Auditorium || Theme: The Home Builders (Prov 14:1),
-</Text>
-<Text color="white" mx="1" lineHeight="1.2">
-  Mother's Day || Date: May 11th || Time: 9:30 AM || Location: Church Auditorium || Theme: Mothers As Home Builders (Prov 14:1; 31:10-31),
-</Text>
-<Text color="white" mx="1" lineHeight="1.2">
-  Single & Useful Fellowship || Date: May 11th || Time: 12:00 PM || Location: Church Auditorium,
-</Text>
-<Text color="white" mx="1" lineHeight="1.2">
-  Intercessory Night || Date: May 16th || Time: 5:30 PM || Location: Church Auditorium,
-</Text>
-<Text color="white" mx="1" lineHeight="1.2">
-  Evangel Baptist Association in Session || Date: May 17th || Time: 9:00 AM || Location: Good Tiding Baptist Church, Lawanson,
-</Text>
-<Text color="white" mx="1" lineHeight="1.2">
-  Radiant Couples Fellowship || Date: May 24th || Time: 10:00 AM || Location: Church Auditorium || Theme: Recalibrate Romance (Guests: Revd. Dr. Samson & Dr. Margaret Adedokun),
-</Text>
-<Text color="white" mx="1" lineHeight="1.2">
-  Children’s Day Service || Date: May 25th || Time: 9:30 AM || Location: Church Auditorium,
-</Text>
-<Text color="white" mx="1" lineHeight="1.2">
-  Faith of Our Fathers || Date: May 29th – 30th || Time: 9:00 AM || Location: New Heritage Baptist Church, Shomolu || Theme: Church Response to Contemporary Family Challenges,
-</Text>
+          2026 Sunday School Annual Bible Study || Date: Every Sunday in January 2026 || Time: 8:30 AM – 9:25 AM || Location: Sunday School Classes || Theme: Character Study (Daniel 1–6),
+        </Text>
 
+        <Text color="white" mx="1" lineHeight="1.2">
+          Peniel 2026: 21 Days of Fasting & Prayer || Date: January 5 – 24, 2026 || Time: Mon–Fri & Sun: 5:30 PM | Sat: 12:00 Noon || Location: Church Auditorium || Theme: Next Level,
+        </Text>
+
+        <Text color="white" mx="1" lineHeight="1.2">
+          NBBC Workers’ Retreat || Date: Saturday, January 10, 2026 || Time: 8:00 AM prompt || Location: Church Auditorium || Theme: Transformational Worker – An Agent of Exponential Church Growth,
+        </Text>
+
+        <Text color="white" mx="1" lineHeight="1.2">
+          Lagos East Baptist Conference Workers’ Retreat || Date: January 2026 || Time: 9:00 AM || Location: FBC Ikorodu || Theme: Transformational Leaders – Becoming a Generous and Faithful Steward,
+        </Text>
+
+        <Text color="white" mx="1" lineHeight="1.2">
+          Deacons’ Appreciation & Ordination Service || Date: January 18, 2026 || Time: 9:30 AM || Location: Church Auditorium,
+        </Text>
+
+        <Text color="white" mx="1" lineHeight="1.2">
+          MMU & WMU Emphasis Sunday || Date: January 25, 2026 || Time: 9:30 AM || Location: Church Auditorium || Theme: Restoring the Broken Walls Through the Fruit and Gifts of the Holy Spirit,
+        </Text>
+
+        <Text color="white" mx="1" lineHeight="1.2">
+          Church Council Meeting || Date: January 27, 2026 || Time: 5:30 PM || Location: Church Auditorium,
+        </Text>
+
+        <Text color="white" mx="1" lineHeight="1.2">
+          Radiant Couples Fellowship – Breakfast Fellowship || Date: January 31, 2026 || Time: To Be Announced || Location: To Be Announced,
+        </Text>
       </Box>
+
 
       <style jsx>{`
         @keyframes scroll {

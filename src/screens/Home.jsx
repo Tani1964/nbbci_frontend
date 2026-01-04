@@ -30,7 +30,7 @@ const animationSettings = {
 
 const Home = () => {
   return (
-    <Box className="flex flex-col gap-10">
+    <Box className="flex flex-col ">
       {/* Fade-in Image Animation */}
       <MotionImage
       width={'100vw'}
@@ -62,9 +62,9 @@ const Home = () => {
         <PastorateI />
       </MotionBox>
 
-       <MotionBox {...animationSettings} className={'max-h-[60vh]'}>
+       {/* <MotionBox {...animationSettings} className={'max-h-[60vh]'}>
         <Bulletin />
-      </MotionBox>
+      </MotionBox> */}
 
       {/* Swipe-in Left for Upcoming Section */}
       <MotionBox

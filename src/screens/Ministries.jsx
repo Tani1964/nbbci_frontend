@@ -1,7 +1,8 @@
-import { Box, Text, VStack, Button, Collapse, Image } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import { Box, Text, VStack, Button, Collapse, Container, Icon, Flex } from '@chakra-ui/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
 
 // Motion component for animation
 const MotionBox = motion(Box);
@@ -9,8 +10,9 @@ const MotionBox = motion(Box);
 const ministriesData = [
   {
     title: 'Worship Ministry',
-    description: 'The Worship Ministry is at the heart of our church’s spiritual life, focusing on leading the congregation into meaningful worship experiences. Through music, media, and drama, this ministry enriches our services, uplifting hearts and minds toward God.',
-    image: 'path_to_worship_ministry_image.jpg', // Add your image path here
+    description: 'The Worship Ministry is at the heart of our church\'s spiritual life, focusing on leading the congregation into meaningful worship experiences. Through music, media, and drama, this ministry enriches our services, uplifting hearts and minds toward God.',
+    image: 'path_to_worship_ministry_image.jpg',
+    color: '#A8518A',
     childrenMinistries: [
       { 
         title: 'MEDIA', 
@@ -45,7 +47,8 @@ const ministriesData = [
   {
     title: 'Missions & Outreaches',
     description: 'The Missions & Outreaches Ministry embodies our commitment to spreading the gospel beyond the church walls. Through local and international outreach efforts, this ministry works to bring hope and support to communities in need.',
-    image: 'path_to_missions_ministry_image.jpg', // Add your image path here
+    image: 'path_to_missions_ministry_image.jpg',
+    color: '#6B46C1',
     childrenMinistries: [
       { 
         title: "MEN'S MISSIONARY UNION", 
@@ -53,7 +56,7 @@ const ministriesData = [
       },
       { 
         title: "WOMEN'S MISSIONARY UNION", 
-        description: 'Committed to compassionate outreach, the Women’s Missionary Union reaches out to the community through programs aimed at women and children, offering support, guidance, and faith-based resources.' 
+        description: 'Committed to compassionate outreach, the Women\'s Missionary Union reaches out to the community through programs aimed at women and children, offering support, guidance, and faith-based resources.' 
       },
       { 
         title: 'PREACHING STATIONS', 
@@ -61,14 +64,15 @@ const ministriesData = [
       },
       { 
         title: 'EVANGELISM TEAM', 
-        description: 'The Evangelism Team actively shares the gospel through organized street evangelism, door-to-door outreach, and community events that invite people to learn about and experience God’s love.' 
+        description: 'The Evangelism Team actively shares the gospel through organized street evangelism, door-to-door outreach, and community events that invite people to learn about and experience God\'s love.' 
       },
     ],
   },
   {
     title: 'Fellowship Ministry',
     description: 'The Fellowship Ministry focuses on fostering relationships and spiritual growth among members. Through age- and life-stage-based groups, this ministry builds a supportive and faith-filled community.',
-    image: 'path_to_fellowship_ministry_image.jpg', // Add your image path here
+    image: 'path_to_fellowship_ministry_image.jpg',
+    color: '#2C7A7B',
     childrenMinistries: [
       { 
         title: 'CHILDREN CHURCH', 
@@ -98,8 +102,9 @@ const ministriesData = [
   },
   {
     title: 'Education Ministry',
-    description: 'The Education Ministry is dedicated to providing structured spiritual education and training to deepen members’ knowledge of the Bible and strengthen their faith.',
-    image: 'path_to_education_ministry_image.jpg', // Add your image path here
+    description: 'The Education Ministry is dedicated to providing structured spiritual education and training to deepen members\' knowledge of the Bible and strengthen their faith.',
+    image: 'path_to_education_ministry_image.jpg',
+    color: '#C05621',
     childrenMinistries: [
       { 
         title: 'SUNDAY SCHOOL', 
@@ -118,7 +123,8 @@ const ministriesData = [
   {
     title: 'Secretariat/Administration',
     description: 'The Secretariat/Administration Ministry handles the organizational and operational needs of the church, ensuring efficient and transparent management of resources, people, and policies.',
-    image: 'path_to_secretariat_ministry_image.jpg', // Add your image path here
+    image: 'path_to_secretariat_ministry_image.jpg',
+    color: '#2D3748',
     childrenMinistries: [
       { 
         title: 'FINANCE', 
@@ -146,11 +152,11 @@ const ministriesData = [
       },
       { 
         title: 'LEGAL', 
-        description: 'Advises the church on legal matters, ensuring compliance with relevant laws and protecting the church’s interests.' 
+        description: 'Advises the church on legal matters, ensuring compliance with relevant laws and protecting the church\'s interests.' 
       },
       { 
         title: 'HISTORY & LITERATURE', 
-        description: 'Preserves the church’s history and manages literature resources, documenting events, milestones, and teachings for current and future generations.' 
+        description: 'Preserves the church\'s history and manages literature resources, documenting events, milestones, and teachings for current and future generations.' 
       },
       { 
         title: 'PERSONNEL', 
@@ -161,7 +167,8 @@ const ministriesData = [
   {
     title: 'Welfare & Services',
     description: 'The Welfare & Services Ministry is dedicated to caring for the practical needs of members and the wider community, providing support in areas such as health, security, and general welfare.',
-    image: 'path_to_welfare_ministry_image.jpg', // Add your image path here
+    image: 'path_to_welfare_ministry_image.jpg',
+    color: '#38A169',
     childrenMinistries: [
       { 
         title: 'MEDICAL', 
@@ -187,7 +194,6 @@ const ministriesData = [
   },
 ];
 
-
 const Ministries = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -196,55 +202,155 @@ const Ministries = () => {
   };
 
   return (
-    <Box py={10}>
-      {ministriesData.map((ministry, index) => {
-        const { title, description, image, childrenMinistries } = ministry;
-        const isOpen = openIndex === index;
+    <Container maxW="container.xl" py={10}>
+      <Box className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        {ministriesData.map((ministry, index) => {
+          const { title, description, childrenMinistries, color } = ministry;
+          const isOpen = openIndex === index;
 
-        // Use the useInView hook to detect when the ministry is in view
-        const { ref, inView } = useInView({ threshold: 0.1 });
+          const { ref, inView } = useInView({ 
+            threshold: 0.1,
+            triggerOnce: true 
+          });
 
-        return (
-          <MotionBox
-            key={index}
-            ref={ref}
-            mb={6}
-            borderWidth={1}
-            borderRadius="md"
-            p={4}
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5 }}
-          >
-            <VStack align="start" spacing={2}>
-              <Text fontSize="xl" fontWeight="bold">{title}</Text>
-              <Text>{description}</Text>
-              {/* {image && <Image src={image} alt={title} boxSize="150px" objectFit="cover" />} */}
-              <Button
-                onClick={() => handleToggle(index)}
-                variant="outline"
-                width="100%"
-                textAlign="left"
-                borderRadius="md"
-                colorScheme="#A8518A;"
+          return (
+            <MotionBox
+              key={index}
+              ref={ref}
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              bg="white"
+              borderRadius="xl"
+              overflow="hidden"
+              boxShadow="lg"
+              _hover={{ 
+                boxShadow: '2xl',
+                transform: 'translateY(-4px)',
+                transition: 'all 0.3s ease'
+              }}
+              // transition="all 0.3s ease"
+              h="fit-content"
+            >
+              {/* Header Section with Gradient */}
+              <Box
+                bgGradient={`linear(to-br, ${color}, ${color}DD)`}
+                p={6}
+                color="white"
               >
-                {isOpen ? 'Hide Details' : 'View Details'}
-              </Button>
-              <Collapse in={isOpen}>
-                <Box pl={4} mt={2}>
-                  {childrenMinistries.map((child, childIndex) => (
-                    <Box key={childIndex} pl={4} mt={2}>
-                      <Text fontWeight="semibold">{child.title}</Text>
-                      <Text>{child.description}</Text>
-                    </Box>
-                  ))}
+                <Text fontSize="2xl" fontWeight="bold" mb={2}>
+                  {title}
+                </Text>
+              </Box>
+
+              {/* Content Section */}
+              <VStack align="stretch" spacing={0}>
+                <Box p={6}>
+                  <Text color="gray.700" lineHeight="1.7">
+                    {description}
+                  </Text>
                 </Box>
-              </Collapse>
-            </VStack>
-          </MotionBox>
-        );
-      })}
-    </Box>
+
+                {/* Toggle Button */}
+                <Button
+                  onClick={() => handleToggle(index)}
+                  bg={isOpen ? `${color}15` : 'gray.50'}
+                  color={color}
+                  _hover={{ 
+                    bg: `${color}25`,
+                    transform: 'scale(1.02)'
+                  }}
+                  _active={{ 
+                    bg: `${color}35` 
+                  }}
+                  borderRadius="none"
+                  h="60px"
+                  rightIcon={isOpen ? <ChevronUpIcon boxSize={6} /> : <ChevronDownIcon boxSize={6} />}
+                  fontWeight="semibold"
+                  fontSize="md"
+                  transition="all 0.3s ease"
+                  borderTop="1px"
+                  borderColor="gray.200"
+                >
+                  {isOpen ? 'Hide Sub-Ministries' : 'View Sub-Ministries'}
+                </Button>
+
+                {/* Collapsible Content */}
+                <Collapse in={isOpen} animateOpacity>
+                  <Box 
+                    bg="gray.50" 
+                    borderTop="1px" 
+                    borderColor="gray.200"
+                  >
+                    <AnimatePresence>
+                      {isOpen && (
+                        <motion.div
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.3 }}
+                        >
+                          <VStack align="stretch" spacing={0} divider={<Box h="1px" bg="gray.200" />}>
+                            {childrenMinistries.map((child, childIndex) => (
+                              <motion.div
+                                key={childIndex}
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ 
+                                  duration: 0.4, 
+                                  delay: childIndex * 0.05 
+                                }}
+                              >
+                                <Box 
+                                  p={5}
+                                  _hover={{ 
+                                    bg: 'white',
+                                    borderLeft: '4px solid',
+                                    borderColor: color,
+                                    transition: 'all 0.2s ease'
+                                  }}
+                                  transition="all 0.2s ease"
+                                >
+                                  <Flex align="center" mb={2}>
+                                    <Box
+                                      w="3px"
+                                      h="20px"
+                                      bg={color}
+                                      mr={3}
+                                      borderRadius="full"
+                                    />
+                                    <Text 
+                                      fontWeight="bold" 
+                                      fontSize="sm"
+                                      color={color}
+                                      letterSpacing="wide"
+                                    >
+                                      {child.title}
+                                    </Text>
+                                  </Flex>
+                                  <Text 
+                                    color="gray.600" 
+                                    fontSize="sm"
+                                    lineHeight="1.6"
+                                    pl={5}
+                                  >
+                                    {child.description}
+                                  </Text>
+                                </Box>
+                              </motion.div>
+                            ))}
+                          </VStack>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </Box>
+                </Collapse>
+              </VStack>
+            </MotionBox>
+          );
+        })}
+      </Box>
+    </Container>
   );
 };
 

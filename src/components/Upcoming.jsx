@@ -9,69 +9,70 @@ const Upcoming = () => {
 const activities = [
   {
     week: "1ST WEEK",
-    title: "Let My Gate Be Opened",
-    theme: "God's Favour. Exodus 3:21",
-    date: "December 1-3, 2025",
-    time: "5:30 PM Daily",
-    location: "Church Auditorium"
+    title: "2026 Sunday School Annual Bible Study",
+    theme: "Character Study – Daniel 1–6",
+    date: "Every Sunday in January 2026",
+    time: "8:30 AM – 9:25 AM",
+    location: "Sunday School Classes"
   },
   {
     week: "1ST WEEK",
-    title: "2025 Minister's Leadership Retreat",
-    theme: "Times of Refreshing from the Presence of God. Acts 3:19",
-    date: "December 3-6, 2025",
-    time: "Various",
-    location: "Christian Retreat Center, Ago Iwoye, Agric-Isawo Road, Ikorodu"
-  },
-  {
-    week: "2ND WEEK",
-    title: "Unveil 2026",
-    theme: "Go Up and Possess the Land. Deuteronomy 1:21",
-    date: "December 7-13, 2025",
-    time: "5:30 PM (Mon-Fri), 12:00 PM (Sat)",
+    title: "Peniel 2026: 21 Days of Fasting & Prayer",
+    theme: "Next Level",
+    date: "January 5–24, 2026",
+    time: "Mon–Fri & Sun: 5:30 PM | Sat: 12:00 Noon",
     location: "Church Auditorium"
   },
   {
     week: "2ND WEEK",
-    title: "Family Meeting",
-    theme: "Last Church-in-Conference for 2025",
-    date: "December 14, 2025",
-    time: "5:30 PM",
+    title: "NBBC Workers’ Retreat",
+    theme: "Transformational Worker – An Agent of Exponential Church Growth",
+    date: "Saturday, January 10, 2026",
+    time: "8:00 AM prompt",
     location: "Church Auditorium"
   },
   {
-    week: "3RD WEEK",
-    title: "Church Council Meeting",
-    theme: "Leadership Alignment with God's Vision",
-    date: "December 18, 2025",
-    time: "5:30 PM",
-    location: "Church Auditorium"
+    week: "2ND WEEK",
+    title: "Lagos East Baptist Conference Workers’ Retreat",
+    theme: "Transformational Leaders – Becoming a Generous and Faithful Steward",
+    date: "January 2026",
+    time: "9:00 AM",
+    location: "FBC Ikorodu"
   },
   {
     week: "3RD WEEK",
-    title: "Christmas Carol Service",
-    theme: "Celebrating the Birth of Our Saviour",
-    date: "December 21, 2025",
-    time: "4:30 PM",
+    title: "Deacons’ Appreciation & Ordination Service",
+    theme: "Honouring Faithful Service and Ordination of New Deacons",
+    date: "January 18, 2026",
+    time: "9:30 AM",
     location: "Church Auditorium"
   },
   {
     week: "4TH WEEK",
-    title: "Christmas Service",
-    theme: "His Coming is Our Hope and Victory",
-    date: "December 25, 2025",
-    time: "8:30 AM",
+    title: "MMU & WMU Emphasis Sunday",
+    theme: "Restoring the Broken Walls Through the Fruit and Gifts of the Holy Spirit",
+    date: "January 25, 2026",
+    time: "9:30 AM",
+    location: "Church Auditorium"
+  },
+  {
+    week: "4TH WEEK",
+    title: "Church Council Meeting",
+    theme: "Review, Direction, and Strategic Church Leadership",
+    date: "January 27, 2026",
+    time: "5:30 PM",
     location: "Church Auditorium"
   },
   {
     week: "5TH WEEK",
-    title: "Cross-Over Service",
-    theme: "Crossing Over: Dispossess the Giant Nations",
-    date: "December 31, 2025",
-    time: "9:00 PM",
-    location: "Church Auditorium"
+    title: "Radiant Couples Fellowship – Breakfast Fellowship",
+    theme: "Strengthening Marriages Through Fellowship and Connection",
+    date: "January 31, 2026",
+    time: "To Be Announced",
+    location: "To Be Announced"
   }
 ];
+
 
   
   return (
@@ -81,7 +82,7 @@ const activities = [
         Upcoming Activities
       </Text>
       <Text fontSize="xl" color="#A8518A" mb={8}>
-        December
+        January
       </Text>
 
       {/* Activities Grid */}
