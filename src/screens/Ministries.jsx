@@ -71,7 +71,7 @@ const ministriesData = [
   },
   {
     title: 'Fellowship Ministry',
-    description: 'The Fellowship Ministry focuses on fostering relationships and spiritual growth among members. Through age- and life-stage-based groups, this ministry builds a supportive and faith-filled community.',
+    description: 'The Fellowship Ministry focuses on fostering relationships and spiritual growth among members. Through age- and life-stage-based groups, this ministry builds a supportive and faith-filled community.\n',
     image: 'path_to_fellowship_ministry_image.jpg',
     color: '#2C7A7B',
     childrenMinistries: [
@@ -181,7 +181,7 @@ const ministriesData = [
       },
       { 
         title: 'SECURITY', 
-        description: 'Responsible for maintaining a safe and secure environment during church services and events, ensuring the safety of all attendees.' 
+        description: 'Responsible for maintaining a safe and secure environment during church services and events, ensuring the safety of all attendees.       ' 
       },
       { 
         title: 'CARE & WELFARE', 
@@ -317,7 +317,8 @@ const Ministries = () => {
                 transition: 'all 0.4s ease'
               }}
               transition="all 0.4s ease"
-              h="fit-content"
+              // h="fit-content"
+              h="100%"
             >
               {/* Header Section with Gradient */}
               <Box
@@ -367,7 +368,7 @@ const Ministries = () => {
               </Box>
 
               {/* Content Section */}
-              <VStack align="stretch" spacing={0}>
+              <VStack align="stretch" spacing={0} className="justify-between" >
                 <Box p={7}>
                   <Text color="gray.700" lineHeight="1.8" fontSize="md">
                     {description}
@@ -501,6 +502,7 @@ const Ministries = () => {
                                     fontSize="sm"
                                     lineHeight="1.7"
                                     pl={7}
+                                    mt={8}
                                   >
                                     {child.description}
                                   </Text>
