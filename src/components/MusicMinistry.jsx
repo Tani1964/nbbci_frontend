@@ -10,7 +10,7 @@ function MusicMinistry() {
       </Text>
 
       {/* Section Description */}
-      <Text fontSize="md" textAlign="center" color="gray.600" mb={10} maxW="600px" mx="auto">
+      <Text fontSize="md" textAlign="center" color="text.secondary" mb={10} maxW="600px" mx="auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit
         urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices massa. 
         Vestibulum auctor nisl et accumsan vulputate...

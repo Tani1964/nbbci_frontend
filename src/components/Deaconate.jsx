@@ -31,7 +31,7 @@ function Deaconate() {
             <Text color="#A8518A" fontSize="lg" fontWeight="semibold">
               Deaconess
             </Text>
-            <Text mt={4} fontSize="md" color="gray.600">
+            <Text mt={4} fontSize="md" color="text.secondary">
               <b>Dns. Adebisi Ifegbesan</b> gave her life to Christ in April 1988 at Adelabu Street Baptist Church, Adeniran Ogunsanya (now Good News Baptist Church) at Olufemi Street, Surulere. She went through water baptism by immersion and engaged in various church training programs such as Follow the Master, Master Life, Serve the Master, Experiencing God, In God's Presence, and other developmental programs. Dns. Ifegbesan actively participated in multiple church activities, serving as an usher, teacher in Sunday School, baptismal class teacher, member of the Evangelism Committee, and part of the Prayer Group.
               <br />
               <br />
@@ -70,7 +70,7 @@ function Deaconate() {
             <Text color="#A8518A" fontSize="lg" fontWeight="semibold">
               Deaconess
             </Text>
-            <Text mt={4} fontSize="md" color="gray.600">
+            <Text mt={4} fontSize="md" color="text.secondary">
               <b>Dns. Maria Gaadi</b> gave her life to Christ in 1976 as a teenager at an open-air crusade in Kaduna and was baptized by immersion in 1977 in ECWA Church, also in Kaduna. She served as the coordinator of Air Force Secondary School Ikeja Staff and Students Fellowship.
               <br />
               <br />
@@ -111,7 +111,7 @@ function Deaconate() {
             <Text color="#A8518A" fontSize="lg" fontWeight="semibold">
               Deacon
             </Text>
-            <Text mt={4} fontSize="md" color="gray.600">
+            <Text mt={4} fontSize="md" color="text.secondary">
               <b>Dn. Rotimi Adeoye</b> joined New Birth Baptist Church, Ikorodu, in 2014, bringing a deep commitment to faith and service. His journey began in 1989 when he became born again, and he was baptized in 1993 at New Estate Baptist Church. Over the years, he has been an active leader, serving as the pioneer treasurer of New Port Baptist Church, Apapa, before moving to Ikorodu.
               <br />
               <br />

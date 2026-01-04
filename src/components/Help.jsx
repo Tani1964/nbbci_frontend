@@ -64,25 +64,25 @@ const Help = () => {
           <label style={{ color: "white" }}>Email:</label>
           <Input
             type="email"
-            name="email" // Add name attribute for Formspree
+            name="email"
             mb={4}
-            bg="white"
-            color="black"
-            _placeholder={{ color: "gray.500" }}
-            required // Make it required
+            bg="bg.surface"
+            color="text.primary"
+            _placeholder={{ color: "text.muted" }}
+            required
           />
         </Flex>
 
         <Flex direction="column" width={{ base: "100%", md: "45%" }}>
           <label style={{ color: "white" }}>Message:</label>
           <Textarea
-            name="message" // Add name attribute for Formspree
+            name="message"
             mb={4}
-            bg="white"
-            color="black"
+            bg="bg.surface"
+            color="text.primary"
             height={{ base: "20vh", md: "40vh" }}
-            _placeholder={{ color: "gray.500" }}
-            required // Make it required
+            _placeholder={{ color: "text.muted" }}
+            required
           />
         </Flex>
       </Flex>

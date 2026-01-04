@@ -66,12 +66,12 @@ return (
 
         {/* Right Section - Form */}
         <Box
-          bg="white"
+          bg="bg.surface"
           borderRadius="md"
           p={6}
           boxShadow="lg"
-          width={{ base: "100%", md: "35%" }} // Full width on small screens
-          color="black"
+          width={{ base: "100%", md: "35%" }}
+          color="text.primary"
         >
           <Text fontSize="xl" fontWeight="bold" mb={4}>
           General Account: Offering & Tithe

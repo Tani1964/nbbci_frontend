@@ -9,7 +9,6 @@ import {
   VStack,
   HStack,
   Badge,
-  useColorModeValue,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -34,10 +33,9 @@ function Bulletin() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   // Color mode values for light/dark theme support
-  const bgColor = useColorModeValue("white", "gray.800");
-  const shadowColor = useColorModeValue("rgba(0,0,0,0.1)", "rgba(255,255,255,0.1)");
-  const arrowBg = useColorModeValue("white", "gray.700");
-  const arrowHoverBg = useColorModeValue("gray.100", "gray.600");
+  const bgColor = "bg.surface";
+  const arrowBg = "bg.emphasized";
+  const arrowHoverBg = "border.emphasized";
 
 const bulletinData = [
   { 
@@ -119,13 +117,12 @@ const bulletinData = [
       <VStack spacing={2} textAlign="center" px={4}>
         <Heading 
           size={{ base: "md", md: "lg" }}
-          color={useColorModeValue("gray.800", "white")}
           fontWeight="600"
         >
           Community Bulletin
         </Heading>
         <Text 
-          color={useColorModeValue("gray.600", "gray.300")}
+          color="text.muted"
           fontSize={{ base: "sm", md: "md" }}
           textAlign="center"
         >
@@ -200,10 +197,10 @@ const bulletinData = [
                     <Badge colorScheme="blue" px={3} py={1} borderRadius="full">
                       {selectedImage.date}
                     </Badge>
-                    <Heading size="md" color="gray.800">
+                    <Heading size="md" color="text.primary">
                       {selectedImage.title}
                     </Heading>
-                    <Text color="gray.600" lineHeight="tall">
+                    <Text color="text.secondary" lineHeight="tall">
                       {selectedImage.description}
                     </Text>
                   </VStack>
@@ -222,12 +219,9 @@ const bulletinData = [
         bg={bgColor}
         borderRadius={{ base: "xl", md: "2xl" }}
         overflow="hidden"
-        boxShadow={{
-          base: `0 10px 25px ${shadowColor}`,
-          md: `0 20px 40px ${shadowColor}`
-        }}
+        boxShadow="md"
         border="1px solid"
-        borderColor={useColorModeValue("gray.200", "gray.700")}
+        borderColor="border.subtle"
         onMouseEnter={() => setIsAutoplayPaused(true)}
         onMouseLeave={() => setIsAutoplayPaused(false)}
       >
@@ -244,7 +238,7 @@ const bulletinData = [
                 }}
                 position="relative"
                 overflow="hidden"
-                bg="gray.100"
+                bg="bg.muted"
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
@@ -326,7 +320,7 @@ const bulletinData = [
                   left="0"
                   right="0"
                   height={{ base: "70%", md: "60%" }}
-                  bgGradient="linear(to-t, blacFkAlpha.900, blackAlpha.600, transparent)"
+                  bgGradient="linear(to-t, blackAlpha.900, blackAlpha.600, transparent)"
                   zIndex={1}
                 />
                 
@@ -433,7 +427,7 @@ const bulletinData = [
       {/* Slide Counter */}
       <Text 
         fontSize={{ base: "xs", md: "sm" }}
-        color={useColorModeValue("gray.500", "gray.400")}
+        color="text.muted"
         fontWeight="medium"
       >
         {currentSlide + 1} of {bulletinData.length}
@@ -456,7 +450,7 @@ const NextArrow = ({ bg, hoverBg, ...props }) => {
       onClick={onClick}
       aria-label="Next Slide"
       bg={bg}
-      color="gray.600"
+      color="text.muted"
       boxShadow="0 4px 12px rgba(0,0,0,0.15)"
       size={{ base: "md", md: "lg" }}
       borderRadius="full"
@@ -486,7 +480,7 @@ const PrevArrow = ({ bg, hoverBg, ...props }) => {
       onClick={onClick}
       aria-label="Previous Slide"
       bg={bg}
-      color="gray.600"
+      color="text.muted"
       boxShadow="0 4px 12px rgba(0,0,0,0.15)"
       size={{ base: "md", md: "lg" }}
       borderRadius="full"

@@ -57,10 +57,10 @@ const NextArrow = (props) => {
       zIndex={1}
       onClick={onClick}
       aria-label="Next Slide"
-      bg="white"
+      bg="bg.surface"
       boxShadow="md"
       p={4}
-      _hover={{ bg: "gray.300" }}
+      _hover={{ bg: "bg.emphasized" }}
     />
   );
 };
@@ -78,10 +78,10 @@ const PrevArrow = (props) => {
       zIndex={1}
       onClick={onClick}
       aria-label="Previous Slide"
-      bg="white"
+      bg="bg.surface"
       p={4}
       boxShadow="md"
-      _hover={{ bg: "gray.300" }}
+      _hover={{ bg: "bg.emphasized" }}
     />
   );
 };

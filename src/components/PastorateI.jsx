@@ -76,7 +76,7 @@ const PastorateI = () => {
           </MotionText>
           <MotionText
             mt={4}
-            color="gray.600"
+            color="text.secondary"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -120,7 +120,7 @@ const PastorateI = () => {
           <MotionText fontSize="lg" color="#A8518A" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
             Assistant Pastor
           </MotionText>
-          <MotionText mt={4} color="gray.600" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+          <MotionText mt={4} color="text.secondary" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultricies lorem.
           </MotionText>
         </Box> */}

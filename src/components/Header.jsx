@@ -4,7 +4,6 @@ import {
   HStack,
   Link,
   Button,
-  useColorModeValue,
   Image,
   IconButton,
   Drawer,
@@ -23,6 +22,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
 import Logo from "../assets/logo.png";
+import DarkModeToggle from "./DarkModeToggle";
 
 const MotionBox = motion(Box);
 const MotionButton = motion(Button);
@@ -48,8 +48,8 @@ const Header = () => {
   ];
 
   return (
-    <Box 
-      bg={useColorModeValue("white", "gray.800")} 
+    <Box
+      bg="bg.surface"
       px={{ base: 4, md: 20 }}
       boxShadow="sm"
       position="sticky"
@@ -57,44 +57,31 @@ const Header = () => {
       zIndex={1000}
       backdropFilter="blur(10px)"
       borderBottom="1px"
-      borderColor={useColorModeValue("gray.100", "gray.700")}
+      borderColor="border.subtle"
     >
       <Flex alignItems="center" justifyContent="space-between" py={5}>
         {/* Logo */}
-        <MotionBox 
-          initial={{ opacity: 0, x: -20 }} 
-          animate={{ opacity: 1, x: 0 }} 
+        <MotionBox
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           cursor="pointer"
           onClick={() => navigate("/")}
         >
-          <Image 
-            src={Logo} 
-            alt="NBBC logo" 
-            w={{ base: "45px", md: "65px" }} 
+          <Image
+            src={Logo}
+            alt="NBBC logo"
+            w={{ base: "45px", md: "65px" }}
             transition="transform 0.3s ease"
             _hover={{ transform: "scale(1.05)" }}
           />
         </MotionBox>
 
-        {/* Hamburger Menu for Mobile */}
-        <IconButton
-          icon={<HamburgerIcon boxSize={6} />}
-          aria-label="Open Menu"
-          variant="ghost"
-          colorScheme="purple"
-          onClick={onOpen}
-          display={{ base: "flex", md: "none" }}
-          _hover={{ bg: "#A8518A15" }}
-          _active={{ bg: "#A8518A25" }}
-          size="lg"
-        />
-
         {/* Desktop Navigation Links */}
         <HStack spacing={8} alignItems="center" display={{ base: "none", md: "flex" }}>
           {navItems.map(({ label, path }, index) => (
-            <MotionBox 
-              key={label} 
+            <MotionBox
+              key={label}
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -103,9 +90,9 @@ const Header = () => {
                 href={path}
                 fontSize="md"
                 fontWeight="600"
-                color={location.pathname === path ? "#A8518A" : "gray.600"}
-                _hover={{ 
-                  color: "#A8518A", 
+                color={location.pathname === path ? "#A8518A" : "text.muted"}
+                _hover={{
+                  color: "#A8518A",
                   textDecoration: "none",
                   transform: "translateY(-2px)"
                 }}
@@ -131,7 +118,23 @@ const Header = () => {
               </Link>
             </MotionBox>
           ))}
+          <DarkModeToggle />
         </HStack>
+
+        {/* Mobile Controls */}
+        <Flex alignItems="center" gap={2} display={{ base: "flex", md: "none" }}>
+          <DarkModeToggle />
+          <IconButton
+            icon={<HamburgerIcon boxSize={6} />}
+            aria-label="Open Menu"
+            variant="ghost"
+            colorScheme="purple"
+            onClick={onOpen}
+            _hover={{ bg: "#A8518A15" }}
+            _active={{ bg: "#A8518A25" }}
+            size="lg"
+          />
+        </Flex>
 
         {/* Offering Button (Desktop) */}
         <MotionButton
@@ -156,19 +159,21 @@ const Header = () => {
       {/* Enhanced Sidebar/Drawer for Mobile */}
       <Drawer isOpen={isOpen} placement="left" onClose={onClose} size="sm">
         <DrawerOverlay backdropFilter="blur(4px)" />
-        <DrawerContent>
-          <DrawerHeader 
-            borderBottomWidth="1px" 
+        <DrawerContent bg="bg.surface">
+          <DrawerHeader
+            borderBottomWidth="1px"
             pb={4}
             bgGradient="linear(to-r, #A8518A, #8E3E74)"
+            borderColor="border.subtle"
           >
             <Flex align="center" justify="space-between">
               <Flex align="center" gap={3}>
-                <Image 
-                  src={Logo} 
-                  alt="NBBC logo" 
-                  w="40px"
-                  filter="brightness(0) invert(1)"
+                <Image
+                  src={Logo}
+                  alt="NBBC logo"
+                  w={{ base: "45px", md: "65px" }}
+                  transition="transform 0.3s ease"
+                  _hover={{ transform: "scale(1.05)" }}
                 />
                 <Text color="white" fontSize="xl" fontWeight="bold">
                   Menu
@@ -178,7 +183,7 @@ const Header = () => {
             </Flex>
           </DrawerHeader>
 
-          <DrawerBody px={0} py={6}>
+          <DrawerBody px={0} py={6} bg="bg.surface">
             <VStack spacing={2} align="stretch">
               {navItems.map(({ label, path }, index) => (
                 <MotionFlex
@@ -197,10 +202,10 @@ const Header = () => {
                     display="flex"
                     alignItems="center"
                     gap={3}
-                    color={location.pathname === path ? "#A8518A" : "gray.700"}
+                    color={location.pathname === path ? "#A8518A" : "text.secondary"}
                     bg={location.pathname === path ? "#A8518A10" : "transparent"}
                     borderLeft={location.pathname === path ? "4px solid #A8518A" : "4px solid transparent"}
-                    _hover={{ 
+                    _hover={{
                       bg: "#A8518A10",
                       color: "#A8518A",
                       textDecoration: "none",
@@ -213,7 +218,7 @@ const Header = () => {
                       w="6px"
                       h="6px"
                       borderRadius="full"
-                      bg={location.pathname === path ? "#A8518A" : "gray.400"}
+                      bg={location.pathname === path ? "#A8518A" : "text.muted"}
                       transition="all 0.2s ease"
                     />
                     {label}
@@ -221,9 +226,16 @@ const Header = () => {
                 </MotionFlex>
               ))}
             </VStack>
-            
-            <Divider my={6} />
-            
+
+            <Divider my={6} borderColor="border.subtle" />
+
+            <Box px={6} mb={6}>
+              <Flex justify="space-between" align="center" mb={4}>
+                <Text fontSize="sm" fontWeight="600" color="text.muted">Dark Mode</Text>
+                <DarkModeToggle display={{ base: "flex", md: "none" }}/>
+              </Flex>
+            </Box>
+
             <Box px={6}>
               <MotionButton
                 bg="#A8518A"
@@ -248,8 +260,8 @@ const Header = () => {
             </Box>
           </DrawerBody>
 
-          <DrawerFooter borderTopWidth="1px" bg="gray.50">
-            <Text fontSize="sm" color="gray.500" textAlign="center" width="100%">
+          <DrawerFooter borderTopWidth="1px" bg="bg.muted">
+            <Text fontSize="sm" color="text.muted" textAlign="center" width="100%">
               © 2026 NBBC International
             </Text>
           </DrawerFooter>

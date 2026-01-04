@@ -1,4 +1,4 @@
-import { Box, Text, VStack, Button, Collapse, Container, Icon, Flex } from '@chakra-ui/react';
+import { Box, Text, VStack, Button, Collapse, Container, Icon, Flex, Heading, Badge, useColorModeValue } from '@chakra-ui/react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -6,6 +6,7 @@ import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
 
 // Motion component for animation
 const MotionBox = motion(Box);
+const MotionText = motion(Text);
 
 const ministriesData = [
   {
@@ -201,9 +202,92 @@ const Ministries = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const { ref: heroRef, inView: heroInView } = useInView({ 
+    threshold: 0.1,
+    triggerOnce: true 
+  });
+
   return (
-    <Container maxW="container.xl" py={10}>
-      <Box className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+    <Box bg={useColorModeValue('gray.50', 'gray.900')} minH="100vh">
+      {/* Hero Section */}
+      <Box
+        ref={heroRef}
+        bgGradient="linear(to-br, #A8518A, #6B46C1)"
+        color="white"
+        py={{ base: 16, md: 24 }}
+        px={{ base: 4, md: 8 }}
+        position="relative"
+        overflow="hidden"
+      >
+        {/* Decorative Background Elements */}
+        <Box
+          position="absolute"
+          top="-10%"
+          right="-5%"
+          width="300px"
+          height="300px"
+          borderRadius="full"
+          bg="whiteAlpha.100"
+          filter="blur(60px)"
+        />
+        <Box
+          position="absolute"
+          bottom="-10%"
+          left="-5%"
+          width="250px"
+          height="250px"
+          borderRadius="full"
+          bg="whiteAlpha.100"
+          filter="blur(60px)"
+        />
+        
+        <Container maxW="container.xl" position="relative" zIndex={1}>
+          <MotionBox
+            initial={{ opacity: 0, y: 30 }}
+            animate={heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.8 }}
+            textAlign="center"
+          >
+            <Badge
+              colorScheme="purple"
+              bg="whiteAlpha.200"
+              color="white"
+              px={4}
+              py={2}
+              borderRadius="full"
+              fontSize="sm"
+              fontWeight="600"
+              mb={4}
+              backdropFilter="blur(10px)"
+            >
+              Serve With Us
+            </Badge>
+            <Heading
+              as="h1"
+              fontSize={{ base: '3xl', md: '5xl', lg: '6xl' }}
+              fontWeight="800"
+              mb={6}
+              letterSpacing="tight"
+            >
+              Our Ministries
+            </Heading>
+            <Text
+              fontSize={{ base: 'lg', md: 'xl' }}
+              maxW="3xl"
+              mx="auto"
+              lineHeight="1.8"
+              opacity={0.95}
+            >
+              Discover how you can serve and grow in faith through our diverse ministries. 
+              Each ministry is dedicated to building God's kingdom and nurturing His people.
+            </Text>
+          </MotionBox>
+        </Container>
+      </Box>
+
+      {/* Ministries Grid */}
+      <Container maxW="container.xl" py={{ base: 12, md: 20 }}>
+        <Box className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
         {ministriesData.map((ministry, index) => {
           const { title, description, childrenMinistries, color } = ministry;
           const isOpen = openIndex === index;
@@ -221,66 +305,126 @@ const Ministries = () => {
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               bg="white"
-              borderRadius="xl"
+              borderRadius="2xl"
               overflow="hidden"
-              boxShadow="lg"
+              boxShadow="md"
+              border="1px"
+              borderColor="gray.100"
               _hover={{ 
                 boxShadow: '2xl',
-                transform: 'translateY(-4px)',
-                transition: 'all 0.3s ease'
+                transform: 'translateY(-8px)',
+                borderColor: color,
+                transition: 'all 0.4s ease'
               }}
-              // transition="all 0.3s ease"
+              transition="all 0.4s ease"
               h="fit-content"
             >
               {/* Header Section with Gradient */}
               <Box
-                bgGradient={`linear(to-br, ${color}, ${color}DD)`}
-                p={6}
+                bgGradient={`linear(135deg, ${color} 0%, ${color}CC 100%)`}
+                p={8}
                 color="white"
+                position="relative"
+                overflow="hidden"
               >
-                <Text fontSize="2xl" fontWeight="bold" mb={2}>
+                {/* Decorative corner element */}
+                <Box
+                  position="absolute"
+                  top="-20px"
+                  right="-20px"
+                  width="100px"
+                  height="100px"
+                  borderRadius="full"
+                  bg="whiteAlpha.200"
+                  filter="blur(30px)"
+                />
+                
+                <Flex align="center" justify="space-between" mb={3} position="relative">
+                  <Badge
+                    bg="whiteAlpha.300"
+                    color="white"
+                    px={3}
+                    py={1}
+                    borderRadius="md"
+                    fontSize="xs"
+                    fontWeight="600"
+                    backdropFilter="blur(10px)"
+                  >
+                    Ministry {index + 1}
+                  </Badge>
+                  <Box
+                    w="8px"
+                    h="8px"
+                    borderRadius="full"
+                    bg="white"
+                    boxShadow="0 0 20px rgba(255,255,255,0.6)"
+                  />
+                </Flex>
+                
+                <Text fontSize="2xl" fontWeight="800" lineHeight="1.3" position="relative">
                   {title}
                 </Text>
               </Box>
 
               {/* Content Section */}
               <VStack align="stretch" spacing={0}>
-                <Box p={6}>
-                  <Text color="gray.700" lineHeight="1.7">
+                <Box p={7}>
+                  <Text color="gray.700" lineHeight="1.8" fontSize="md">
                     {description}
                   </Text>
                 </Box>
 
+                {/* Sub-ministries count badge */}
+                {childrenMinistries && childrenMinistries.length > 0 && (
+                  <Flex 
+                    px={7} 
+                    pb={4} 
+                    align="center" 
+                    gap={2}
+                  >
+                    <Box
+                      w="6px"
+                      h="6px"
+                      borderRadius="full"
+                      bg={color}
+                    />
+                    <Text fontSize="sm" color="gray.600" fontWeight="600">
+                      {childrenMinistries.length} Sub-Ministries
+                    </Text>
+                  </Flex>
+                )}
+
                 {/* Toggle Button */}
                 <Button
                   onClick={() => handleToggle(index)}
-                  bg={isOpen ? `${color}15` : 'gray.50'}
-                  color={color}
+                  bg={isOpen ? `${color}` : 'gray.50'}
+                  color={isOpen ? 'white' : color}
                   _hover={{ 
-                    bg: `${color}25`,
-                    transform: 'scale(1.02)'
+                    bg: isOpen ? `${color}DD` : `${color}15`,
+                    transform: 'none'
                   }}
                   _active={{ 
-                    bg: `${color}35` 
+                    bg: `${color}CC` 
                   }}
                   borderRadius="none"
                   h="60px"
                   rightIcon={isOpen ? <ChevronUpIcon boxSize={6} /> : <ChevronDownIcon boxSize={6} />}
-                  fontWeight="semibold"
+                  fontWeight="700"
                   fontSize="md"
                   transition="all 0.3s ease"
                   borderTop="1px"
                   borderColor="gray.200"
+                  letterSpacing="wide"
                 >
-                  {isOpen ? 'Hide Sub-Ministries' : 'View Sub-Ministries'}
+                  {isOpen ? 'Hide Details' : 'Explore Sub-Ministries'}
                 </Button>
 
                 {/* Collapsible Content */}
                 <Collapse in={isOpen} animateOpacity>
                   <Box 
-                    bg="gray.50" 
-                    borderTop="1px" 
-                    borderColor="gray.200"
+                    bgGradient={`linear(to-b, ${color}05, ${color}10)`}
+                    borderTop="2px" 
+                    borderColor={color}
                   >
                     <AnimatePresence>
                       {isOpen && (
@@ -290,7 +434,7 @@ const Ministries = () => {
                           exit={{ opacity: 0 }}
                           transition={{ duration: 0.3 }}
                         >
-                          <VStack align="stretch" spacing={0} divider={<Box h="1px" bg="gray.200" />}>
+                          <VStack align="stretch" spacing={0}>
                             {childrenMinistries.map((child, childIndex) => (
                               <motion.div
                                 key={childIndex}
@@ -302,37 +446,61 @@ const Ministries = () => {
                                 }}
                               >
                                 <Box 
-                                  p={5}
+                                  p={6}
+                                  borderBottom={childIndex < childrenMinistries.length - 1 ? '1px' : 'none'}
+                                  borderColor="gray.200"
                                   _hover={{ 
                                     bg: 'white',
                                     borderLeft: '4px solid',
                                     borderColor: color,
-                                    transition: 'all 0.2s ease'
+                                    pl: '22px',
+                                    transition: 'all 0.3s ease'
                                   }}
-                                  transition="all 0.2s ease"
+                                  transition="all 0.3s ease"
+                                  position="relative"
                                 >
-                                  <Flex align="center" mb={2}>
+                                  {/* Decorative number */}
+                                  <Box
+                                    position="absolute"
+                                    top={4}
+                                    right={4}
+                                    w="32px"
+                                    h="32px"
+                                    borderRadius="md"
+                                    bg={`${color}15`}
+                                    display="flex"
+                                    alignItems="center"
+                                    justifyContent="center"
+                                    fontWeight="800"
+                                    fontSize="xs"
+                                    color={color}
+                                  >
+                                    {childIndex + 1}
+                                  </Box>
+                                  
+                                  <Flex align="center" mb={3}>
                                     <Box
-                                      w="3px"
-                                      h="20px"
+                                      w="4px"
+                                      h="24px"
                                       bg={color}
                                       mr={3}
                                       borderRadius="full"
                                     />
                                     <Text 
-                                      fontWeight="bold" 
+                                      fontWeight="800" 
                                       fontSize="sm"
                                       color={color}
-                                      letterSpacing="wide"
+                                      letterSpacing="wider"
+                                      textTransform="uppercase"
                                     >
                                       {child.title}
                                     </Text>
                                   </Flex>
                                   <Text 
-                                    color="gray.600" 
+                                    color="gray.700" 
                                     fontSize="sm"
-                                    lineHeight="1.6"
-                                    pl={5}
+                                    lineHeight="1.7"
+                                    pl={7}
                                   >
                                     {child.description}
                                   </Text>
@@ -351,6 +519,7 @@ const Ministries = () => {
         })}
       </Box>
     </Container>
+    </Box>
   );
 };
 

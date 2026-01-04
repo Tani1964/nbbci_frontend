@@ -14,7 +14,7 @@ const Connect = () => {
       <Text fontSize="2xl" fontWeight="bold">
         Connect with us
       </Text>
-      <Text fontSize="md" color="gray.500" mb={6}>
+      <Text fontSize="md" color="text.muted" mb={6}>
         Join the Christian train, don't get left out
       </Text>
       <Flex maxWidth={'50vw'} justify="center" gap={8} wrap="wrap">

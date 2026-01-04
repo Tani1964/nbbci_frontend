@@ -43,7 +43,7 @@ const PastorateII = () => {
           </Text>
           <MotionText
             mt={4}
-            color="gray.600"
+            color="text.secondary"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}

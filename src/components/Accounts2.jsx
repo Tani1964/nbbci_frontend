@@ -7,10 +7,10 @@ const Accounts2 = () => {
     <Box
       position="relative"
       minH="fit"
-      backgroundImage={`url(${Bg})`}
-      backgroundSize="cover"
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
+      // backgroundImage={`url(${Bg})`}
+      // backgroundSize="cover"
+      // backgroundPosition="center"
+      // backgroundRepeat="no-repeat"
       px={{ base: 6, md: 10, lg: 20 }}
       py={{ base: 10, md: 16, lg:30 }}
     >
@@ -21,7 +21,7 @@ const Accounts2 = () => {
         left="0"
         right="0"
         bottom="0"
-        bg="rgba(0, 0, 0, 0.5)"
+        // bg="rgba(0, 0, 0, 0.5)"
       />
 
       {/* Content */}
@@ -73,12 +73,12 @@ const Accounts2 = () => {
         >
           {/* General Account Box */}
           <Box
-            bg="white"
+            bg="bg.surface"
             borderRadius="md"
             p={6}
             boxShadow="lg"
             width={{ base: "100%", md: "45%" }}
-            color="black"
+            color="text.primary"
           >
             <Text fontSize="xl" fontWeight="bold" mb={4}>
               General Account: Offering & Tithe
@@ -107,12 +107,12 @@ const Accounts2 = () => {
 
           {/* Project Account Box */}
           <Box
-            bg="white"
+            bg="bg.surface"
             borderRadius="md"
             p={6}
             boxShadow="lg"
             width={{ base: "100%", md: "45%" }}
-            color="black"
+            color="text.primary"
           >
             <Text fontSize="xl" fontWeight="bold" mb={4}>
               Project Account

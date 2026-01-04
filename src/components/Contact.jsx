@@ -13,9 +13,9 @@ const Contact = () => {
   const [state, handleSubmit] = useForm("xpwzpljq");
 
   return (
-    <Flex justify="center" py={10} px={5} bg="gray.50">
+    <Flex justify="center" py={10} px={5} bg="bg.muted">
       <Box
-        bg="white"
+        bg="bg.surface"
         p={8}
         rounded="lg"
         shadow="lg"
@@ -32,7 +32,7 @@ const Contact = () => {
             <Text fontSize={{ base: "xl", md: "2xl" }} fontWeight="bold" mb={2}>
               Let’s get in touch!
             </Text>
-            <Text color="gray.600" mb={4}>
+            <Text color="text.muted" mb={4}>
               Have a question or need more information? We’re here to help!
               Reach out to us for any inquiries, and we’ll get back to you as
               soon as possible.
@@ -42,19 +42,19 @@ const Contact = () => {
               {/* Phone */}
               <Flex align="center">
                 <Icon as={FaPhoneAlt} color="#A8518A" boxSize={5} mr={3} />
-                <Text color="gray.700">+234 808 149 4141 or +234 906 802 2226</Text>
+                <Text color="text.primary">+234 808 149 4141 or +234 906 802 2226</Text>
               </Flex>
 
               {/* Email */}
               <Flex align="center">
                 <Icon as={FaEnvelope} color="#A8518A" boxSize={5} mr={3} />
-                <Text color="gray.700">newbbcil@gmail.com</Text>
+                <Text color="text.primary">newbbcil@gmail.com</Text>
               </Flex>
 
               {/* Address */}
               <Flex align="center">
                 <Icon as={FaMapMarkerAlt} color="#A8518A" boxSize={5} mr={3} />
-                <Text color="gray.700">
+                <Text color="text.primary">
                   5, Olateru Street, Haruna Bus-stop, Lagos, Nigeria
                 </Text>
               </Flex>

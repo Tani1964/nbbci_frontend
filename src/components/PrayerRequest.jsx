@@ -9,18 +9,20 @@ const PrayerRequest = () => {
     <Box
       position="relative"
       minH="80vh"
-      backgroundImage={`url(${Bg})`}
-      backgroundSize="cover"
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
-      px={{ base: "5%", md: "8%" }}
+      // backgroundImage={`url(${Bg})`}
+      // backgroundSize="cover"
+      // backgroundPosition="center"
+      // backgroundRepeat="no-repeat"
+      // px={{ base: "5%", md: "8%" }}
+      // px={{ base: 6, md: 10, lg: 20 }}
+
       py={{ base: "10%", md: "8%" }}
       color="white"
       display="flex"
       flexDirection={{ base: "column", lg: "row" }}
-      justifyContent="space-between"
+      justifyContent="space-around"
       alignItems="center"
-      gap={10}
+      // gap={4}
     >
       {/* Overlay */}
       <Box
@@ -29,7 +31,7 @@ const PrayerRequest = () => {
         left="0"
         right="0"
         bottom="0"
-        bg="rgba(0, 0, 0, 0.5)"
+        // bg="rgba(0, 0, 0, 0.5)"
         zIndex={1}
       />
 
@@ -71,12 +73,12 @@ const PrayerRequest = () => {
           <label style={{ color: "white" }}>Your Prayer Request:</label>
           <Textarea
             name="message"
-            bg="white"
-            color="black"
+            bg="bg.surface"
+            color="text.primary"
             width="100%"
             height={{ base: "20vh", md: "30vh" }}
             placeholder="Share your prayer request here..."
-            _placeholder={{ color: "gray.500" }}
+            _placeholder={{ color: "text.muted" }}
             mb={4}
             required
           />

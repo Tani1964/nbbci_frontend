@@ -97,7 +97,7 @@ const activities = [
             p={6}
             borderWidth="1px"
             borderRadius="md"
-            borderColor="gray.200"
+            borderColor="border.subtle"
             position="relative"
             overflow="hidden"
             transition="transform 0.3s ease"
@@ -138,7 +138,7 @@ const activities = [
               <Text fontSize="lg" fontWeight="semibold" mb={2}>
                 {activity.title}
               </Text>
-              <Text fontSize="md" color="gray.500" mb={4}>
+              <Text fontSize="md" color="text.muted" mb={4}>
                 {activity.date}
               </Text>
               <Flex align="center" justify="center" color="red.500">
