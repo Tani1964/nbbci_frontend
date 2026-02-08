@@ -82,7 +82,7 @@ const activities = [
         Upcoming Activities
       </Text>
       <Text fontSize="xl" color="#A8518A" mb={8}>
-        January
+        Febuary
       </Text>
 
       {/* Activities Grid */}
