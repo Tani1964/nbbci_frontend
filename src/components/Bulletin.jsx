@@ -40,54 +40,83 @@ function Bulletin() {
 const bulletinData = [
   { 
     image: Img1, 
-    title: "2026 Sunday School Annual Bible Study", 
-    description: "Character Study (Daniel 1–6) — A systematic study of Daniel’s life, convictions, and faithfulness to strengthen Christian character in challenging times.",
-    date: "Every Sunday in January 2026 | 8:30 AM – 9:25 AM"
+    title: "Monthly Thanksgiving Service", 
+    description: "A joyful worship service dedicated to appreciating God for His faithfulness, goodness, and blessings over the church and families.",
+    date: "Sunday, March 1, 2026 | 10:30 AM"
   },
   { 
     image: Img2, 
-    title: "Peniel 2026: 21 Days of Fasting & Prayer", 
-    description: "Theme: Next Level — A season of corporate seeking of God for direction, strength, and advancement in the new year.",
-    date: "January 5–24, 2026"
+    title: "Help From the Lord – Revival Meetings", 
+    description: "Theme: Let My Gate Be Opened (Psalm 121). A powerful season of prayer, revival, breakthrough, and renewed confidence in God’s help.",
+    date: "March 1–3, 2026 | 5:30 PM Daily"
   },
   { 
     image: Img3, 
-    title: "NBBC Workers’ Retreat 2026", 
-    description: "Theme: Transformational Worker – An Agent of Exponential Church Growth. A strategic gathering for renewal, alignment, and equipping of church workers.",
-    date: "Saturday, January 10, 2026 | 8:00 AM prompt"
+    title: "Discipleship Classes", 
+    description: "Focused training sessions aimed at helping believers grow deeper in Christ, establish strong spiritual foundations, and live out their faith effectively.",
+    date: "March 7 & 8, 2026 | Sat: 8:00 AM | Sun: 10:00 AM"
   },
   { 
     image: Img4, 
-    title: "Lagos East Baptist Conference Workers’ Retreat", 
-    description: "Theme: Transformational Leaders – Becoming a Generous and Faithful Steward. Focused on leadership growth, stewardship, and kingdom responsibility.",
-    date: "January 2026 | 9:00 AM | Venue: FBC Ikorodu"
+    title: "Sunday School Preparatory Sessions", 
+    description: "Preparatory and refresher sessions for Sunday School teachers to enhance effectiveness, clarity, and impact in teaching God’s Word.",
+    date: "March 7 & 21, 2026 | 8:00 AM"
   },
   { 
     image: Img5, 
-    title: "Deacons’ Appreciation & Ordination Service", 
-    description: "A special service to appreciate serving deacons and formally ordain new ones into the office.",
-    date: "January 18, 2026 | 9:30 AM"
-  },
-  { 
-    image: Img6, 
-    title: "MMU & WMU Emphasis Sunday", 
-    description: "Theme: Restoring the Broken Walls Through the Fruit and Gifts of the Holy Spirit (Nehemiah 1–2; Isaiah 58:12; Acts 1:8).",
-    date: "January 25, 2026 | 9:30 AM"
+    title: "Singles’ Fellowship", 
+    description: "Theme: Setting Healthy Boundaries in Relationship. An interactive fellowship designed to guide singles in building godly, balanced, and purposeful relationships.",
+    date: "Sunday, March 8, 2026 | 12:00 Noon"
   },
   { 
     image: Img6, 
     title: "Church Council Meeting", 
-    description: "A leadership meeting to review progress and set direction for church administration and ministry.",
-    date: "January 27, 2026 | 5:30 PM"
+    description: "A strategic leadership meeting focused on planning, review, decision-making, and providing clear direction for church growth and administration.",
+    date: "Tuesday, March 10, 2026 | 5:30 PM"
   },
   { 
     image: Img6, 
-    title: "Radiant Couples Fellowship – Breakfast Fellowship", 
-    description: "A fellowship gathering for couples to connect, refresh, and strengthen marital bonds in a relaxed setting.",
-    date: "January 31, 2026 | Time: To Be Announced"
+    title: "Global Leadership Summit", 
+    description: "Theme: Lead Where You Are. A leadership development summit empowering leaders at every level to influence effectively and lead with excellence.",
+    date: "Saturday, March 14, 2026 | 9:00 AM"
+  },
+  { 
+    image: Img6, 
+    title: "Prayer Summit", 
+    description: "Theme: The Heart That Prays (Matthew 26:38). An intensive period of prayer, worship, and spiritual alignment for individuals, families, and the church.",
+    date: "March 15–17, 2026 | Sun: 9:30 AM | Mon–Tue: 5:30 PM"
+  },
+  { 
+    image: Img6, 
+    title: "Interactive Family Hub (IFH)", 
+    description: "Topic: Gambling & Betting – Restoring Discipline and Christian Character in the Home, Church, and Society. A teaching forum addressing contemporary family challenges.",
+    date: "Wednesday, March 18, 2026 | 5:30 PM"
+  },
+  { 
+    image: Img6, 
+    title: "Intercessory Night", 
+    description: "Topic: Pray for One Another (James 5:16). A dedicated night of focused prayer, intercession, and spiritual support for one another.",
+    date: "Friday, March 20, 2026 | 5:30 PM"
+  },
+  { 
+    image: Img6, 
+    title: "Radiant Couples Fellowship", 
+    description: "Topic: Dysfunctional Family – Understanding Domestic Violence. A couples’ fellowship aimed at strengthening marriages through biblical understanding and open dialogue.",
+    date: "Saturday, March 28, 2026 | 10:00 AM"
+  },
+  { 
+    image: Img6, 
+    title: "Palm Sunday Service", 
+    description: "Theme: Triumphal Entry – The Call to All-round Usefulness (Luke 19:28–38). A celebratory service marking Christ’s triumphant entry and our call to purposeful service.",
+    date: "Sunday, March 29, 2026 | 9:30 AM"
+  },
+  { 
+    image: Img6, 
+    title: "Believers’ Congress 2026", 
+    description: "Theme: Growing in Grace (2 Peter 3:18). A multi-day congress focused on spiritual growth, renewal, and deeper walk with God.",
+    date: "April 10–12, 2026"
   }
 ];
-
 
   // Handle image click
   const handleImageClick = (item) => {

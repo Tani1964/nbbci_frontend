@@ -14,44 +14,64 @@ const Announcement = () => {
       fontWeight="bold"
       textAlign="center"
     >
-      <Box
-        as="div"
-        display="flex"
-        alignItems="center"
-        animation="scroll 30s linear infinite"
-      >
-        <Text color="white" mx="1" lineHeight="1.2">
-          2026 Sunday School Annual Bible Study || Date: Every Sunday in January 2026 || Time: 8:30 AM – 9:25 AM || Location: Sunday School Classes || Theme: Character Study (Daniel 1–6),
-        </Text>
+     <Box
+  as="div"
+  display="flex"
+  alignItems="center"
+  animation="scroll 30s linear infinite"
+>
+  <Text color="white" mx="1" lineHeight="1.2">
+    Monthly Thanksgiving Service || Date: Sunday, March 1, 2026 || Time: 10:30 AM || Location: Church Auditorium || Theme: Grateful Hearts to Appreciate God’s Faithfulness,
+  </Text>
 
-        <Text color="white" mx="1" lineHeight="1.2">
-          Peniel 2026: 21 Days of Fasting & Prayer || Date: January 5 – 24, 2026 || Time: Mon–Fri & Sun: 5:30 PM | Sat: 12:00 Noon || Location: Church Auditorium || Theme: Next Level,
-        </Text>
+  <Text color="white" mx="1" lineHeight="1.2">
+    Help From the Lord – Revival Meetings || Date: March 1–3, 2026 || Time: 5:30 PM Daily || Location: Church Auditorium || Theme: Let My Gate Be Opened (Psalm 121),
+  </Text>
 
-        <Text color="white" mx="1" lineHeight="1.2">
-          NBBC Workers’ Retreat || Date: Saturday, January 10, 2026 || Time: 8:00 AM prompt || Location: Church Auditorium || Theme: Transformational Worker – An Agent of Exponential Church Growth,
-        </Text>
+  <Text color="white" mx="1" lineHeight="1.2">
+    Discipleship Classes || Date: March 7 & 8, 2026 || Time: Sat: 8:00 AM | Sun: 10:00 AM || Location: Designated Classes || Theme: Growing Deep in Christ and Building Strong Foundations,
+  </Text>
 
-        <Text color="white" mx="1" lineHeight="1.2">
-          Lagos East Baptist Conference Workers’ Retreat || Date: January 2026 || Time: 9:00 AM || Location: FBC Ikorodu || Theme: Transformational Leaders – Becoming a Generous and Faithful Steward,
-        </Text>
+  <Text color="white" mx="1" lineHeight="1.2">
+    Sunday School Preparatory Sessions || Date: March 7 & 21, 2026 || Time: 8:00 AM || Location: Sunday School Classes || Theme: Preparing Teachers for Effective Teaching,
+  </Text>
 
-        <Text color="white" mx="1" lineHeight="1.2">
-          Deacons’ Appreciation & Ordination Service || Date: January 18, 2026 || Time: 9:30 AM || Location: Church Auditorium,
-        </Text>
+  <Text color="white" mx="1" lineHeight="1.2">
+    Singles’ Fellowship || Date: Sunday, March 8, 2026 || Time: 12:00 Noon || Location: Church Auditorium || Theme: Setting Healthy Boundaries in Relationship,
+  </Text>
 
-        <Text color="white" mx="1" lineHeight="1.2">
-          MMU & WMU Emphasis Sunday || Date: January 25, 2026 || Time: 9:30 AM || Location: Church Auditorium || Theme: Restoring the Broken Walls Through the Fruit and Gifts of the Holy Spirit,
-        </Text>
+  <Text color="white" mx="1" lineHeight="1.2">
+    Church Council Meeting || Date: Tuesday, March 10, 2026 || Time: 5:30 PM || Location: Church Auditorium || Theme: Strategic Leadership for Planning and Direction,
+  </Text>
 
-        <Text color="white" mx="1" lineHeight="1.2">
-          Church Council Meeting || Date: January 27, 2026 || Time: 5:30 PM || Location: Church Auditorium,
-        </Text>
+  <Text color="white" mx="1" lineHeight="1.2">
+    Global Leadership Summit || Date: Saturday, March 14, 2026 || Time: 9:00 AM || Location: Church Auditorium || Theme: Lead Where You Are,
+  </Text>
 
-        <Text color="white" mx="1" lineHeight="1.2">
-          Radiant Couples Fellowship – Breakfast Fellowship || Date: January 31, 2026 || Time: To Be Announced || Location: To Be Announced,
-        </Text>
-      </Box>
+  <Text color="white" mx="1" lineHeight="1.2">
+    Prayer Summit || Date: March 15–17, 2026 || Time: Sun: 9:30 AM | Mon–Tue: 5:30 PM || Location: Church Auditorium || Theme: The Heart That Prays (Matthew 26:38),
+  </Text>
+
+  <Text color="white" mx="1" lineHeight="1.2">
+    Interactive Family Hub (IFH) || Date: Wednesday, March 18, 2026 || Time: 5:30 PM || Location: Church Auditorium || Theme: Gambling & Betting – Restoring Discipline and Christian Character,
+  </Text>
+
+  <Text color="white" mx="1" lineHeight="1.2">
+    Intercessory Night || Date: Friday, March 20, 2026 || Time: 5:30 PM || Location: Church Auditorium || Theme: Pray for One Another (James 5:16),
+  </Text>
+
+  <Text color="white" mx="1" lineHeight="1.2">
+    Radiant Couples Fellowship || Date: Saturday, March 28, 2026 || Time: 10:00 AM || Location: Church Auditorium || Theme: Dysfunctional Family – Understanding Domestic Violence,
+  </Text>
+
+  <Text color="white" mx="1" lineHeight="1.2">
+    Palm Sunday Service || Date: Sunday, March 29, 2026 || Time: 9:30 AM || Location: Church Auditorium || Theme: Triumphal Entry – The Call to All-round Usefulness,
+  </Text>
+
+  <Text color="white" mx="1" lineHeight="1.2">
+    Believers’ Congress 2026 || Date: April 10–12, 2026 || Time: To Be Announced || Location: Church Auditorium || Theme: Growing in Grace,
+  </Text>
+</Box>
 
 
       <style jsx>{`
