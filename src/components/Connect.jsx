@@ -59,7 +59,7 @@ const Connect = () => {
         </Link>
 
         {/* YouTube */}
-        <Link href="http://www.youtube.com/@newbirthbaptistchurchikoro7592" isExternal>
+        <Link href="https://www.youtube.com/@nbbcil" isExternal>
           <Flex direction="row" align="center" gap={4} alignItems={'center'}>
             <Icon as={FaYoutube} boxSize={8} color="red.600" />
             <Text mt={2}>YouTube</Text>
