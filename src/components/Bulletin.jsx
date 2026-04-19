@@ -40,81 +40,87 @@ function Bulletin() {
 const bulletinData = [
   { 
     image: Img1, 
-    title: "Monthly Thanksgiving Service", 
-    description: "A joyful worship service dedicated to appreciating God for His faithfulness, goodness, and blessings over the church and families.",
-    date: "Sunday, March 1, 2026 | 10:30 AM"
+    title: "Let My Gate Be Opened", 
+    description: "Theme: Double Victory (Exodus 14:13-14). A 3-day prophetic encounter focused on open doors, deliverance, and victory over every obstacle.",
+    date: "April 1–3, 2026 | 5:30 PM Daily"
   },
   { 
     image: Img2, 
-    title: "Help From the Lord – Revival Meetings", 
-    description: "Theme: Let My Gate Be Opened (Psalm 121). A powerful season of prayer, revival, breakthrough, and renewed confidence in God’s help.",
-    date: "March 1–3, 2026 | 5:30 PM Daily"
+    title: "Good Friday Service", 
+    description: "Theme: Proclaiming The Lord’s Death. A solemn remembrance of Christ’s sacrifice and victory on the cross.",
+    date: "April 3, 2026 | 8:30 AM"
   },
   { 
     image: Img3, 
-    title: "Discipleship Classes", 
-    description: "Focused training sessions aimed at helping believers grow deeper in Christ, establish strong spiritual foundations, and live out their faith effectively.",
-    date: "March 7 & 8, 2026 | Sat: 8:00 AM | Sun: 10:00 AM"
+    title: "Pathfinder 2026", 
+    description: "Theme: The Supernatural Student. A special program designed to empower students for excellence through divine wisdom and direction.",
+    date: "April 4, 2026 | 9:30 AM"
   },
   { 
     image: Img4, 
-    title: "Sunday School Preparatory Sessions", 
-    description: "Preparatory and refresher sessions for Sunday School teachers to enhance effectiveness, clarity, and impact in teaching God’s Word.",
-    date: "March 7 & 21, 2026 | 8:00 AM"
+    title: "Discipleship Classes", 
+    description: "Focused training sessions aimed at helping believers grow deeper in Christ, build strong spiritual foundations, and live a transformed life.",
+    date: "April 4 & 18, 2026 | 8:00 AM & 10:00 AM"
   },
   { 
     image: Img5, 
-    title: "Singles’ Fellowship", 
-    description: "Theme: Setting Healthy Boundaries in Relationship. An interactive fellowship designed to guide singles in building godly, balanced, and purposeful relationships.",
-    date: "Sunday, March 8, 2026 | 12:00 Noon"
+    title: "Sunday School Sessions", 
+    description: "Interactive Bible teaching sessions designed to strengthen understanding, encourage participation, and deepen spiritual knowledge.",
+    date: "April 4 & 18, 2026 | 10:00 AM & 8:00 AM"
+  },
+  { 
+    image: Img6, 
+    title: "Thanksgiving & Easter Sunday", 
+    description: "Theme: The Power of Resurrection (Philippians 3:1-10). A celebration of Christ’s victory, new life, and resurrection power.",
+    date: "April 5, 2026 | 9:30 AM"
+  },
+  { 
+    image: Img6, 
+    title: "Easter Cantata", 
+    description: "Theme: Hosanna (Matthew 21:9). A musical celebration of Christ’s death and resurrection through powerful ministrations.",
+    date: "April 5, 2026 | 5:00 PM"
+  },
+  { 
+    image: Img6, 
+    title: "Believers’ Congress", 
+    description: "Theme: Growing in Grace (2 Peter 3:18). A life-transforming congress focused on spiritual maturity and deeper walk with God.",
+    date: "April 10–12, 2026 | Fri: 5 PM | Sat: 8:30 AM | Sun: 9:30 AM"
+  },
+  { 
+    image: Img6, 
+    title: "Home Fellowship", 
+    description: "A time of fellowship, prayer, and studying God’s Word in smaller groups to build stronger spiritual connections.",
+    date: "April 11 & 25, 2026 | 5:30 PM"
   },
   { 
     image: Img6, 
     title: "Church Council Meeting", 
-    description: "A strategic leadership meeting focused on planning, review, decision-making, and providing clear direction for church growth and administration.",
-    date: "Tuesday, March 10, 2026 | 5:30 PM"
+    description: "A strategic leadership meeting focused on planning, direction, and strengthening church administration.",
+    date: "April 14, 2026 | 5:30 PM"
   },
   { 
     image: Img6, 
-    title: "Global Leadership Summit", 
-    description: "Theme: Lead Where You Are. A leadership development summit empowering leaders at every level to influence effectively and lead with excellence.",
-    date: "Saturday, March 14, 2026 | 9:00 AM"
+    title: "NBC in Session", 
+    description: "A national gathering focused on vision alignment, leadership direction, and spiritual growth.",
+    date: "April 18–23, 2026 | Abuja"
   },
   { 
     image: Img6, 
-    title: "Prayer Summit", 
-    description: "Theme: The Heart That Prays (Matthew 26:38). An intensive period of prayer, worship, and spiritual alignment for individuals, families, and the church.",
-    date: "March 15–17, 2026 | Sun: 9:30 AM | Mon–Tue: 5:30 PM"
+    title: "General Evangelism", 
+    description: "An outreach program focused on spreading the Gospel and impacting lives within the community.",
+    date: "April 19, 2026 | 9:30 AM"
   },
   { 
     image: Img6, 
-    title: "Interactive Family Hub (IFH)", 
-    description: "Topic: Gambling & Betting – Restoring Discipline and Christian Character in the Home, Church, and Society. A teaching forum addressing contemporary family challenges.",
-    date: "Wednesday, March 18, 2026 | 5:30 PM"
+    title: "Victory Night", 
+    description: "Theme: Contending Against The Wicked Sower (Matthew 13:24-30). A powerful midnight prayer for deliverance and victory.",
+    date: "April 24, 2026 | 11:00 PM"
   },
   { 
     image: Img6, 
-    title: "Intercessory Night", 
-    description: "Topic: Pray for One Another (James 5:16). A dedicated night of focused prayer, intercession, and spiritual support for one another.",
-    date: "Friday, March 20, 2026 | 5:30 PM"
-  },
-  { 
-    image: Img6, 
-    title: "Radiant Couples Fellowship", 
-    description: "Topic: Dysfunctional Family – Understanding Domestic Violence. A couples’ fellowship aimed at strengthening marriages through biblical understanding and open dialogue.",
-    date: "Saturday, March 28, 2026 | 10:00 AM"
-  },
-  { 
-    image: Img6, 
-    title: "Palm Sunday Service", 
-    description: "Theme: Triumphal Entry – The Call to All-round Usefulness (Luke 19:28–38). A celebratory service marking Christ’s triumphant entry and our call to purposeful service.",
-    date: "Sunday, March 29, 2026 | 9:30 AM"
-  },
-  { 
-    image: Img6, 
-    title: "Believers’ Congress 2026", 
-    description: "Theme: Growing in Grace (2 Peter 3:18). A multi-day congress focused on spiritual growth, renewal, and deeper walk with God.",
-    date: "April 10–12, 2026"
+    title: "Family Meeting", 
+    description: "A gathering focused on strengthening family values, unity, and godly relationships.",
+    date: "April 26, 2026 | 9:30 AM"
   }
 ];
 

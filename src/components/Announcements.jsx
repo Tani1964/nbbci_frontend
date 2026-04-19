@@ -14,62 +14,66 @@ const Announcement = () => {
       fontWeight="bold"
       textAlign="center"
     >
-     <Box
+<Box
   as="div"
   display="flex"
   alignItems="center"
   animation="scroll 30s linear infinite"
 >
   <Text color="white" mx="1" lineHeight="1.2">
-    Monthly Thanksgiving Service || Date: Sunday, March 1, 2026 || Time: 10:30 AM || Location: Church Auditorium || Theme: Grateful Hearts to Appreciate God’s Faithfulness,
+    Let My Gate Be Opened || Date: April 1–3, 2026 || Time: 5:30 PM Daily || Location: Church Auditorium || Theme: Double Victory (Exodus 14:13-14),
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Help From the Lord – Revival Meetings || Date: March 1–3, 2026 || Time: 5:30 PM Daily || Location: Church Auditorium || Theme: Let My Gate Be Opened (Psalm 121),
+    Good Friday Service || Date: April 3, 2026 || Time: 8:30 AM || Location: Church Auditorium || Theme: Proclaiming The Lord’s Death,
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Discipleship Classes || Date: March 7 & 8, 2026 || Time: Sat: 8:00 AM | Sun: 10:00 AM || Location: Designated Classes || Theme: Growing Deep in Christ and Building Strong Foundations,
+    Pathfinder 2026 || Date: April 4, 2026 || Time: 9:30 AM || Location: Church Auditorium || Theme: The Supernatural Student,
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Sunday School Preparatory Sessions || Date: March 7 & 21, 2026 || Time: 8:00 AM || Location: Sunday School Classes || Theme: Preparing Teachers for Effective Teaching,
+    Discipleship Classes || Date: April 4 & 18, 2026 || Time: 8:00 AM & 10:00 AM || Location: Designated Classes || Theme: Spiritual Growth and Maturity,
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Singles’ Fellowship || Date: Sunday, March 8, 2026 || Time: 12:00 Noon || Location: Church Auditorium || Theme: Setting Healthy Boundaries in Relationship,
+    Sunday School Sessions || Date: April 4 & 18, 2026 || Time: 10:00 AM & 8:00 AM || Location: Sunday School Classes || Theme: Deepening Biblical Understanding,
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Church Council Meeting || Date: Tuesday, March 10, 2026 || Time: 5:30 PM || Location: Church Auditorium || Theme: Strategic Leadership for Planning and Direction,
+    Thanksgiving & Easter Sunday || Date: April 5, 2026 || Time: 9:30 AM || Location: Church Auditorium || Theme: The Power of Resurrection,
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Global Leadership Summit || Date: Saturday, March 14, 2026 || Time: 9:00 AM || Location: Church Auditorium || Theme: Lead Where You Are,
+    Easter Cantata || Date: April 5, 2026 || Time: 5:00 PM || Location: Church Auditorium || Theme: Hosanna,
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Prayer Summit || Date: March 15–17, 2026 || Time: Sun: 9:30 AM | Mon–Tue: 5:30 PM || Location: Church Auditorium || Theme: The Heart That Prays (Matthew 26:38),
+    Believers’ Congress || Date: April 10–12, 2026 || Time: Fri: 5 PM | Sat: 8:30 AM | Sun: 9:30 AM || Location: Church Auditorium || Theme: Growing in Grace,
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Interactive Family Hub (IFH) || Date: Wednesday, March 18, 2026 || Time: 5:30 PM || Location: Church Auditorium || Theme: Gambling & Betting – Restoring Discipline and Christian Character,
+    Home Fellowship || Date: April 11 & 25, 2026 || Time: 5:30 PM || Location: Various Centres || Theme: Building Faith and Fellowship,
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Intercessory Night || Date: Friday, March 20, 2026 || Time: 5:30 PM || Location: Church Auditorium || Theme: Pray for One Another (James 5:16),
+    Church Council Meeting || Date: April 14, 2026 || Time: 5:30 PM || Location: Virtual || Theme: Strategic Leadership,
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Radiant Couples Fellowship || Date: Saturday, March 28, 2026 || Time: 10:00 AM || Location: Church Auditorium || Theme: Dysfunctional Family – Understanding Domestic Violence,
+    NBC in Session || Date: April 18–23, 2026 || Location: Abuja || Theme: National Gathering for Vision and Direction,
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Palm Sunday Service || Date: Sunday, March 29, 2026 || Time: 9:30 AM || Location: Church Auditorium || Theme: Triumphal Entry – The Call to All-round Usefulness,
+    General Evangelism || Date: April 19, 2026 || Time: 9:30 AM || Location: Outreach Centres || Theme: Spreading the Gospel,
   </Text>
 
   <Text color="white" mx="1" lineHeight="1.2">
-    Believers’ Congress 2026 || Date: April 10–12, 2026 || Time: To Be Announced || Location: Church Auditorium || Theme: Growing in Grace,
+    Victory Night || Date: April 24, 2026 || Time: 11:00 PM || Location: Church Auditorium || Theme: Contending Against The Wicked Sower,
+  </Text>
+
+  <Text color="white" mx="1" lineHeight="1.2">
+    Family Meeting || Date: April 26, 2026 || Time: 9:30 AM || Location: Church Auditorium || Theme: Strengthening Family Bonds,
   </Text>
 </Box>
 

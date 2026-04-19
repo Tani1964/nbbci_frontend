@@ -9,106 +9,138 @@ const Upcoming = () => {
 const activities = [
   {
     week: "1ST WEEK",
-    title: "Monthly Thanksgiving Service",
-    theme: "Grateful Hearts to Appreciate God’s Faithfulness",
-    date: "Sunday, March 1, 2026",
-    time: "10:30 AM",
-    location: "Church Auditorium"
-  },
-  {
-    week: "1ST WEEK",
-    title: "Help From the Lord – Revival Meetings",
-    theme: "Let My Gate Be Opened (Psalm 121)",
-    date: "March 1–3, 2026",
+    title: "Let My Gate Be Opened",
+    theme: "Double Victory (Exodus 14:13-14)",
+    date: "April 1–3, 2026",
     time: "5:30 PM Daily",
     location: "Church Auditorium"
   },
   {
     week: "1ST WEEK",
-    title: "Discipleship Classes",
-    theme: "Growing Deep in Christ and Building Strong Foundations",
-    date: "Saturday, March 7 & Sunday, March 8, 2026",
-    time: "Sat: 8:00 AM | Sun: 10:00 AM",
-    location: "Designated Classes"
+    title: "Good Friday Service",
+    theme: "Proclaiming The Lord’s Death",
+    date: "Friday, April 3, 2026",
+    time: "8:30 AM",
+    location: "Church Auditorium"
   },
   {
     week: "1ST WEEK",
-    title: "Sunday School Preparatory Sessions",
-    theme: "Preparing Teachers for Effective Teaching",
-    date: "March 7 & March 21, 2026",
-    time: "8:00 AM",
-    location: "Sunday School Classes"
-  },
-  {
-    week: "2ND WEEK",
-    title: "Singles’ Fellowship",
-    theme: "Setting Healthy Boundaries in Relationship",
-    date: "Sunday, March 8, 2026",
-    time: "12:00 Noon",
-    location: "Church Auditorium"
-  },
-  {
-    week: "2ND WEEK",
-    title: "Church Council Meeting",
-    theme: "Strategic Leadership for Planning and Direction",
-    date: "Tuesday, March 10, 2026",
-    time: "5:30 PM",
-    location: "Church Auditorium"
-  },
-  {
-    week: "2ND WEEK",
-    title: "Global Leadership Summit",
-    theme: "Lead Where You Are",
-    date: "Saturday, March 14, 2026",
-    time: "9:00 AM",
-    location: "Church Auditorium"
-  },
-  {
-    week: "3RD WEEK",
-    title: "Prayer Summit",
-    theme: "The Heart That Prays (Matthew 26:38)",
-    date: "March 15–17, 2026",
-    time: "Sun: 9:30 AM | Mon–Tue: 5:30 PM",
-    location: "Church Auditorium"
-  },
-  {
-    week: "3RD WEEK",
-    title: "Interactive Family Hub (IFH)",
-    theme: "Gambling & Betting: Restoring Discipline and Christian Character",
-    date: "Wednesday, March 18, 2026",
-    time: "5:30 PM",
-    location: "Church Auditorium"
-  },
-  {
-    week: "3RD WEEK",
-    title: "Intercessory Night",
-    theme: "Pray for One Another (James 5:16)",
-    date: "Friday, March 20, 2026",
-    time: "5:30 PM",
-    location: "Church Auditorium"
-  },
-  {
-    week: "4TH WEEK",
-    title: "Radiant Couples Fellowship",
-    theme: "Dysfunctional Family: Understanding Domestic Violence",
-    date: "Saturday, March 28, 2026",
-    time: "10:00 AM",
-    location: "Church Auditorium"
-  },
-  {
-    week: "4TH WEEK",
-    title: "Palm Sunday Service",
-    theme: "Triumphal Entry – The Call to All-round Usefulness",
-    date: "Sunday, March 29, 2026",
+    title: "Pathfinder 2026",
+    theme: "The Supernatural Student",
+    date: "Saturday, April 4, 2026",
     time: "9:30 AM",
     location: "Church Auditorium"
   },
   {
-    week: "5TH WEEK",
-    title: "Believers’ Congress 2026",
-    theme: "Growing in Grace",
+    week: "1ST WEEK",
+    title: "Discipleship Classes",
+    theme: "Spiritual Growth and Maturity",
+    date: "April 4 & 18, 2026",
+    time: "8:00 AM & 10:00 AM",
+    location: "Designated Classes"
+  },
+  {
+    week: "1ST WEEK",
+    title: "Sunday School Sessions",
+    theme: "Deepening Biblical Understanding",
+    date: "April 4 & 18, 2026",
+    time: "10:00 AM & 8:00 AM",
+    location: "Sunday School Classes"
+  },
+  {
+    week: "1ST WEEK",
+    title: "Thanksgiving & Easter Sunday",
+    theme: "The Power of Resurrection",
+    date: "Sunday, April 5, 2026",
+    time: "9:30 AM",
+    location: "Church Auditorium"
+  },
+  {
+    week: "1ST WEEK",
+    title: "Easter Cantata",
+    theme: "Hosanna (Matthew 21:9)",
+    date: "Sunday, April 5, 2026",
+    time: "5:00 PM",
+    location: "Church Auditorium"
+  },
+  {
+    week: "2ND WEEK",
+    title: "Believers’ Congress",
+    theme: "Growing in Grace (2 Peter 3:18)",
     date: "April 10–12, 2026",
-    time: "To Be Announced",
+    time: "Fri: 5 PM | Sat: 8:30 AM | Sun: 9:30 AM",
+    location: "Church Auditorium"
+  },
+  {
+    week: "2ND WEEK",
+    title: "Home Fellowship",
+    theme: "Building Faith and Fellowship",
+    date: "Saturday, April 11, 2026",
+    time: "5:30 PM",
+    location: "Various Centres"
+  },
+  {
+    week: "3RD WEEK",
+    title: "Church Council Meeting",
+    theme: "Strategic Leadership and Direction",
+    date: "Tuesday, April 14, 2026",
+    time: "5:30 PM",
+    location: "Virtual"
+  },
+  {
+    week: "3RD WEEK",
+    title: "Discipleship Classes",
+    theme: "Spiritual Growth and Maturity",
+    date: "Saturday, April 18, 2026",
+    time: "8:00 AM & 10:00 AM",
+    location: "Designated Classes"
+  },
+  {
+    week: "3RD WEEK",
+    title: "Sunday School Sessions",
+    theme: "Deepening Biblical Understanding",
+    date: "Saturday, April 18, 2026",
+    time: "10:00 AM & 8:00 AM",
+    location: "Sunday School Classes"
+  },
+  {
+    week: "3RD WEEK",
+    title: "NBC in Session",
+    theme: "Vision Alignment and Leadership Direction",
+    date: "April 18–23, 2026",
+    time: "As Scheduled",
+    location: "Abuja"
+  },
+  {
+    week: "4TH WEEK",
+    title: "General Evangelism",
+    theme: "Spreading the Gospel",
+    date: "Sunday, April 19, 2026",
+    time: "9:30 AM",
+    location: "Outreach Centres"
+  },
+  {
+    week: "4TH WEEK",
+    title: "Home Fellowship",
+    theme: "Building Faith and Fellowship",
+    date: "Saturday, April 25, 2026",
+    time: "5:30 PM",
+    location: "Various Centres"
+  },
+  {
+    week: "4TH WEEK",
+    title: "Victory Night",
+    theme: "Contending Against The Wicked Sower (Matthew 13:24-30)",
+    date: "Friday, April 24, 2026",
+    time: "11:00 PM",
+    location: "Church Auditorium"
+  },
+  {
+    week: "5TH WEEK",
+    title: "Family Meeting",
+    theme: "Strengthening Family Bonds and Values",
+    date: "Sunday, April 26, 2026",
+    time: "9:30 AM",
     location: "Church Auditorium"
   }
 ];
