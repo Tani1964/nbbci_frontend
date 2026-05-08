@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Text } from "@chakra-ui/react";
+import React from "react";
 
 const Announcement = () => {
   return (
@@ -14,69 +14,74 @@ const Announcement = () => {
       fontWeight="bold"
       textAlign="center"
     >
-<Box
-  as="div"
-  display="flex"
-  alignItems="center"
-  animation="scroll 30s linear infinite"
->
-  <Text color="white" mx="1" lineHeight="1.2">
-    Let My Gate Be Opened || Date: April 1–3, 2026 || Time: 5:30 PM Daily || Location: Church Auditorium || Theme: Double Victory (Exodus 14:13-14),
-  </Text>
+      <Box
+        as="div"
+        display="flex"
+        alignItems="center"
+        animation="scroll 30s linear infinite"
+        whiteSpace="nowrap"
+      >
+        <Text color="white" mx="4" lineHeight="1.2">
+          🎯 Youth Network Special Programme || Date: May 1, 2026 || Time: 3:30
+          PM || Theme: God, Family, Work and You,
+        </Text>
 
-  <Text color="white" mx="1" lineHeight="1.2">
-    Good Friday Service || Date: April 3, 2026 || Time: 8:30 AM || Location: Church Auditorium || Theme: Proclaiming The Lord’s Death,
-  </Text>
+        <Text color="white" mx="4" lineHeight="1.2">
+          🚪 Let My Gate Be Opened || Date: May 1–3, 2026 || Time: Fri 5:30 PM |
+          Sat 12 Noon | Sun 5:30 PM || Theme: Thus Says The Lord (Isaiah
+          54:1–3),
+        </Text>
 
-  <Text color="white" mx="1" lineHeight="1.2">
-    Pathfinder 2026 || Date: April 4, 2026 || Time: 9:30 AM || Location: Church Auditorium || Theme: The Supernatural Student,
-  </Text>
+        <Text color="white" mx="4" lineHeight="1.2">
+          ⚡ Special Pre-Worship Service || Date: May 3, 2026 || Time: 7:45 AM –
+          8:30 AM || Theme: Divine Power for Exponential Growth,
+        </Text>
 
-  <Text color="white" mx="1" lineHeight="1.2">
-    Discipleship Classes || Date: April 4 & 18, 2026 || Time: 8:00 AM & 10:00 AM || Location: Designated Classes || Theme: Spiritual Growth and Maturity,
-  </Text>
+        <Text color="white" mx="4" lineHeight="1.2">
+          🎉 Monthly Thanksgiving Sunday || Date: May 3, 2026 || Time: 9:30 AM
+          || Theme: Rejoicing in Christ Always (Philippians 3:1–10),
+        </Text>
 
-  <Text color="white" mx="1" lineHeight="1.2">
-    Sunday School Sessions || Date: April 4 & 18, 2026 || Time: 10:00 AM & 8:00 AM || Location: Sunday School Classes || Theme: Deepening Biblical Understanding,
-  </Text>
+        <Text color="white" mx="4" lineHeight="1.2">
+          📘 Discipleship Class || Dates: May 3 & 17, 2026 || Time: 8:00 AM &
+          10:00 AM || Theme: Spiritual Growth and Christian Living,
+        </Text>
 
-  <Text color="white" mx="1" lineHeight="1.2">
-    Thanksgiving & Easter Sunday || Date: April 5, 2026 || Time: 9:30 AM || Location: Church Auditorium || Theme: The Power of Resurrection,
-  </Text>
+        <Text color="white" mx="4" lineHeight="1.2">
+          📚 Sunday School Sessions || Dates: May 3 & 17, 2026 || Time: 8:00 AM
+          & 10:00 AM || Theme: Practical Christian Living and Bible Teaching,
+        </Text>
 
-  <Text color="white" mx="1" lineHeight="1.2">
-    Easter Cantata || Date: April 5, 2026 || Time: 5:00 PM || Location: Church Auditorium || Theme: Hosanna,
-  </Text>
+        <Text color="white" mx="4" lineHeight="1.2">
+          👩‍👧 WOWEN Conference || Date: May 9, 2026 || Theme: Real Mother, Real
+          Model (1 Samuel 25:18–31),
+        </Text>
 
-  <Text color="white" mx="1" lineHeight="1.2">
-    Believers’ Congress || Date: April 10–12, 2026 || Time: Fri: 5 PM | Sat: 8:30 AM | Sun: 9:30 AM || Location: Church Auditorium || Theme: Growing in Grace,
-  </Text>
+        <Text color="white" mx="4" lineHeight="1.2">
+          💐 Mother’s Day Service || Date: May 10, 2026 || Theme: My Mother, My
+          Model,
+        </Text>
 
-  <Text color="white" mx="1" lineHeight="1.2">
-    Home Fellowship || Date: April 11 & 25, 2026 || Time: 5:30 PM || Location: Various Centres || Theme: Building Faith and Fellowship,
-  </Text>
+        <Text color="white" mx="4" lineHeight="1.2">
+          🏠 Home Fellowship || Dates: May 10 & 24, 2026 || Time: 5:30 PM ||
+          Theme: Building Community Through Fellowship,
+        </Text>
 
-  <Text color="white" mx="1" lineHeight="1.2">
-    Church Council Meeting || Date: April 14, 2026 || Time: 5:30 PM || Location: Virtual || Theme: Strategic Leadership,
-  </Text>
+        <Text color="white" mx="4" lineHeight="1.2">
+          🗂 Church Council Meeting || Date: May 12, 2026 || Time: 5:30 PM ||
+          Venue: Virtual || Theme: Leadership and Church Advancement,
+        </Text>
 
-  <Text color="white" mx="1" lineHeight="1.2">
-    NBC in Session || Date: April 18–23, 2026 || Location: Abuja || Theme: National Gathering for Vision and Direction,
-  </Text>
+        <Text color="white" mx="4" lineHeight="1.2">
+          🌙 Intercessory Night || Date: May 15, 2026 || Time: 5:30 PM || Theme:
+          Let There be Peace in Nigeria (Jeremiah 29:7),
+        </Text>
 
-  <Text color="white" mx="1" lineHeight="1.2">
-    General Evangelism || Date: April 19, 2026 || Time: 9:30 AM || Location: Outreach Centres || Theme: Spreading the Gospel,
-  </Text>
-
-  <Text color="white" mx="1" lineHeight="1.2">
-    Victory Night || Date: April 24, 2026 || Time: 11:00 PM || Location: Church Auditorium || Theme: Contending Against The Wicked Sower,
-  </Text>
-
-  <Text color="white" mx="1" lineHeight="1.2">
-    Family Meeting || Date: April 26, 2026 || Time: 9:30 AM || Location: Church Auditorium || Theme: Strengthening Family Bonds,
-  </Text>
-</Box>
-
+        <Text color="white" mx="4" lineHeight="1.2">
+          💑 Radiant Couples Fellowship || Date: May 23, 2026 || Time: 10:00 AM
+          || Theme: The Unequally Yoked Dilemma (2 Corinthians 6:14),
+        </Text>
+      </Box>
 
       <style jsx>{`
         @keyframes scroll {

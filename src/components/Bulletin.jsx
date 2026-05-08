@@ -1,30 +1,30 @@
-import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
-import { 
-  Box, 
-  Image, 
-  IconButton, 
-  Text, 
-  Heading,
-  VStack,
-  HStack,
+import { ArrowBackIcon, ArrowForwardIcon, ViewIcon } from "@chakra-ui/icons";
+import {
   Badge,
+  Box,
+  Flex,
+  Heading,
+  HStack,
+  IconButton,
+  Image,
   Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
   ModalBody,
   ModalCloseButton,
+  ModalContent,
+  ModalHeader,
+  ModalOverlay,
+  Text,
   useDisclosure,
-  Flex
+  VStack,
 } from "@chakra-ui/react";
-import { ArrowBackIcon, ArrowForwardIcon, ViewIcon } from "@chakra-ui/icons";
-import Img1 from '../assets/bulletin/img1.jpeg'
-import Img2 from '../assets/bulletin/img2.jpeg'
-import Img3 from '../assets/bulletin/img3.jpeg'
-import Img4 from '../assets/bulletin/img4.jpeg'
-import Img5 from '../assets/bulletin/img5.jpeg'
-import Img6 from '../assets/bulletin/img6.jpeg'
+import React, { useEffect, useState } from "react";
+import Slider from "react-slick";
+import Img1 from "../assets/bulletin/img1.jpeg";
+import Img2 from "../assets/bulletin/img2.jpeg";
+import Img3 from "../assets/bulletin/img3.jpeg";
+import Img4 from "../assets/bulletin/img4.jpeg";
+import Img5 from "../assets/bulletin/img5.jpeg";
+import Img6 from "../assets/bulletin/img6.jpeg";
 
 function Bulletin() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,92 +37,103 @@ function Bulletin() {
   const arrowBg = "bg.emphasized";
   const arrowHoverBg = "border.emphasized";
 
-const bulletinData = [
-  { 
-    image: Img1, 
-    title: "Let My Gate Be Opened", 
-    description: "Theme: Double Victory (Exodus 14:13-14). A 3-day prophetic encounter focused on open doors, deliverance, and victory over every obstacle.",
-    date: "April 1–3, 2026 | 5:30 PM Daily"
-  },
-  { 
-    image: Img2, 
-    title: "Good Friday Service", 
-    description: "Theme: Proclaiming The Lord’s Death. A solemn remembrance of Christ’s sacrifice and victory on the cross.",
-    date: "April 3, 2026 | 8:30 AM"
-  },
-  { 
-    image: Img3, 
-    title: "Pathfinder 2026", 
-    description: "Theme: The Supernatural Student. A special program designed to empower students for excellence through divine wisdom and direction.",
-    date: "April 4, 2026 | 9:30 AM"
-  },
-  { 
-    image: Img4, 
-    title: "Discipleship Classes", 
-    description: "Focused training sessions aimed at helping believers grow deeper in Christ, build strong spiritual foundations, and live a transformed life.",
-    date: "April 4 & 18, 2026 | 8:00 AM & 10:00 AM"
-  },
-  { 
-    image: Img5, 
-    title: "Sunday School Sessions", 
-    description: "Interactive Bible teaching sessions designed to strengthen understanding, encourage participation, and deepen spiritual knowledge.",
-    date: "April 4 & 18, 2026 | 10:00 AM & 8:00 AM"
-  },
-  { 
-    image: Img6, 
-    title: "Thanksgiving & Easter Sunday", 
-    description: "Theme: The Power of Resurrection (Philippians 3:1-10). A celebration of Christ’s victory, new life, and resurrection power.",
-    date: "April 5, 2026 | 9:30 AM"
-  },
-  { 
-    image: Img6, 
-    title: "Easter Cantata", 
-    description: "Theme: Hosanna (Matthew 21:9). A musical celebration of Christ’s death and resurrection through powerful ministrations.",
-    date: "April 5, 2026 | 5:00 PM"
-  },
-  { 
-    image: Img6, 
-    title: "Believers’ Congress", 
-    description: "Theme: Growing in Grace (2 Peter 3:18). A life-transforming congress focused on spiritual maturity and deeper walk with God.",
-    date: "April 10–12, 2026 | Fri: 5 PM | Sat: 8:30 AM | Sun: 9:30 AM"
-  },
-  { 
-    image: Img6, 
-    title: "Home Fellowship", 
-    description: "A time of fellowship, prayer, and studying God’s Word in smaller groups to build stronger spiritual connections.",
-    date: "April 11 & 25, 2026 | 5:30 PM"
-  },
-  { 
-    image: Img6, 
-    title: "Church Council Meeting", 
-    description: "A strategic leadership meeting focused on planning, direction, and strengthening church administration.",
-    date: "April 14, 2026 | 5:30 PM"
-  },
-  { 
-    image: Img6, 
-    title: "NBC in Session", 
-    description: "A national gathering focused on vision alignment, leadership direction, and spiritual growth.",
-    date: "April 18–23, 2026 | Abuja"
-  },
-  { 
-    image: Img6, 
-    title: "General Evangelism", 
-    description: "An outreach program focused on spreading the Gospel and impacting lives within the community.",
-    date: "April 19, 2026 | 9:30 AM"
-  },
-  { 
-    image: Img6, 
-    title: "Victory Night", 
-    description: "Theme: Contending Against The Wicked Sower (Matthew 13:24-30). A powerful midnight prayer for deliverance and victory.",
-    date: "April 24, 2026 | 11:00 PM"
-  },
-  { 
-    image: Img6, 
-    title: "Family Meeting", 
-    description: "A gathering focused on strengthening family values, unity, and godly relationships.",
-    date: "April 26, 2026 | 9:30 AM"
-  }
-];
+  const bulletinData = [
+    {
+      image: Img1,
+      title: "Youth Network Special Programme",
+      description:
+        "Theme: God, Family, Work and You. A life-shaping session focused on balancing your walk with God, family responsibilities, and career purpose as a young believer.",
+      date: "May 1, 2026 | 3:30 PM",
+    },
+
+    {
+      image: Img2,
+      title: "Let My Gate Be Opened",
+      description:
+        "Theme: Thus Says The Lord (Isaiah 54:1–3). A prophetic encounter for divine access, enlargement, and supernatural breakthroughs.",
+      date: "May 1–3, 2026 | Fri 5:30 PM | Sat 12 Noon | Sun 5:30 PM",
+    },
+
+    {
+      image: Img3,
+      title: "Special Pre-Worship Service",
+      description:
+        "Theme: Divine Power for Exponential Growth (Acts 1:8; Ezekiel 36:26). A power-packed session to ignite spiritual capacity for unusual and accelerated growth through the Holy Spirit.",
+      date: "May 3, 2026 | 7:45 AM – 8:30 AM",
+    },
+
+    {
+      image: Img4,
+      title: "Monthly Thanksgiving Sunday",
+      description:
+        "Theme: Rejoicing in Christ Always (Philippians 3:1–10). A joyful celebration of God’s faithfulness, victories, and testimonies.",
+      date: "May 3, 2026 | 9:30 AM",
+    },
+
+    {
+      image: Img5,
+      title: "Discipleship Class",
+      description:
+        "A growth platform for believers to deepen their understanding of God’s Word, Christian living, and spiritual maturity.",
+      date: "May 3 & 17, 2026 | 8:00 AM & 10:00 AM",
+    },
+
+    {
+      image: Img6,
+      title: "Sunday School Sessions",
+      description:
+        "Interactive Bible teaching sessions focused on practical Christian living, spiritual development, and deeper scriptural understanding.",
+      date: "May 3 & 17, 2026 | 8:00 AM & 10:00 AM",
+    },
+
+    {
+      image: Img1,
+      title: "WOWEN Conference",
+      description:
+        "Theme: Real Mother, Real Model (1 Samuel 25:18–31). Empowering women to embody wisdom, courage, and godly influence like Abigail.",
+      date: "May 9, 2026",
+    },
+
+    {
+      image: Img2,
+      title: "Mother’s Day Service",
+      description:
+        "Theme: My Mother, My Model. A special celebration honoring mothers and their invaluable role in shaping destinies.",
+      date: "May 10, 2026",
+    },
+
+    {
+      image: Img3,
+      title: "Home Fellowship",
+      description:
+        "Small group fellowship designed to build community, share the Word, and pray together in love and unity.",
+      date: "May 10 & 24, 2026 | 5:30 PM",
+    },
+
+    {
+      image: Img4,
+      title: "Church Council Meeting",
+      description:
+        "A strategic leadership meeting focused on church advancement, administration, and impactful decision-making.",
+      date: "May 12, 2026 | 5:30 PM | Virtual",
+    },
+
+    {
+      image: Img5,
+      title: "Intercessory Night",
+      description:
+        "Theme: Let There be Peace in Nigeria (Jeremiah 29:7). A night of intense prayers for the church, families, and the nation.",
+      date: "May 15, 2026 | 5:30 PM",
+    },
+
+    {
+      image: Img6,
+      title: "Radiant Couples Fellowship",
+      description:
+        "Theme: The Unequally Yoked Dilemma (2 Corinthians 6:14). Insightful teaching for couples and intending couples on building godly relationships.",
+      date: "May 23, 2026 | 10:00 AM",
+    },
+  ];
 
   // Handle image click
   const handleImageClick = (item) => {
@@ -147,16 +158,19 @@ const bulletinData = [
   };
 
   return (
-    <VStack spacing={{ base: 4, md: 6 }} w="100%" maxW="1200px" mx="auto" px={{ base: 2, sm: 4, md: 6 }}>
+    <VStack
+      spacing={{ base: 4, md: 6 }}
+      w="100%"
+      maxW="1200px"
+      mx="auto"
+      px={{ base: 2, sm: 4, md: 6 }}
+    >
       {/* Header */}
       <VStack spacing={2} textAlign="center" px={4}>
-        <Heading 
-          size={{ base: "md", md: "lg" }}
-          fontWeight="600"
-        >
+        <Heading size={{ base: "md", md: "lg" }} fontWeight="600">
           Community Bulletin
         </Heading>
-        <Text 
+        <Text
           color="text.muted"
           fontSize={{ base: "sm", md: "md" }}
           textAlign="center"
@@ -164,20 +178,17 @@ const bulletinData = [
           Stay updated with the latest news and announcements
         </Text>
         {/* Image Modal */}
-      <Modal isOpen={isOpen} onClose={onClose} size="6xl" isCentered>
-        <ModalOverlay 
-          bg="blackAlpha.800" 
-          backdropFilter="blur(10px)"
-        />
-        <ModalContent 
-          bg="transparent" 
-          boxShadow="none" 
-          maxW="90vw" 
-          maxH="90vh"
-        >
-          <ModalHeader p={0}>
-            <Flex justify="space-between" align="center" p={4}>
-              {/* {selectedImage && (
+        <Modal isOpen={isOpen} onClose={onClose} size="6xl" isCentered>
+          <ModalOverlay bg="blackAlpha.800" backdropFilter="blur(10px)" />
+          <ModalContent
+            bg="transparent"
+            boxShadow="none"
+            maxW="90vw"
+            maxH="90vh"
+          >
+            <ModalHeader p={0}>
+              <Flex justify="space-between" align="center" p={4}>
+                {/* {selectedImage && (
                 <VStack align="start" spacing={1} color="white">
                   <Heading size="lg" textShadow="0 2px 4px rgba(0,0,0,0.8)">
                     {selectedImage.title}
@@ -187,39 +198,39 @@ const bulletinData = [
                   </Text>
                 </VStack>
               )} */}
-              <ModalCloseButton 
-                position="static" 
-                color="white" 
-                bg="blackAlpha.600"
-                _hover={{ bg: "blackAlpha.800" }}
-                size="lg"
-                borderRadius="full"
-              />
-            </Flex>
-          </ModalHeader>
-          
-          <ModalBody p={4} pt={0}>
-            {selectedImage && (
-              <VStack spacing={4} align="center">
-                <Box
-                  position="relative"
-                  borderRadius="xl"
-                  overflow="hidden"
-                  boxShadow="0 25px 50px rgba(0,0,0,0.5)"
-                  maxW="100%"
-                  maxH="70vh"
-                >
-                  <Image
-                    src={selectedImage.image}
-                    alt={selectedImage.title}
+                <ModalCloseButton
+                  position="static"
+                  color="white"
+                  bg="blackAlpha.600"
+                  _hover={{ bg: "blackAlpha.800" }}
+                  size="lg"
+                  borderRadius="full"
+                />
+              </Flex>
+            </ModalHeader>
+
+            <ModalBody p={4} pt={0}>
+              {selectedImage && (
+                <VStack spacing={4} align="center">
+                  <Box
+                    position="relative"
+                    borderRadius="xl"
+                    overflow="hidden"
+                    boxShadow="0 25px 50px rgba(0,0,0,0.5)"
                     maxW="100%"
                     maxH="70vh"
-                    objectFit="contain"
-                    borderRadius="xl"
-                  />
-                </Box>
-                
-                {/* <Box
+                  >
+                    <Image
+                      src={selectedImage.image}
+                      alt={selectedImage.title}
+                      maxW="100%"
+                      maxH="70vh"
+                      objectFit="contain"
+                      borderRadius="xl"
+                    />
+                  </Box>
+
+                  {/* <Box
                   bg="whiteAlpha.900"
                   color="gray.800"
                   p={6}
@@ -240,17 +251,17 @@ const bulletinData = [
                     </Text>
                   </VStack>
                 </Box> */}
-              </VStack>
-            )}
-          </ModalBody>
-        </ModalContent>
-      </Modal>
-    </VStack>
+                </VStack>
+              )}
+            </ModalBody>
+          </ModalContent>
+        </Modal>
+      </VStack>
 
       {/* Carousel Container */}
-      <Box 
-        position="relative" 
-        w="100%" 
+      <Box
+        position="relative"
+        w="100%"
         bg={bgColor}
         borderRadius={{ base: "xl", md: "2xl" }}
         overflow="hidden"
@@ -263,13 +274,13 @@ const bulletinData = [
         <Slider {...settings}>
           {bulletinData.map((item, index) => (
             <Box key={index} position="relative" role="group">
-              <Box 
-                height={{ 
-                  base: "300px", 
-                  sm: "350px", 
-                  md: "450px", 
-                  lg: "500px", 
-                  xl: "550px" 
+              <Box
+                height={{
+                  base: "300px",
+                  sm: "350px",
+                  md: "450px",
+                  lg: "500px",
+                  xl: "550px",
                 }}
                 position="relative"
                 overflow="hidden"
@@ -302,7 +313,7 @@ const bulletinData = [
                     </Box>
                   }
                 />
-                
+
                 {/* Click hint overlay */}
                 <Box
                   position="absolute"
@@ -331,15 +342,15 @@ const bulletinData = [
                       aria-label="View Full Image"
                       bg="whiteAlpha.300"
                       backdropFilter="blur(10px)"
-                      _hover={{ 
+                      _hover={{
                         bg: "whiteAlpha.400",
-                        transform: "scale(1.1)"
+                        transform: "scale(1.1)",
                       }}
                       boxShadow="0 8px 20px rgba(0,0,0,0.3)"
                       onClick={() => handleImageClick(item)}
                     />
-                    <Text 
-                      fontSize="sm" 
+                    <Text
+                      fontSize="sm"
                       fontWeight="medium"
                       textShadow="0 2px 4px rgba(0,0,0,0.8)"
                     >
@@ -347,7 +358,7 @@ const bulletinData = [
                     </Text>
                   </VStack>
                 </Box>
-                
+
                 {/* Gradient Overlay */}
                 <Box
                   position="absolute"
@@ -358,7 +369,7 @@ const bulletinData = [
                   bgGradient="linear(to-t, blackAlpha.900, blackAlpha.600, transparent)"
                   zIndex={1}
                 />
-                
+
                 {/* Content Overlay */}
                 {/* <VStack
                   position="absolute"
@@ -442,15 +453,23 @@ const bulletinData = [
         {bulletinData.map((_, index) => (
           <Box
             key={index}
-            w={currentSlide === index ? { base: "10px", md: "12px" } : { base: "6px", md: "8px" }}
-            h={currentSlide === index ? { base: "10px", md: "12px" } : { base: "6px", md: "8px" }}
+            w={
+              currentSlide === index
+                ? { base: "10px", md: "12px" }
+                : { base: "6px", md: "8px" }
+            }
+            h={
+              currentSlide === index
+                ? { base: "10px", md: "12px" }
+                : { base: "6px", md: "8px" }
+            }
             borderRadius="full"
             bg={currentSlide === index ? "blue.500" : "gray.300"}
             cursor="pointer"
             transition="all 0.2s ease"
-            _hover={{ 
+            _hover={{
               bg: currentSlide === index ? "blue.600" : "gray.400",
-              transform: "scale(1.1)"
+              transform: "scale(1.1)",
             }}
             onClick={() => {
               setCurrentSlide(index);
@@ -460,7 +479,7 @@ const bulletinData = [
       </HStack>
 
       {/* Slide Counter */}
-      <Text 
+      <Text
         fontSize={{ base: "xs", md: "sm" }}
         color="text.muted"
         fontWeight="medium"
@@ -491,10 +510,10 @@ const NextArrow = ({ bg, hoverBg, ...props }) => {
       borderRadius="full"
       transition="all 0.2s ease"
       display={{ base: "none", sm: "flex" }}
-      _hover={{ 
+      _hover={{
         bg: hoverBg,
         transform: "translateY(-50%) scale(1.05)",
-        boxShadow: "0 6px 16px rgba(0,0,0,0.2)"
+        boxShadow: "0 6px 16px rgba(0,0,0,0.2)",
       }}
       _active={{ transform: "translateY(-50%) scale(0.95)" }}
     />
@@ -521,10 +540,10 @@ const PrevArrow = ({ bg, hoverBg, ...props }) => {
       borderRadius="full"
       transition="all 0.2s ease"
       display={{ base: "none", sm: "flex" }}
-      _hover={{ 
+      _hover={{
         bg: hoverBg,
         transform: "translateY(-50%) scale(1.05)",
-        boxShadow: "0 6px 16px rgba(0,0,0,0.2)"
+        boxShadow: "0 6px 16px rgba(0,0,0,0.2)",
       }}
       _active={{ transform: "translateY(-50%) scale(0.95)" }}
     />
