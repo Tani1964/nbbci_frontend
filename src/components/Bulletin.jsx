@@ -37,103 +37,95 @@ function Bulletin() {
   const arrowBg = "bg.emphasized";
   const arrowHoverBg = "border.emphasized";
 
-  const bulletinData = [
-    {
-      image: Img1,
-      title: "Youth Network Special Programme",
-      description:
-        "Theme: God, Family, Work and You. A life-shaping session focused on balancing your walk with God, family responsibilities, and career purpose as a young believer.",
-      date: "May 1, 2026 | 3:30 PM",
-    },
+ const bulletinData = [
+  {
+    image: Img1,
+    title: "Let My Gate Be Opened",
+    description:
+      "Theme: Perfect Opening (Revelation 3:20). A prophetic encounter for undeniable access to God's Presence, Power, and Peace that enables exponential growth.",
+    date: "June 1–3, 2026 | 5:30 PM Daily",
+  },
 
-    {
-      image: Img2,
-      title: "Let My Gate Be Opened",
-      description:
-        "Theme: Thus Says The Lord (Isaiah 54:1–3). A prophetic encounter for divine access, enlargement, and supernatural breakthroughs.",
-      date: "May 1–3, 2026 | Fri 5:30 PM | Sat 12 Noon | Sun 5:30 PM",
-    },
+  {
+    image: Img2,
+    title: "Discipleship Class",
+    description:
+      "A growth platform for believers to deepen their understanding of God's Word, Christian living, and spiritual maturity.",
+    date: "June 6, 2026 | 8:00 AM",
+  },
 
-    {
-      image: Img3,
-      title: "Special Pre-Worship Service",
-      description:
-        "Theme: Divine Power for Exponential Growth (Acts 1:8; Ezekiel 36:26). A power-packed session to ignite spiritual capacity for unusual and accelerated growth through the Holy Spirit.",
-      date: "May 3, 2026 | 7:45 AM – 8:30 AM",
-    },
+  {
+    image: Img3,
+    title: "Sunday School Session",
+    description:
+      "Interactive Bible teaching sessions focused on practical Christian living, spiritual development, and deeper scriptural understanding.",
+    date: "June 6, 2026 | 10:00 AM",
+  },
 
-    {
-      image: Img4,
-      title: "Monthly Thanksgiving Sunday",
-      description:
-        "Theme: Rejoicing in Christ Always (Philippians 3:1–10). A joyful celebration of God’s faithfulness, victories, and testimonies.",
-      date: "May 3, 2026 | 9:30 AM",
-    },
+  {
+    image: Img4,
+    title: "Church Council Meeting",
+    description:
+      "A strategic leadership meeting focused on church advancement, administration, and impactful decision-making.",
+    date: "June 10, 2026 | 5:30 PM | Virtual",
+  },
 
-    {
-      image: Img5,
-      title: "Discipleship Class",
-      description:
-        "A growth platform for believers to deepen their understanding of God’s Word, Christian living, and spiritual maturity.",
-      date: "May 3 & 17, 2026 | 8:00 AM & 10:00 AM",
-    },
+  {
+    image: Img5,
+    title: "Inter-Cultural Praise",
+    description:
+      "Theme: Unconventional Praise (2 Samuel 6:14,16). A vibrant worship experience celebrating God's goodness through diverse cultural expressions of praise.",
+    date: "June 14, 2026 | 9:30 AM",
+  },
 
-    {
-      image: Img6,
-      title: "Sunday School Sessions",
-      description:
-        "Interactive Bible teaching sessions focused on practical Christian living, spiritual development, and deeper scriptural understanding.",
-      date: "May 3 & 17, 2026 | 8:00 AM & 10:00 AM",
-    },
+  {
+    image: Img6,
+    title: "Home Fellowship",
+    description:
+      "Small group fellowship designed to build community, share the Word, and pray together in love and unity.",
+    date: "June 14 & 28, 2026 | 5:30 PM",
+  },
 
-    {
-      image: Img1,
-      title: "WOWEN Conference",
-      description:
-        "Theme: Real Mother, Real Model (1 Samuel 25:18–31). Empowering women to embody wisdom, courage, and godly influence like Abigail.",
-      date: "May 9, 2026",
-    },
+  {
+    image: Img1,
+    title: "Monthly Thanksgiving Sunday",
+    description:
+      "A joyful celebration of God's faithfulness, victories, testimonies, and abundant blessings throughout the month.",
+    date: "June 17, 2026 | 9:30 AM",
+  },
 
-    {
-      image: Img2,
-      title: "Mother’s Day Service",
-      description:
-        "Theme: My Mother, My Model. A special celebration honoring mothers and their invaluable role in shaping destinies.",
-      date: "May 10, 2026",
-    },
+  {
+    image: Img2,
+    title: "Men's Conference",
+    description:
+      "Theme: Fathers As Kingdom Builders (Hebrews 34:4; 1 Corinthians 3:9–11). Empowering men to lead with wisdom, integrity, responsibility, and godly influence.",
+    date: "June 20, 2026",
+  },
 
-    {
-      image: Img3,
-      title: "Home Fellowship",
-      description:
-        "Small group fellowship designed to build community, share the Word, and pray together in love and unity.",
-      date: "May 10 & 24, 2026 | 5:30 PM",
-    },
+  {
+    image: Img3,
+    title: "Father's Day Service",
+    description:
+      "Theme: Fathers As Kingdom Builders. A special celebration honoring fathers and their invaluable role in building families, communities, and God's kingdom.",
+    date: "June 21, 2026",
+  },
 
-    {
-      image: Img4,
-      title: "Church Council Meeting",
-      description:
-        "A strategic leadership meeting focused on church advancement, administration, and impactful decision-making.",
-      date: "May 12, 2026 | 5:30 PM | Virtual",
-    },
+  {
+    image: Img4,
+    title: "Victory Night",
+    description:
+      "A night of fervent worship, prayer, spiritual warfare, and divine encounters as believers gather to seek God's intervention and breakthroughs.",
+    date: "June 26, 2026 | 11:00 PM",
+  },
 
-    {
-      image: Img5,
-      title: "Intercessory Night",
-      description:
-        "Theme: Let There be Peace in Nigeria (Jeremiah 29:7). A night of intense prayers for the church, families, and the nation.",
-      date: "May 15, 2026 | 5:30 PM",
-    },
-
-    {
-      image: Img6,
-      title: "Radiant Couples Fellowship",
-      description:
-        "Theme: The Unequally Yoked Dilemma (2 Corinthians 6:14). Insightful teaching for couples and intending couples on building godly relationships.",
-      date: "May 23, 2026 | 10:00 AM",
-    },
-  ];
+  {
+    image: Img5,
+    title: "New Birth on the Street",
+    description:
+      "Medical Outreach & Street Crusade. Taking the love of Christ to the community through evangelism, medical care, prayer, and acts of compassion.",
+    date: "June 28, 2026 | 9:30 AM | Ipara Community",
+  },
+];
 
   // Handle image click
   const handleImageClick = (item) => {
