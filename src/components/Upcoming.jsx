@@ -1,12 +1,12 @@
 import { Box, Flex, Grid, Text } from "@chakra-ui/react";
 
 const Upcoming = () => {
- const activities = [
+const activities = [
   {
     week: "1ST WEEK",
     title: "Let My Gate Be Opened",
-    theme: "Perfect Opening (Revelation 3:20)",
-    date: "June 1–3, 2026",
+    theme: "Unique Rest (Matthew 11:28)",
+    date: "July 1–3, 2026",
     time: "5:30 PM Daily",
     location: "Church Auditorium",
   },
@@ -14,81 +14,81 @@ const Upcoming = () => {
   {
     week: "1ST WEEK",
     title: "Discipleship Class",
-    theme: "Spiritual Growth and Christian Living",
-    date: "Saturday, June 6, 2026",
+    theme: "Growing Deeper Through Practical Biblical Teaching",
+    date: "July 4 & 11, 2026",
     time: "8:00 AM",
     location: "Designated Classes",
   },
 
   {
     week: "1ST WEEK",
-    title: "Sunday School Session",
-    theme: "Practical Christian Living and Spiritual Development",
-    date: "Saturday, June 6, 2026",
+    title: "Sunday School",
+    theme: "Interactive Bible Study and Faith Building",
+    date: "July 4 & 11, 2026",
     time: "10:00 AM",
     location: "Sunday School Classes",
   },
 
   {
     week: "2ND WEEK",
+    title: "Single and Useful",
+    theme: "Purity, Sexual Temptation and Accountability",
+    date: "Sunday, July 12, 2026",
+    time: "After Worship Service",
+    location: "Church Auditorium",
+  },
+
+  {
+    week: "2ND WEEK",
+    title: "Home Fellowship",
+    theme: "Building Community Through Fellowship",
+    date: "July 12 & 26, 2026",
+    time: "5:30 PM",
+    location: "Various Centres",
+  },
+
+  {
+    week: "3RD WEEK",
     title: "Church Council Meeting",
-    theme: "Leadership and Church Advancement",
-    date: "Wednesday, June 10, 2026",
+    theme: "Leadership, Prayer and Church Advancement",
+    date: "Tuesday, July 14, 2026",
     time: "5:30 PM",
-    location: "Virtual",
-  },
-
-  {
-    week: "2ND WEEK",
-    title: "Inter-Cultural Praise",
-    theme: "Unconventional Praise (2 Samuel 6:14,16)",
-    date: "Sunday, June 14, 2026",
-    time: "9:30 AM",
     location: "Church Auditorium",
   },
 
   {
-    week: "2ND WEEK",
-    title: "Home Fellowship",
-    theme: "Building Community Through Fellowship",
-    date: "Sunday, June 14, 2026",
+    week: "3RD WEEK",
+    title: "Special Worship Service",
+    theme: "Evening of Sacrificial Worship",
+    date: "Wednesday, July 15, 2026",
     time: "5:30 PM",
-    location: "Various Centres",
-  },
-
-  {
-    week: "3RD WEEK",
-    title: "Monthly Thanksgiving Sunday",
-    theme: "Celebrating God's Faithfulness and Testimonies",
-    date: "Wednesday, June 17, 2026",
-    time: "9:30 AM",
     location: "Church Auditorium",
   },
 
   {
     week: "3RD WEEK",
-    title: "Men's Conference",
-    theme: "Fathers As Kingdom Builders (Hebrews 34:4; 1 Corinthians 3:9–11)",
-    date: "Saturday, June 20, 2026",
-    time: "9:00 AM",
+    title: "Intercessory Night",
+    theme: "God of New Things (Revelation 21:5)",
+    date: "Friday, July 17, 2026",
+    time: "5:30 PM",
     location: "Church Auditorium",
   },
 
   {
     week: "3RD WEEK",
-    title: "Father's Day Service",
-    theme: "Fathers As Kingdom Builders",
-    date: "Sunday, June 21, 2026",
+    title: "Health Sunday",
+    theme: "Lifestyle Medicine: Living God's Dream For Our Health",
+    date: "Sunday, July 19, 2026",
     time: "9:30 AM",
     location: "Church Auditorium",
   },
 
   {
     week: "4TH WEEK",
-    title: "Victory Night",
-    theme: "Prayer, Worship and Divine Encounters",
-    date: "Friday, June 26, 2026",
-    time: "11:00 PM",
+    title: "Radiant Couples Fellowship",
+    theme: "Strengthening Christ-Centred Marriages and Families",
+    date: "Saturday, July 25, 2026",
+    time: "TBA",
     location: "Church Auditorium",
   },
 
@@ -96,18 +96,9 @@ const Upcoming = () => {
     week: "4TH WEEK",
     title: "Home Fellowship",
     theme: "Building Community Through Fellowship",
-    date: "Sunday, June 28, 2026",
+    date: "Sunday, July 26, 2026",
     time: "5:30 PM",
     location: "Various Centres",
-  },
-
-  {
-    week: "4TH WEEK",
-    title: "New Birth on the Street",
-    theme: "Medical Outreach & Street Crusade",
-    date: "Sunday, June 28, 2026",
-    time: "9:30 AM",
-    location: "Ipara Community",
   },
 ];
   return (

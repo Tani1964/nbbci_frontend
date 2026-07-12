@@ -37,96 +37,95 @@ function Bulletin() {
   const arrowBg = "bg.emphasized";
   const arrowHoverBg = "border.emphasized";
 
- const bulletinData = [
+const bulletinData = [
   {
     image: Img1,
     title: "Let My Gate Be Opened",
     description:
-      "Theme: Perfect Opening (Revelation 3:20). A prophetic encounter for undeniable access to God's Presence, Power, and Peace that enables exponential growth.",
-    date: "June 1–3, 2026 | 5:30 PM Daily",
+      "Theme: Unique Rest (Matthew 11:28). A three-day encounter designed to position you for divine access, open doors, and the unique rest that only Christ can give.",
+    date: "July 1–3, 2026 | 5:30 PM Daily",
   },
 
   {
     image: Img2,
-    title: "Discipleship Class",
+    title: "Monthly Thanksgiving Service",
     description:
-      "A growth platform for believers to deepen their understanding of God's Word, Christian living, and spiritual maturity.",
-    date: "June 6, 2026 | 8:00 AM",
+      "Join us as we celebrate God's faithfulness, express our gratitude, and dedicate the new month to Him with joyful worship.",
+    date: "July 5, 2026 | 9:30 AM",
   },
 
   {
     image: Img3,
-    title: "Sunday School Session",
+    title: "Discipleship Class",
     description:
-      "Interactive Bible teaching sessions focused on practical Christian living, spiritual development, and deeper scriptural understanding.",
-    date: "June 6, 2026 | 10:00 AM",
+      "Grow deeper in your walk with Christ through practical biblical teachings that build strong and mature disciples.",
+    date: "July 4 & 11, 2026 | 8:00 AM",
   },
 
   {
     image: Img4,
-    title: "Church Council Meeting",
+    title: "Sunday School",
     description:
-      "A strategic leadership meeting focused on church advancement, administration, and impactful decision-making.",
-    date: "June 10, 2026 | 5:30 PM | Virtual",
+      "Discover timeless biblical truths through interactive learning and meaningful discussions that strengthen your faith.",
+    date: "July 4 & 11, 2026 | 10:00 AM",
   },
 
   {
     image: Img5,
-    title: "Inter-Cultural Praise",
+    title: "Single and Useful",
     description:
-      "Theme: Unconventional Praise (2 Samuel 6:14,16). A vibrant worship experience celebrating God's goodness through diverse cultural expressions of praise.",
-    date: "June 14, 2026 | 9:30 AM",
+      "Topic: Purity, Sexual Temptation and Accountability. An inspiring session designed to equip singles to maximise their season, fulfil purpose, and prepare for a godly future.",
+    date: "July 12, 2026 | Church Auditorium",
   },
 
   {
     image: Img6,
     title: "Home Fellowship",
     description:
-      "Small group fellowship designed to build community, share the Word, and pray together in love and unity.",
-    date: "June 14 & 28, 2026 | 5:30 PM",
+      "Experience warm fellowship, heartfelt prayer, and spiritual growth as we gather in our various home fellowship centres.",
+    date: "July 12 & 26, 2026 | 5:30 PM",
   },
 
   {
     image: Img1,
-    title: "Monthly Thanksgiving Sunday",
+    title: "Church Council Meeting",
     description:
-      "A joyful celebration of God's faithfulness, victories, testimonies, and abundant blessings throughout the month.",
-    date: "June 17, 2026 | 9:30 AM",
+      "A strategic meeting for church leaders to pray, plan, and strengthen the work of the ministry.",
+    date: "July 14, 2026 | 5:30 PM | Church Auditorium",
   },
 
   {
     image: Img2,
-    title: "Men's Conference",
+    title: "Special Worship Service",
     description:
-      "Theme: Fathers As Kingdom Builders (Hebrews 34:4; 1 Corinthians 3:9–11). Empowering men to lead with wisdom, integrity, responsibility, and godly influence.",
-    date: "June 20, 2026",
+      "Theme: Evening of Sacrificial Worship. Come and offer heartfelt worship to God in an atmosphere of praise, thanksgiving, and deep spiritual communion.",
+    date: "July 15, 2026 | 5:30 PM",
   },
 
   {
     image: Img3,
-    title: "Father's Day Service",
+    title: "Intercessory Night",
     description:
-      "Theme: Fathers As Kingdom Builders. A special celebration honoring fathers and their invaluable role in building families, communities, and God's kingdom.",
-    date: "June 21, 2026",
+      "Topic: God of New Things (Revelation 21:5). Stand in the gap through fervent prayer as we intercede for families, the Church, our nation, and divine intervention.",
+    date: "July 17, 2026 | 5:30 PM",
   },
 
   {
     image: Img4,
-    title: "Victory Night",
+    title: "Health Sunday",
     description:
-      "A night of fervent worship, prayer, spiritual warfare, and divine encounters as believers gather to seek God's intervention and breakthroughs.",
-    date: "June 26, 2026 | 11:00 PM",
+      "Theme: Lifestyle Medicine: Living God's Dream For Our Health. Receive practical health insights and biblical principles for maintaining sound physical, mental, and spiritual well-being.",
+    date: "July 19, 2026",
   },
 
   {
     image: Img5,
-    title: "New Birth on the Street",
+    title: "Radiant Couples Fellowship",
     description:
-      "Medical Outreach & Street Crusade. Taking the love of Christ to the community through evangelism, medical care, prayer, and acts of compassion.",
-    date: "June 28, 2026 | 9:30 AM | Ipara Community",
+      "A refreshing time for married couples to strengthen their relationships, deepen intimacy, and build Christ-centred homes.",
+    date: "July 25, 2026",
   },
 ];
-
   // Handle image click
   const handleImageClick = (item) => {
     setSelectedImage(item);

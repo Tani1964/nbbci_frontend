@@ -22,60 +22,60 @@ const Announcement = () => {
   whiteSpace="nowrap"
 >
   <Text color="white" mx="4" lineHeight="1.2">
-    🚪 Let My Gate Be Opened || Date: June 1–3, 2026 || Time: 5:30 PM Daily ||
-    Theme: Perfect Opening (Rev. 3:20),
+    🚪 Let My Gate Be Opened || Date: July 1–3, 2026 || Time: 5:30 PM Daily ||
+    Theme: Unique Rest (Matthew 11:28),
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    📘 Discipleship Class || Date: June 6, 2026 || Time: 8:00 AM || Theme:
-    Growing in God's Word and Christian Living,
+    🎉 Monthly Thanksgiving Service || Date: July 5, 2026 || Time: 9:30 AM ||
+    Celebrating God's Faithfulness and Gratitude,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    📚 Sunday School Session || Date: June 6, 2026 || Time: 10:00 AM || Theme:
-    Practical Christian Living and Spiritual Development,
+    📘 Discipleship Class || Dates: July 4 & 11, 2026 || Time: 8:00 AM ||
+    Growing Deeper Through Practical Biblical Teaching,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    🗂 Church Council Meeting || Date: June 10, 2026 || Time: 5:30 PM ||
-    Venue: Virtual || Theme: Leadership Decisions and Church Advancement,
+    📚 Sunday School || Dates: July 4 & 11, 2026 || Time: 10:00 AM ||
+    Interactive Bible Study and Faith Building,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    💃 Inter-Cultural Praise || Date: June 14, 2026 || Time: 9:30 AM ||
-    Theme: Unconventional Praise (2 Samuel 6:14,16),
+    💍 Single and Useful || Date: July 12, 2026 || Venue: Church Auditorium ||
+    Topic: Purity, Sexual Temptation and Accountability,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    🏠 Home Fellowship || Dates: June 14 & 28, 2026 || Time: 5:30 PM ||
-    Theme: Building Community Through Fellowship,
+    🏠 Home Fellowship || Dates: July 12 & 26, 2026 || Time: 5:30 PM ||
+    Building Community Through Fellowship,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    🎉 Monthly Thanksgiving Sunday || Date: June 17, 2026 || Time: 9:30 AM ||
-    Celebrating God's Faithfulness and Testimonies,
+    🗂 Church Council Meeting || Date: July 14, 2026 || Time: 5:30 PM ||
+    Venue: Church Auditorium,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    👨 Men's Conference || Date: June 20, 2026 || Theme: Fathers As Kingdom
-    Builders (Hebrews 34:4; 1 Corinthians 3:9–11),
+    🙌 Special Worship Service || Date: July 15, 2026 || Time: 5:30 PM ||
+    Theme: Evening of Sacrificial Worship,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    💐 Father's Day Service || Date: June 21, 2026 || Theme: Fathers As Kingdom
-    Builders (Hebrews 34:4; 1 Corinthians 3:9–11),
+    🔥 Intercessory Night || Date: July 17, 2026 || Time: 5:30 PM ||
+    Topic: God of New Things (Revelation 21:5),
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    🌙 Victory Night || Date: June 26, 2026 || Time: 11:00 PM || A Night of
-    Prayer, Worship, and Divine Encounters,
+    🩺 Health Sunday || Date: July 19, 2026 || Theme: Lifestyle Medicine:
+    Living God's Dream For Our Health,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    📢 New Birth on the Street || Date: June 28, 2026 || Time: 9:30 AM ||
-    Medical Outreach & Street Crusade || Venue: Ipara Community,
+    ❤️ Radiant Couples Fellowship || Date: July 25, 2026 ||
+    Strengthening Christ-Centred Marriages and Families,
   </Text>
-</Box>      <style jsx>{`
+</Box>    <style jsx>{`
         @keyframes scroll {
           0% {
             transform: translateX(100%);
