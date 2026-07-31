@@ -40,90 +40,98 @@ function Bulletin() {
 const bulletinData = [
   {
     image: Img1,
+    title: "Pre-Worship Encounter",
+    description:
+      "Begin each Sunday by seeking God together in prayer and expectation before worship service.",
+    date: "Every Sunday, August 2026 | 8:00 AM - 8:30 AM | Church Auditorium",
+  },
+
+  {
+    image: Img2,
+    title: "Sunday School",
+    description:
+      "Grow deeper in God's Word through interactive Bible study designed for practical life transformation.",
+    date: "Every Sunday, August 2026 | 8:30 AM - 9:30 AM | Church Auditorium",
+  },
+
+  {
+    image: Img3,
+    title: "Worship Service",
+    description:
+      "Join us for heartfelt worship, the Word, and rich fellowship in God's presence.",
+    date: "Every Sunday, August 2026 | 9:30 AM - 11:30 AM | Church Auditorium",
+  },
+
+  {
+    image: Img4,
+    title: "Dew of Hermon - Early Morning Prayer",
+    description:
+      "Start your week in God's presence and power through focused early morning prayer.",
+    date: "Every Monday, August 2026 | 6:00 AM - 6:30 AM | Virtual",
+  },
+
+  {
+    image: Img5,
+    title: "Business Men & Women Fellowship - Prayer Session",
+    description:
+      "Commit your work and business unto the Lord in prayer and seek divine direction for the marketplace.",
+    date: "Every Tuesday, August 2026 | 5:00 AM - 6:00 AM | Virtual",
+  },
+
+  {
+    image: Img6,
+    title: "Midweek Service and Choir Rehearsal",
+    description:
+      "Midweek Service every Wednesday at 5:30 PM and Choir Rehearsal every Saturday at 12:00 Noon at the Church Auditorium.",
+    date: "Weekly, August 2026 | Church Auditorium",
+  },
+
+  {
+    image: Img1,
     title: "Let My Gate Be Opened",
     description:
-      "Theme: Unique Rest (Matthew 11:28). A three-day encounter designed to position you for divine access, open doors, and the unique rest that only Christ can give.",
-    date: "July 1–3, 2026 | 5:30 PM Daily",
+      "Theme: More Space (Isaiah 49:20) - Enter into God's divine enlargement and breakthrough.",
+    date: "August 1-3, 2026 | Aug 1 (12 Noon), Aug 2 (Home Fellowships), Aug 3 (5:30 PM)",
   },
 
   {
     image: Img2,
     title: "Monthly Thanksgiving Service",
     description:
-      "Join us as we celebrate God's faithfulness, express our gratitude, and dedicate the new month to Him with joyful worship.",
-    date: "July 5, 2026 | 9:30 AM",
+      "Celebrate God's faithfulness with grateful hearts in worship and thanksgiving.",
+    date: "Sunday, August 2, 2026 | 9:30 AM | Church Auditorium",
   },
 
   {
     image: Img3,
-    title: "Discipleship Class",
+    title: "Discipleship and Sunday School Special Classes",
     description:
-      "Grow deeper in your walk with Christ through practical biblical teachings that build strong and mature disciples.",
-    date: "July 4 & 11, 2026 | 8:00 AM",
+      "Discipleship Class at 8:00 AM and Sunday School Special Class at 10:00 AM to equip believers for effective Christian living.",
+    date: "August 1 & 15, 2026",
   },
 
   {
     image: Img4,
-    title: "Sunday School",
+    title: "Workers Breakfast and RALYD Day",
     description:
-      "Discover timeless biblical truths through interactive learning and meaningful discussions that strengthen your faith.",
-    date: "July 4 & 11, 2026 | 10:00 AM",
+      "Workers Breakfast Fellowship on August 8 and RALYD Day on August 9 with the theme: The Keys of the Kingdom for Service Empowerment.",
+    date: "August 8-9, 2026 | Church Auditorium",
   },
 
   {
     image: Img5,
-    title: "Single and Useful",
+    title: "BSF Week and Victory Night",
     description:
-      "Topic: Purity, Sexual Temptation and Accountability. An inspiring session designed to equip singles to maximise their season, fulfil purpose, and prepare for a godly future.",
-    date: "July 12, 2026 | Church Auditorium",
+      "BSF Week topic: Harvesting the Nations (Matthew 9:35-38), followed by Victory Night: More and More (1 Chronicles 11:9).",
+    date: "August 16 & 21, 2026 | 9:30 AM and 11:00 PM",
   },
 
   {
     image: Img6,
-    title: "Home Fellowship",
+    title: "Baptism, New Members Induction and Family Week",
     description:
-      "Experience warm fellowship, heartfelt prayer, and spiritual growth as we gather in our various home fellowship centres.",
-    date: "July 12 & 26, 2026 | 5:30 PM",
-  },
-
-  {
-    image: Img1,
-    title: "Church Council Meeting",
-    description:
-      "A strategic meeting for church leaders to pray, plan, and strengthen the work of the ministry.",
-    date: "July 14, 2026 | 5:30 PM | Church Auditorium",
-  },
-
-  {
-    image: Img2,
-    title: "Special Worship Service",
-    description:
-      "Theme: Evening of Sacrificial Worship. Come and offer heartfelt worship to God in an atmosphere of praise, thanksgiving, and deep spiritual communion.",
-    date: "July 15, 2026 | 5:30 PM",
-  },
-
-  {
-    image: Img3,
-    title: "Intercessory Night",
-    description:
-      "Topic: God of New Things (Revelation 21:5). Stand in the gap through fervent prayer as we intercede for families, the Church, our nation, and divine intervention.",
-    date: "July 17, 2026 | 5:30 PM",
-  },
-
-  {
-    image: Img4,
-    title: "Health Sunday",
-    description:
-      "Theme: Lifestyle Medicine: Living God's Dream For Our Health. Receive practical health insights and biblical principles for maintaining sound physical, mental, and spiritual well-being.",
-    date: "July 19, 2026",
-  },
-
-  {
-    image: Img5,
-    title: "Radiant Couples Fellowship",
-    description:
-      "A refreshing time for married couples to strengthen their relationships, deepen intimacy, and build Christ-centred homes.",
-    date: "July 25, 2026",
+      "Baptism at 7:45 AM and Induction of New Members at 9:30 AM on August 23, then Family Week with Guest Minister Rev. Mike Babatunde.",
+    date: "August 23 and August 30 - September 2, 2026 | Church Auditorium",
   },
 ];
   // Handle image click
