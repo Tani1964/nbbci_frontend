@@ -18,62 +18,87 @@ const Announcement = () => {
   as="div"
   display="flex"
   alignItems="center"
-  animation="scroll 30s linear infinite"
+  animation="scroll 60s linear infinite"
   whiteSpace="nowrap"
 >
   <Text color="white" mx="4" lineHeight="1.2">
-    🚪 Let My Gate Be Opened || Date: July 1–3, 2026 || Time: 5:30 PM Daily ||
-    Theme: Unique Rest (Matthew 11:28),
+    🙏 Pre-Worship Encounter || Every Sunday || 8:00 AM - 8:30 AM || Church Auditorium,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    🎉 Monthly Thanksgiving Service || Date: July 5, 2026 || Time: 9:30 AM ||
-    Celebrating God's Faithfulness and Gratitude,
+    📖 Sunday School || Every Sunday || 8:30 AM - 9:30 AM || Church Auditorium,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    📘 Discipleship Class || Dates: July 4 & 11, 2026 || Time: 8:00 AM ||
-    Growing Deeper Through Practical Biblical Teaching,
+    🎉 Worship Service || Every Sunday || 9:30 AM - 11:30 AM || Church Auditorium,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    📚 Sunday School || Dates: July 4 & 11, 2026 || Time: 10:00 AM ||
-    Interactive Bible Study and Faith Building,
+    🌅 Dew of Hermon || Every Monday || 6:00 AM - 6:30 AM || Virtual: https://join.freeconferencecall.com/newbbci,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    💍 Single and Useful || Date: July 12, 2026 || Venue: Church Auditorium ||
-    Topic: Purity, Sexual Temptation and Accountability,
+    💼 Business Men & Women Fellowship Prayer Session || Every Tuesday || 5:00 AM - 6:00 AM || Virtual: https://join.freeconferencecall.com/newbbci,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    🏠 Home Fellowship || Dates: July 12 & 26, 2026 || Time: 5:30 PM ||
-    Building Community Through Fellowship,
+    ⛪ Midweek Service || Every Wednesday || 5:30 PM || Church Auditorium,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    🗂 Church Council Meeting || Date: July 14, 2026 || Time: 5:30 PM ||
-    Venue: Church Auditorium,
+    🎶 Choir Rehearsal || Every Saturday || 12:00 Noon || Church Auditorium,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    🙌 Special Worship Service || Date: July 15, 2026 || Time: 5:30 PM ||
-    Theme: Evening of Sacrificial Worship,
+    🚪 Let My Gate Be Opened || August 1-3 || Theme: More Space (Isaiah 49:20),
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    🔥 Intercessory Night || Date: July 17, 2026 || Time: 5:30 PM ||
-    Topic: God of New Things (Revelation 21:5),
+    🙌 Monthly Thanksgiving Service || Sunday, August 2 || 9:30 AM || Church Auditorium,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    🩺 Health Sunday || Date: July 19, 2026 || Theme: Lifestyle Medicine:
-    Living God's Dream For Our Health,
+    📚 Discipleship Class || August 1 & 15 || 8:00 AM,
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    ❤️ Radiant Couples Fellowship || Date: July 25, 2026 ||
-    Strengthening Christ-Centred Marriages and Families,
+    📖 Sunday School Special Class || August 1 & 15 || 10:00 AM,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🍽️ Workers Breakfast Fellowship || August 8 || Topic: That to Change For Change,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🔑 RALYD Day || August 9 || 9:30 AM || Church Auditorium,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🌟 Single and Useful || August 9 || Topic: To Be Announced || Church Auditorium,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🌍 BSF Week || August 16 || Topic: Harvesting the Nations (Matthew 9:35-38),
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🏠 Home Fellowship || August 9 & 23 || 5:30 PM,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    📝 Church Council Meeting || August 11 || 5:30 PM || Church Auditorium,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🔥 Victory Night || August 21 || 11:00 PM || Topic: More and More (1 Chronicles 11:9),
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    💧 Baptism || August 23 || 7:45 AM || Induction of New Members: 9:30 AM,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    👨‍👩‍👧‍👦 Family Week || August 30 - September 2 || Guest Minister: Rev. Mike Babatunde,
   </Text>
 </Box>    <style jsx>{`
         @keyframes scroll {

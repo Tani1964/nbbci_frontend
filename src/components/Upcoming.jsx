@@ -3,46 +3,136 @@ import { Box, Flex, Grid, Text } from "@chakra-ui/react";
 const Upcoming = () => {
 const activities = [
   {
-    week: "1ST WEEK",
-    title: "Let My Gate Be Opened",
-    theme: "Unique Rest (Matthew 11:28)",
-    date: "July 1–3, 2026",
-    time: "5:30 PM Daily",
+    week: "WEEKLY",
+    title: "Pre-Worship Encounter",
+    theme: "Begin each Sunday by seeking God together in prayer and expectation.",
+    date: "Every Sunday, August 2026",
+    time: "8:00 AM - 8:30 AM",
+    location: "Church Auditorium",
+  },
+
+  {
+    week: "WEEKLY",
+    title: "Sunday School",
+    theme: "Grow deeper in God's Word through interactive Bible study.",
+    date: "Every Sunday, August 2026",
+    time: "8:30 AM - 9:30 AM",
+    location: "Church Auditorium",
+  },
+
+  {
+    week: "WEEKLY",
+    title: "Worship Service",
+    theme: "Join us for heartfelt worship, the Word, and fellowship.",
+    date: "Every Sunday, August 2026",
+    time: "9:30 AM - 11:30 AM",
+    location: "Church Auditorium",
+  },
+
+  {
+    week: "WEEKLY",
+    title: "Dew of Hermon - Early Morning Prayer",
+    theme: "Start your week in God's presence and power.",
+    date: "Every Monday, August 2026",
+    time: "6:00 AM - 6:30 AM",
+    location: "Virtual (join.freeconferencecall.com/newbbci)",
+  },
+
+  {
+    week: "WEEKLY",
+    title: "Business Men & Women Fellowship - Prayer Session",
+    theme: "Commit your work and business unto the Lord in prayer.",
+    date: "Every Tuesday, August 2026",
+    time: "5:00 AM - 6:00 AM",
+    location: "Virtual (join.freeconferencecall.com/newbbci)",
+  },
+
+  {
+    week: "WEEKLY",
+    title: "Midweek Service",
+    theme: "Be refreshed and strengthened through worship and the Word.",
+    date: "Every Wednesday, August 2026",
+    time: "5:30 PM",
+    location: "Church Auditorium",
+  },
+
+  {
+    week: "WEEKLY",
+    title: "Choir Rehearsal",
+    theme: "Lifting lives through music and excellence in worship.",
+    date: "Every Saturday, August 2026",
+    time: "12:00 Noon",
     location: "Church Auditorium",
   },
 
   {
     week: "1ST WEEK",
+    title: "Let My Gate Be Opened",
+    theme: "More Space (Isaiah 49:20) - Enter into God's divine enlargement.",
+    date: "August 1-3, 2026",
+    time: "Aug 1 (12 Noon), Aug 2 (Home Fellowships), Aug 3 (5:30 PM)",
+    location: "Church Auditorium / Home Fellowships",
+  },
+
+  {
+    week: "1ST WEEK",
+    title: "Monthly Thanksgiving Service",
+    theme: "Celebrate God's faithfulness with grateful hearts.",
+    date: "Sunday, August 2, 2026",
+    time: "9:30 AM",
+    location: "Church Auditorium",
+  },
+
+  {
+    week: "1ST & 3RD WEEK",
     title: "Discipleship Class",
-    theme: "Growing Deeper Through Practical Biblical Teaching",
-    date: "July 4 & 11, 2026",
+    theme: "Be equipped for effective Christian living and service.",
+    date: "August 1 & 15, 2026",
     time: "8:00 AM",
     location: "Designated Classes",
   },
 
   {
-    week: "1ST WEEK",
-    title: "Sunday School",
-    theme: "Interactive Bible Study and Faith Building",
-    date: "July 4 & 11, 2026",
+    week: "1ST & 3RD WEEK",
+    title: "Sunday School Special Class",
+    theme: "Deepen your understanding of God's Word and its application.",
+    date: "August 1 & 15, 2026",
     time: "10:00 AM",
     location: "Sunday School Classes",
   },
 
   {
     week: "2ND WEEK",
-    title: "Single and Useful",
-    theme: "Purity, Sexual Temptation and Accountability",
-    date: "Sunday, July 12, 2026",
-    time: "After Worship Service",
+    title: "Workers Breakfast Fellowship",
+    theme: "Topic: That to Change For Change.",
+    date: "Saturday, August 8, 2026",
+    time: "8:00 AM",
     location: "Church Auditorium",
   },
 
   {
     week: "2ND WEEK",
+    title: "RALYD Day (R.A. & Lydia Week)",
+    theme: "The Keys of the Kingdom for Service Empowerment - Raising kingdom-minded servants.",
+    date: "Sunday, August 9, 2026",
+    time: "9:30 AM",
+    location: "Church Auditorium",
+  },
+
+  {
+    week: "2ND WEEK",
+    title: "Single and Useful",
+    theme: "Topic: To Be Announced.",
+    date: "Sunday, August 9, 2026",
+    time: "TBA",
+    location: "Church Auditorium",
+  },
+
+  {
+    week: "2ND & 4TH WEEK",
     title: "Home Fellowship",
-    theme: "Building Community Through Fellowship",
-    date: "July 12 & 26, 2026",
+    theme: "Experience warmth, prayer, and growth in small-group fellowship.",
+    date: "August 9 & 23, 2026",
     time: "5:30 PM",
     location: "Various Centres",
   },
@@ -50,55 +140,55 @@ const activities = [
   {
     week: "3RD WEEK",
     title: "Church Council Meeting",
-    theme: "Leadership, Prayer and Church Advancement",
-    date: "Tuesday, July 14, 2026",
+    theme: "A strategic meeting for prayer, planning, and kingdom advancement.",
+    date: "Tuesday, August 11, 2026",
     time: "5:30 PM",
     location: "Church Auditorium",
   },
 
   {
     week: "3RD WEEK",
-    title: "Special Worship Service",
-    theme: "Evening of Sacrificial Worship",
-    date: "Wednesday, July 15, 2026",
-    time: "5:30 PM",
-    location: "Church Auditorium",
-  },
-
-  {
-    week: "3RD WEEK",
-    title: "Intercessory Night",
-    theme: "God of New Things (Revelation 21:5)",
-    date: "Friday, July 17, 2026",
-    time: "5:30 PM",
-    location: "Church Auditorium",
-  },
-
-  {
-    week: "3RD WEEK",
-    title: "Health Sunday",
-    theme: "Lifestyle Medicine: Living God's Dream For Our Health",
-    date: "Sunday, July 19, 2026",
+    title: "BSF Week",
+    theme: "Harvesting the Nations (Matthew 9:35-38) - Embracing God's mission for the nations.",
+    date: "Sunday, August 16, 2026",
     time: "9:30 AM",
     location: "Church Auditorium",
   },
 
   {
     week: "4TH WEEK",
-    title: "Radiant Couples Fellowship",
-    theme: "Strengthening Christ-Centred Marriages and Families",
-    date: "Saturday, July 25, 2026",
-    time: "TBA",
+    title: "Victory Night",
+    theme: "More and More (1 Chronicles 11:9) - A night of prayer, worship, and divine increase.",
+    date: "Friday, August 21, 2026",
+    time: "11:00 PM",
     location: "Church Auditorium",
   },
 
   {
     week: "4TH WEEK",
-    title: "Home Fellowship",
-    theme: "Building Community Through Fellowship",
-    date: "Sunday, July 26, 2026",
-    time: "5:30 PM",
-    location: "Various Centres",
+    title: "Baptism",
+    theme: "Celebrate God's transforming grace as believers publicly declare their faith in Christ.",
+    date: "Sunday, August 23, 2026",
+    time: "7:45 AM",
+    location: "Church Auditorium",
+  },
+
+  {
+    week: "4TH WEEK",
+    title: "Induction of New Members",
+    theme: "Join us as we warmly receive and commission our new members into fellowship and service.",
+    date: "Sunday, August 23, 2026",
+    time: "9:30 AM",
+    location: "Church Auditorium",
+  },
+
+  {
+    week: "5TH WEEK",
+    title: "Family Week",
+    theme: "Christian Family Growing Together in Christ (Hebrews 10:23-25). Guest Minister: Rev. Mike Babatunde.",
+    date: "August 30 - September 2, 2026",
+    time: "As Scheduled",
+    location: "Church Auditorium",
   },
 ];
   return (
@@ -108,7 +198,7 @@ const activities = [
         Upcoming Activities
       </Text>
       <Text fontSize="xl" color="#A8518A" mb={8}>
-        March
+        August 2026 Programme
       </Text>
 
       {/* Activities Grid */}
