@@ -43,7 +43,7 @@ const bulletinData = [
     title: "Pre-Worship Encounter",
     description:
       "Begin each Sunday by seeking God together in prayer and expectation before worship service.",
-    date: "Every Sunday, August 2026 | 8:00 AM - 8:30 AM | Church Auditorium",
+    date: "Every Sunday, September 2026 | 8:00 AM - 8:30 AM | Church Auditorium",
   },
 
   {
@@ -51,7 +51,7 @@ const bulletinData = [
     title: "Sunday School",
     description:
       "Grow deeper in God's Word through interactive Bible study designed for practical life transformation.",
-    date: "Every Sunday, August 2026 | 8:30 AM - 9:30 AM | Church Auditorium",
+    date: "Every Sunday, September 2026 | 8:30 AM - 9:30 AM | Church Auditorium",
   },
 
   {
@@ -59,7 +59,7 @@ const bulletinData = [
     title: "Worship Service",
     description:
       "Join us for heartfelt worship, the Word, and rich fellowship in God's presence.",
-    date: "Every Sunday, August 2026 | 9:30 AM - 11:30 AM | Church Auditorium",
+    date: "Every Sunday, September 2026 | 9:30 AM - 11:30 AM | Church Auditorium",
   },
 
   {
@@ -67,7 +67,7 @@ const bulletinData = [
     title: "Dew of Hermon - Early Morning Prayer",
     description:
       "Start your week in God's presence and power through focused early morning prayer.",
-    date: "Every Monday, August 2026 | 6:00 AM - 6:30 AM | Virtual",
+    date: "Every Monday, September 2026 | 6:00 AM - 6:30 AM | Virtual",
   },
 
   {
@@ -75,7 +75,7 @@ const bulletinData = [
     title: "Business Men & Women Fellowship - Prayer Session",
     description:
       "Commit your work and business unto the Lord in prayer and seek divine direction for the marketplace.",
-    date: "Every Tuesday, August 2026 | 5:00 AM - 6:00 AM | Virtual",
+    date: "Every Tuesday, September 2026 | 5:00 AM - 6:00 AM | Virtual",
   },
 
   {
@@ -83,55 +83,55 @@ const bulletinData = [
     title: "Midweek Service and Choir Rehearsal",
     description:
       "Midweek Service every Wednesday at 5:30 PM and Choir Rehearsal every Saturday at 12:00 Noon at the Church Auditorium.",
-    date: "Weekly, August 2026 | Church Auditorium",
+    date: "Weekly, September 2026 | Church Auditorium",
   },
 
   {
     image: Img1,
-    title: "Let My Gate Be Opened",
+    title: "Family Week",
     description:
-      "Theme: More Space (Isaiah 49:20) - Enter into God's divine enlargement and breakthrough.",
-    date: "August 1-3, 2026 | Aug 1 (12 Noon), Aug 2 (Home Fellowships), Aug 3 (5:30 PM)",
+      "Christian Family Growing Together in Christ (Hebrews 10:23-25) with Guest Minister Rev. Mike Babatunde.",
+    date: "August 30 - September 2, 2026 | Church Auditorium",
   },
 
   {
     image: Img2,
-    title: "Monthly Thanksgiving Service",
+    title: "Let My Gate Be Opened and Monthly Thanksgiving Service",
     description:
-      "Celebrate God's faithfulness with grateful hearts in worship and thanksgiving.",
-    date: "Sunday, August 2, 2026 | 9:30 AM | Church Auditorium",
+      "Abiding for Fruitfulness (John 15:4) on September 3, followed by our Monthly Thanksgiving Service celebrating God's faithfulness.",
+    date: "September 3 & 6, 2026 | 5:30 PM & 9:30 AM",
   },
 
   {
     image: Img3,
-    title: "Discipleship and Sunday School Special Classes",
+    title: "Discipleship and Sunday School Preparatory Classes",
     description:
-      "Discipleship Class at 8:00 AM and Sunday School Special Class at 10:00 AM to equip believers for effective Christian living.",
-    date: "August 1 & 15, 2026",
+      "Discipleship Class at 8:00 AM and Sunday School Preparatory Class at 10:00 AM to equip believers for effective Christian living.",
+    date: "September 6 & 20, 2026",
   },
 
   {
     image: Img4,
-    title: "Workers Breakfast and RALYD Day",
+    title: "Church Council Meeting and Single and Useful",
     description:
-      "Workers Breakfast Fellowship on August 8 and RALYD Day on August 9 with the theme: The Keys of the Kingdom for Service Empowerment.",
-    date: "August 8-9, 2026 | Church Auditorium",
+      "Church Council Meeting on September 8, followed by Single and Useful with the theme: Love that lasts (1 Corinthians 13).",
+    date: "September 8 & 13, 2026 | Church Auditorium",
   },
 
   {
     image: Img5,
-    title: "BSF Week and Victory Night",
+    title: "G.A. Week and Home Fellowship",
     description:
-      "BSF Week topic: Harvesting the Nations (Matthew 9:35-38), followed by Victory Night: More and More (1 Chronicles 11:9).",
-    date: "August 16 & 21, 2026 | 9:30 AM and 11:00 PM",
+      "G.A. Week service at 9:30 AM and Home Fellowship gatherings at 5:30 PM, growing together in worship and small-group fellowship.",
+    date: "September 13 & 27, 2026 | Church Auditorium",
   },
 
   {
     image: Img6,
-    title: "Baptism, New Members Induction and Family Week",
+    title: "Intercessory Night",
     description:
-      "Baptism at 7:45 AM and Induction of New Members at 9:30 AM on August 23, then Family Week with Guest Minister Rev. Mike Babatunde.",
-    date: "August 23 and August 30 - September 2, 2026 | Church Auditorium",
+      "Special Intercessory Night for Homes. Topic: Heal Our Homes (Song of Solomon 2:15).",
+    date: "September 18, 2026 | 5:30 PM | Virtual",
   },
 ];
   // Handle image click

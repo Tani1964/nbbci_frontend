@@ -50,55 +50,43 @@ const Announcement = () => {
   </Text>
 
   <Text color="white" mx="4" lineHeight="1.2">
-    🚪 Let My Gate Be Opened || August 1-3 || Theme: More Space (Isaiah 49:20),
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
-    🙌 Monthly Thanksgiving Service || Sunday, August 2 || 9:30 AM || Church Auditorium,
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
-    📚 Discipleship Class || August 1 & 15 || 8:00 AM,
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
-    📖 Sunday School Special Class || August 1 & 15 || 10:00 AM,
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
-    🍽️ Workers Breakfast Fellowship || August 8 || Topic: That to Change For Change,
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
-    🔑 RALYD Day || August 9 || 9:30 AM || Church Auditorium,
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
-    🌟 Single and Useful || August 9 || Topic: To Be Announced || Church Auditorium,
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
-    🌍 BSF Week || August 16 || Topic: Harvesting the Nations (Matthew 9:35-38),
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
-    🏠 Home Fellowship || August 9 & 23 || 5:30 PM,
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
-    📝 Church Council Meeting || August 11 || 5:30 PM || Church Auditorium,
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
-    🔥 Victory Night || August 21 || 11:00 PM || Topic: More and More (1 Chronicles 11:9),
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
-    💧 Baptism || August 23 || 7:45 AM || Induction of New Members: 9:30 AM,
-  </Text>
-
-  <Text color="white" mx="4" lineHeight="1.2">
     👨‍👩‍👧‍👦 Family Week || August 30 - September 2 || Guest Minister: Rev. Mike Babatunde,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🚪 Let My Gate Be Opened || Thursday, September 3 || 5:30 PM || Theme: Abiding for Fruitfulness || Virtual,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🙌 Monthly Thanksgiving Service || Sunday, September 6 || 9:30 AM || Church Auditorium,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    📚 Discipleship Class || September 6 & 20 || 8:00 AM,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    📖 Sunday School Preparatory Class || September 6 & 20 || 10:00 AM,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    📝 Church Council Meeting || September 8 || 5:30 PM || Church Auditorium,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🌟 Single and Useful || Sunday, September 13 || 12 Noon || Theme: Love that lasts (1 Corinthians 13) || Church Auditorium,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🌍 G.A. Week || Sunday, September 13 || 9:30 AM || Church Auditorium,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🏠 Home Fellowship || September 13 & 27 || 5:30 PM,
+  </Text>
+
+  <Text color="white" mx="4" lineHeight="1.2">
+    🔥 Intercessory Night || Friday, September 18 || 5:30 PM || Topic: Heal Our Homes (Song of Solomon 2:15) || Virtual,
   </Text>
 </Box>    <style jsx>{`
         @keyframes scroll {
