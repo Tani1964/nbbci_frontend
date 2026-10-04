@@ -50,11 +50,11 @@ const Connect = () => {
           </Flex>
         </Link>
 
-        {/* MixLR - Using a placeholder icon */}
-        <Link href="https://mixlr.com/nbbcil" isExternal>
+        {/* Radio */}
+        <Link href="https://nbbciradio.ismyradio.com" isExternal>
           <Flex direction="row" align="center" gap={4} alignItems={'center'}>
             <Icon as={FaBroadcastTower} boxSize={8} color="red.400" />
-            <Text mt={2}>MixLR</Text>
+            <Text mt={2}>NBBCI Radio</Text>
           </Flex>
         </Link>
 
