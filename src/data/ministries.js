@@ -22,7 +22,7 @@ export const ministries = [
   {
     slug: "missions",
     title: "Missions & Outreaches",
-    image: { src: "/assets/church/congregation/special-programme-group-photo", widths: [768, 1280], aspect: "aspect-[4/3]", alt: "Members in green-and-white uniforms gathered with church leaders at a 2026 programme", focus: "50% 45%" },
+    image: { src: "/assets/church/congregation/special-programme-group-photo", widths: [640, 1024, 1600], aspect: "aspect-[4/3]", alt: "Members in green-and-white uniforms gathered with church leaders at a 2026 programme", focus: "50% 45%" },
     description:
       "Our commitment to spreading the gospel beyond the church walls. Through local and international outreach, this ministry brings hope and support to communities in need.",
     units: [

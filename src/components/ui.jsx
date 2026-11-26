@@ -3,32 +3,49 @@ import { Link } from "react-router-dom";
 import { PiArrowRight, PiArrowUpRight } from "react-icons/pi";
 
 /**
- * Responsive WebP image. `src` is the path without the "-{width}.webp" suffix.
- * Pass `widths` that exist on disk; the largest is used as the fallback.
+ * Responsive image: AVIF first, WebP fallback. `src` is the path without the
+ * "-{width}.{ext}" suffix; pass `widths` that exist on disk for both formats.
  */
-export function Picture({ src, widths = [640, 1200], alt, sizes = "100vw", className = "", imgClassName = "", focus, eager = false, ratio, reveal = false, delay = 0 }) {
-  const srcSet = widths.map((w) => `${src}-${w}.webp ${w}w`).join(", ");
+export function Picture({ src, widths = [640, 1200], alt, sizes = "100vw", className = "", imgClassName = "", focus, eager = false, ratio, reveal = false, delay = 0, placeholder }) {
+  const set = (ext) => widths.map((w) => `${src}-${w}.${ext} ${w}w`).join(", ");
   const fallback = `${src}-${widths[widths.length - 1]}.webp`;
   return (
     <div
       className={`relative overflow-hidden bg-paper-2 ${className}`}
-      style={{ ...(ratio ? { aspectRatio: ratio } : {}), ...(delay ? { "--reveal-delay": `${delay}ms` } : {}) }}
+      style={{
+        ...(ratio ? { aspectRatio: ratio } : {}),
+        ...(delay ? { "--reveal-delay": `${delay}ms` } : {}),
+        ...(placeholder ? { backgroundImage: `url(${placeholder})`, backgroundSize: "cover", backgroundPosition: focus ?? "center" } : {}),
+      }}
       data-reveal={reveal ? "image" : undefined}
     >
-      <img
-        src={fallback}
-        srcSet={srcSet}
-        sizes={sizes}
-        alt={alt}
-        loading={eager ? "eager" : "lazy"}
-        // React 18 only forwards the lowercase attribute
-        // eslint-disable-next-line react/no-unknown-property
-        fetchpriority={eager ? "high" : undefined}
-        decoding="async"
-        className={`h-full w-full object-cover ${imgClassName}`}
-        style={focus ? { objectPosition: focus } : undefined}
-      />
+      <picture>
+        <source type="image/avif" srcSet={set("avif")} sizes={sizes} />
+        <img
+          src={fallback}
+          srcSet={set("webp")}
+          sizes={sizes}
+          alt={alt}
+          loading={eager ? "eager" : "lazy"}
+          // React 18 only forwards the lowercase attribute
+          // eslint-disable-next-line react/no-unknown-property
+          fetchpriority={eager ? "high" : undefined}
+          decoding="async"
+          className={`h-full w-full object-cover ${imgClassName}`}
+          style={focus ? { objectPosition: focus } : undefined}
+        />
+      </picture>
     </div>
+  );
+}
+
+/** A single fixed-size photo (path ends in .webp); serves the .avif sibling when supported. */
+export function Photo({ src, alt = "", className = "", style, loading = "lazy", ...rest }) {
+  return (
+    <picture>
+      <source type="image/avif" srcSet={src.replace(/\.webp$/, ".avif")} />
+      <img src={src} alt={alt} loading={loading} decoding="async" className={className} style={style} {...rest} />
+    </picture>
   );
 }
 

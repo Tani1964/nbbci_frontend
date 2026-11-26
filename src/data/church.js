@@ -129,7 +129,7 @@ export const deacons = [
   {
     name: "Dns. Maria Doom Gaadi",
     role: "Deaconess · Fellowship & Education Ministry",
-    photo: "/assets/church/leadership/deaconess-maria-gaadi-800.webp",
+    photo: "/assets/church/leadership/deaconess-maria-gaadi-640.webp",
     focus: "center 30%",
     verse: null,
     bio: [

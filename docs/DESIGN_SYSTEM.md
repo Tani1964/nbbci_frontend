@@ -91,7 +91,7 @@ All motion is in `src/index.css` under `@media (prefers-reduced-motion: no-prefe
 
 | Moment | What happens | Duration |
 |---|---|---|
-| **Cinematic landing** (first homepage visit per session, `src/lib/intro.js`) | An aubergine curtain lifts; the photo settles from 1.14× with colour rising; the eyebrow's letter-spacing tightens; the headline rises in word by word through masks; the lede and CTAs fade up; the "This Sunday" strip slides up; the header drops in | about 2.2s in total |
+| **Cinematic landing** (first homepage visit per session, `src/lib/intro.js`) | **3D crest intro.** The church crest is built as a CSS-3D medallion: a front and back face plus 12 stacked edge layers that give it real thickness when turned. It spins in from depth (−560° to 0°), overshoots slightly and settles, then floats gently. Around it, a thin halo draws itself, a dotted ochre ring fades in and a warm glow blooms; a light sheen sweeps across the crest. "New Birth Baptist Church" rises word by word, then the tagline. At 2.6s an **iris** opens outward from the crest onto the congregation photograph while the intro dissolves. The eyebrow, headline words, lede, CTAs, Sunday strip and header follow. A **Skip intro** button, any key, the scroll wheel or a touch-scroll ends it instantly. No 3D library is used, only CSS transforms. | about 4.5s |
 | Hero at rest | Slow drift of the photograph (scale 1.03 to 1.09, 26s alternate) | continuous, barely perceptible |
 | Hero on scroll | Photo parallax (up to 18vh); hero copy fades and lifts | linked to scroll |
 | Image reveal (`<Picture reveal>` or `data-reveal="image"`) | The frame opens from the bottom like a window (clip-path); the photo inside settles from 1.14× | 1.4s / 2s |

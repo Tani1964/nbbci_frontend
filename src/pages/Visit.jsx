@@ -24,7 +24,7 @@ export default function Visit() {
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-28">
               <SectionHeading eyebrow="Sunday mornings" title={<span id="times-title">Service times</span>} />
-              <Picture src="/assets/church/services/minister-preaching-at-pulpit" widths={[640, 1152]} sizes="(min-width:1024px) 35vw, 100vw" alt="A minister preaching from the pulpit during a service" focus="40% 22%" className="mt-8 aspect-[16/10] rounded-sm lg:arch lg:mt-10 lg:aspect-[4/5]" reveal />
+              <Picture src="/assets/church/services/minister-preaching-at-pulpit" widths={[480, 800]} sizes="(min-width:1024px) 35vw, 100vw" alt="A minister preaching from the pulpit during a service" focus="40% 22%" className="mt-8 aspect-[16/10] rounded-sm lg:arch lg:mt-10 lg:aspect-[4/5]" reveal />
             </div>
           </div>
           <div className="lg:col-span-7">

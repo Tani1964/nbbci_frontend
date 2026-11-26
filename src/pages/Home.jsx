@@ -6,7 +6,7 @@ import { ministries } from "../data/ministries";
 import { recordings } from "../data/media";
 import { usePageMeta, useReveal } from "../lib/hooks";
 import { takeIntro } from "../lib/intro";
-import { ArrowLink, ButtonLink, Picture, Scripture, SectionHeading } from "../components/ui";
+import { ArrowLink, ButtonLink, Photo, Picture, Scripture, SectionHeading } from "../components/ui";
 import { FindUs, SundayTimeline, WeeklyRhythm } from "../components/sections";
 
 const memberPortraits = Array.from({ length: 13 }, (_, i) => `/assets/church/congregation/member-portrait-${String(i + 1).padStart(2, "0")}.webp`);
@@ -20,6 +20,42 @@ const newer = [
 // interleave the newer, sharper photos through the older portraits
 const faces = memberPortraits.flatMap((src, i) => (i % 3 === 1 && newer[Math.floor(i / 3)] ? [src, newer[Math.floor(i / 3)]] : [src])).concat(newer.slice(4));
 
+// ~450-byte blurred preview shown while the hero photo downloads
+const HERO_PLACEHOLDER = "data:image/webp;base64,UklGRjYBAABXRUJQVlA4ICoBAACwBgCdASogABYAPu1iqU2ppaOiMAgBMB2JaACsMzL1yNA7Aa4tifav9rOQhZ6e77UxcppOTpOYx2HOoSvbgADOGWwtsHyMFkhHzYcIlFKhSAI7v69twtHOYaGA9Kf7ZaGI8Hwny8h/ITzL62pdlaoMzf8aFa0grEFqHUKhXEt9LCzKw2pDDdH+OICG7hVZ8erkbRNaMHpriPp6REMVmLxzDUrcyUywZl/VRKdXm8TgnZrfPJJHkTFO2Y2Q8X93iDbmnDq5H0o4V2ObAyIo/T2kzsR/XlGFr+WCRoWz+tJFenVQcmISTLpwTCuYj/mgJmq1kHtcOYT2E3eJAQbIhcHGy8eQX6UUtiBkGxHjt6zzVLV6uiD9zm91muqlKX8SjoeTOgAL54EWDCgA";
+const CREST = "/assets/church/brand/nbbc-logo-400.webp";
+const EDGE_LAYERS = 12;
+
+/** First-visit intro: the crest as a 3D medallion, halo, name, then an iris opening onto the photo. */
+function CrestIntro({ onSkip, onDone }) {
+  return (
+    <div className="intro" onAnimationEnd={(e) => { if (e.target === e.currentTarget) onDone(); }}>
+      <div className="intro-stage" aria-hidden>
+        <svg className="intro-halo" viewBox="0 0 200 200">
+          <circle className="halo-line" cx="100" cy="100" r="98" pathLength="1" />
+          <circle className="halo-dots" cx="100" cy="100" r="90" pathLength="1" />
+        </svg>
+        {/* Opacity lives on the pivot: animating it on .medal itself would flatten the 3D scene */}
+        <div className="medal-pivot">
+          <div className="medal">
+            {Array.from({ length: EDGE_LAYERS }, (_, i) => (
+              <span key={i} className="medal-edge" style={{ transform: `translateZ(${-i}px)` }} />
+            ))}
+            <span className="medal-face medal-back"><img src={CREST} alt="" /></span>
+            <span className="medal-face medal-front"><img src={CREST} alt="" /></span>
+          </div>
+        </div>
+      </div>
+      <p className="intro-name" aria-hidden>
+        {["New", "Birth", "Baptist", "Church"].map((w, i) => (
+          <span key={w} style={{ "--i": i }}>{w}</span>
+        ))}
+      </p>
+      <p className="intro-tag" aria-hidden>Raising Fruitful Disciples · John 15:16</p>
+      <button type="button" onClick={onSkip} className="intro-skip">Skip intro</button>
+    </div>
+  );
+}
+
 const HEADLINE = [
   { t: "A" }, { t: "family" }, { t: "raising" }, { t: "fruitful", em: true }, { t: "disciples." },
 ];
@@ -27,7 +63,23 @@ const HEADLINE = [
 function Hero() {
   const ref = useRef(null);
   // Decide once, on mount, whether this is the session's first (cinematic) visit
-  const [mode] = useState(() => (takeIntro() ? "hero-cinematic" : "hero-quick"));
+  const [mode, setMode] = useState(() => (takeIntro() ? "hero-cinematic" : "hero-quick"));
+  const [introDone, setIntroDone] = useState(mode !== "hero-cinematic");
+
+  const skip = () => {
+    setMode("hero-quick");
+    setIntroDone(true);
+    window.dispatchEvent(new Event("nbbc-intro-skip"));
+  };
+
+  // Any key, tap or scroll during the intro jumps straight to the page
+  useEffect(() => {
+    if (introDone) return;
+    const onAny = (e) => { if (e.type !== "keydown" || !["Tab", "Shift"].includes(e.key)) skip(); };
+    const evts = ["keydown", "wheel", "touchmove"];
+    evts.forEach((t) => window.addEventListener(t, onAny, { passive: true }));
+    return () => evts.forEach((t) => window.removeEventListener(t, onAny));
+  }, [introDone]);
 
   // Scroll-linked parallax: expose scroll progress through the first viewport as --hero-p
   useEffect(() => {
@@ -49,18 +101,19 @@ function Hero() {
     <section ref={ref} aria-labelledby="hero-title" className={`${mode} relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-aubergine text-cream`}>
       <Picture
         src="/assets/church/congregation/sunday-worship-drone-view"
-        widths={[768, 1280, 2048]}
+        widths={[640, 1024, 1600]}
         sizes="100vw"
         alt="The New Birth Baptist Church congregation standing in worship in the auditorium on a Sunday morning"
         className="hero-media !absolute -top-[2vh] bottom-0 left-0 right-0 -z-10 !bg-aubergine"
         focus="50% 40%"
+        placeholder={HERO_PLACEHOLDER}
         eager
       />
       {/* Scrim: bottom-weighted for legibility, not decoration */}
       <div aria-hidden className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(26,10,20,0.6)_0%,rgba(26,10,20,0.2)_28%,rgba(26,10,20,0.6)_60%,rgba(26,10,20,0.94)_100%)]" />
       <div aria-hidden className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(26,10,20,0.55)_0%,rgba(26,10,20,0)_65%)]" />
-      {/* Opening curtain – only visible while the intro animation runs */}
-      <div aria-hidden className="hero-curtain pointer-events-none absolute inset-0 z-20 bg-aubergine" />
+
+      {!introDone && <CrestIntro onSkip={skip} onDone={() => setIntroDone(true)} />}
 
       <div className="hero-copy container-site flex flex-1 flex-col justify-end pb-10 pt-32 md:pb-14">
         <p className="hero-eyebrow eyebrow mb-6 !text-cream/85">New Birth Baptist Church · Ikorodu</p>
@@ -74,10 +127,10 @@ function Hero() {
             </span>
           ))}
         </h1>
-        <p className="hero-fade mt-8 max-w-md text-lede text-cream/85 md:mt-10" style={{ "--d": "1.45s" }}>
+        <p className="hero-fade mt-8 max-w-md text-lede text-cream/85 md:mt-10" style={{ "--d": "3.9s" }}>
           Come as you are. Worship with us this Sunday at 9:30 AM, off Haruna Bus-stop, Ikorodu.
         </p>
-        <div className="hero-fade mt-8 flex flex-wrap items-center gap-3" style={{ "--d": "1.65s" }}>
+        <div className="hero-fade mt-8 flex flex-wrap items-center gap-3" style={{ "--d": "4.05s" }}>
           <ButtonLink to="/visit" variant="light">
             Plan your visit <PiArrowRight aria-hidden className="h-4 w-4" />
           </ButtonLink>
@@ -148,7 +201,7 @@ function WhoWeAre() {
           <div className="grid grid-cols-12 gap-4">
             <Picture
               src="/assets/church/congregation/member-in-red-at-service"
-              widths={[640, 1152]}
+              widths={[480, 800]}
               sizes="(min-width:1024px) 30vw, 60vw"
               alt="A member standing in worship among the congregation during a Sunday service"
               className="arch col-span-8 col-start-1 aspect-[3/4] img-zoom"
@@ -181,7 +234,7 @@ function Pastor() {
       <div className="container-site grid items-center gap-12 py-section lg:grid-cols-12 lg:gap-16">
         <div className="mx-auto w-full max-w-[22rem] lg:col-span-4 lg:max-w-none">
           <div className="arch aspect-[4/5] bg-cream/10" data-reveal="image" style={{ "--reveal-cover": "rgb(var(--aubergine))" }}>
-            <img src={pastor.photo} alt={`${pastor.name}, Resident Pastor`} loading="lazy" decoding="async" className="h-full w-full object-cover object-[50%_30%]" />
+            <Photo src={pastor.photo} alt={`${pastor.name}, Resident Pastor`} loading="lazy" decoding="async" className="h-full w-full object-cover object-[50%_30%]" />
           </div>
         </div>
         <div className="lg:col-span-7 lg:col-start-6">
@@ -223,8 +276,18 @@ function FirstSunday() {
 }
 
 function ThisIsNBBC() {
+  // Only fetch the 18 portraits once the section is close to the viewport
+  const ref = useRef(null);
+  const [near, setNear] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || !("IntersectionObserver" in window)) { setNear(true); return; }
+    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setNear(true); io.disconnect(); } }, { rootMargin: "800px 0px" });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
   return (
-    <section aria-labelledby="faces-title" className="overflow-hidden bg-paper-2 py-section">
+    <section ref={ref} aria-labelledby="faces-title" className="overflow-hidden bg-paper-2 py-section">
       <div className="container-site">
         <SectionHeading eyebrow="This is New Birth" title={<span id="faces-title">One family, many faces.</span>} lede={about.invitation} />
       </div>
@@ -235,8 +298,11 @@ function ThisIsNBBC() {
             <ul key={copy} className={`flex shrink-0 gap-3 sm:gap-4 ${copy === 1 ? "motion-reduce:hidden" : ""}`} aria-hidden={copy === 1 ? true : undefined}>
               {faces.map((src, i) => (
                 <li key={src} className={`shrink-0 ${i % 2 ? "mt-10" : ""}`}>
-                  {/* eslint-disable-next-line react/no-unknown-property */}
-                  <img src={src} alt="" loading="eager" fetchpriority="low" decoding="async" width="150" height="170" className="arch h-[150px] w-[132px] scale-[1.06] object-cover sm:h-[190px] sm:w-[166px]" />
+                  {near ? (
+                    <Photo src={src} loading="eager" width="150" height="170" className="arch h-[150px] w-[132px] scale-[1.06] object-cover sm:h-[190px] sm:w-[166px]" />
+                  ) : (
+                    <span className="arch block h-[150px] w-[132px] bg-ink/5 sm:h-[190px] sm:w-[166px]" />
+                  )}
                 </li>
               ))}
             </ul>
@@ -303,7 +369,7 @@ function LatestService() {
         </div>
         <Link to={`/media?v=${latest.id}`} className="group block lg:col-span-7" data-reveal>
           <div className="relative aspect-video overflow-hidden rounded-sm bg-black">
-            <img src={latest.thumb} alt="" loading="lazy" decoding="async" className="h-full w-full object-cover opacity-90 transition-transform duration-[1.2s] ease-soft group-hover:scale-[1.03]" />
+            <Photo src={latest.thumb} className="h-full w-full object-cover opacity-90 transition-transform duration-[1.2s] ease-soft group-hover:scale-[1.03]" />
             <span className="absolute inset-0 grid place-items-center">
               <span className="grid h-20 w-20 place-items-center rounded-full bg-cream text-[rgb(30_20_25)] transition-transform duration-500 ease-soft group-hover:scale-110">
                 <PiPlayFill aria-hidden className="ml-1 h-7 w-7" />

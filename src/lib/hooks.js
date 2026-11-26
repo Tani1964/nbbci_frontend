@@ -59,6 +59,26 @@ export function useReveal(dep) {
       { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
     );
     els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
+
+    // Safety net: fast scrolling or anchor jumps can carry an element past the
+    // viewport between observer checks. Reveal anything already scrolled past.
+    let raf = 0;
+    const sweep = () => {
+      raf = 0;
+      const vh = window.innerHeight;
+      document.querySelectorAll("[data-reveal]:not(.is-revealed)").forEach((el) => {
+        if (el.getBoundingClientRect().top < vh) {
+          el.classList.add("is-revealed");
+          io.unobserve(el);
+        }
+      });
+    };
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(sweep); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      io.disconnect();
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(raf);
+    };
   }, [dep]);
 }

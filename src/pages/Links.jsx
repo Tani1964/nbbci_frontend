@@ -18,7 +18,7 @@ export default function Links() {
   return (
     <section className="container-site flex min-h-[80vh] justify-center pb-section pt-16">
       <div className="w-full max-w-md">
-        <img src="/assets/church/brand/nbbc-logo-320.webp" alt="" width="88" height="88" className="mx-auto h-[88px] w-[88px] rounded-full bg-white" />
+        <img src="/assets/church/brand/nbbc-logo-400.webp" alt="" width="88" height="88" className="mx-auto h-[88px] w-[88px] rounded-full bg-white" />
         <h1 className="mt-6 text-center text-display-m">{church.name}</h1>
         <p className="mt-2 text-center text-ink-2">{church.slogan} · {church.town}</p>
         <ul className="mt-10 border-t-2 border-ink">

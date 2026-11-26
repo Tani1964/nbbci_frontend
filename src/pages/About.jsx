@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { about, church, deacons, pastor } from "../data/church";
 import { usePageMeta, useReveal } from "../lib/hooks";
-import { ButtonLink, PageHeader, Picture, Scripture, SectionHeading } from "../components/ui";
+import { ButtonLink, PageHeader, Photo, Picture, Scripture, SectionHeading } from "../components/ui";
 
 function Deacon({ person, index }) {
   const [open, setOpen] = useState(false);
@@ -10,7 +10,7 @@ function Deacon({ person, index }) {
     <article className="grid gap-8 border-t hairline py-12 md:grid-cols-12 md:gap-12">
       <div className="md:col-span-4 lg:col-span-3">
         <div className="arch mx-auto aspect-[4/5] max-w-[16rem] bg-paper-2 md:mx-0 md:max-w-none" data-reveal="image">
-          <img src={person.photo} alt={person.name} loading="lazy" decoding="async" className="h-full w-full object-cover" style={{ objectPosition: person.focus }} />
+          <Photo src={person.photo} alt={person.name} loading="lazy" decoding="async" className="h-full w-full object-cover" style={{ objectPosition: person.focus }} />
         </div>
       </div>
       <div className="md:col-span-8 lg:col-span-8 lg:col-start-5">
@@ -42,7 +42,7 @@ export default function About() {
       <div className="container-site">
         <Picture
           src="/assets/church/congregation/sunday-worship-drone-view"
-          widths={[768, 1280, 2048]}
+          widths={[640, 1024, 1600]}
           sizes="(min-width: 1312px) 1312px, 100vw"
           alt="The congregation gathered in the auditorium for Sunday worship"
           className="aspect-[4/3] rounded-sm sm:aspect-[16/9] lg:aspect-[21/9]"
@@ -116,7 +116,7 @@ export default function About() {
           <div className="lg:col-span-4">
             <div className="lg:sticky lg:top-28">
               <div className="arch mx-auto aspect-[4/5] max-w-[22rem] bg-paper lg:max-w-none" data-reveal="image" style={{ "--reveal-cover": "rgb(var(--paper-2))" }}>
-                <img src={pastor.photo} alt={pastor.name} loading="lazy" decoding="async" className="h-full w-full object-cover object-[50%_30%]" />
+                <Photo src={pastor.photo} alt={pastor.name} loading="lazy" decoding="async" className="h-full w-full object-cover object-[50%_30%]" />
               </div>
             </div>
           </div>
