@@ -71,16 +71,16 @@ Screenshots at desktop (1440), tablet (820) and mobile (390): [`docs/screenshots
 
 | Page | Mobile perf | Desktop perf | A11y | Best practices | SEO | CLS |
 |---|---|---|---|---|---|---|
-| Home | 91 | 99 | 100 | 100 | 100 | 0.001 |
+| Home (with 3D crest intro) | 93 | 100 | 100 | 100 | 100 | 0.011 |
 | About | 94 | 99 | 100 | 100 | 100 | 0 |
-| Ministries | 93 | 99 | 100 | 100 | 100 | 0 |
+| Ministries | 94 | 100 | 100 | 100 | 100 | 0.003 |
 | Events | 93 | 100 | 100 | 100 | 100 | ≤0.03 |
-| Media | 90 | 99 | 100 | 100 | 100 | 0 |
+| Media | 94 | 100 | 100 | 100 | 100 | 0 |
 | Visit | 93 | 99 | 100 | 100 | 100 | 0 |
 | Give | 94 | 99 | 100 | 100 | 100 | 0 |
 | Prayer | 92 | 100 | 100 | 100 | 100 | ≤0.03 |
 
-Home, About and Ministries were re-measured after the motion layer was added. Events and Prayer figures are from the run before it.
+Home, Media and Ministries were re-measured after the AVIF compression and the 3D crest intro were added. Events and Prayer figures are from the run before it.
 
 **What moved the numbers**
 - Removed Chakra UI, Emotion, framer-motion, react-slick and react-intersection-observer.
@@ -90,6 +90,25 @@ Home, About and Ministries were re-measured after the motion layer was added. Ev
 - The radio and Facebook widgets load on request. The radio page set ad cookies, which had cost 22 Best Practices points.
 
 **Remaining limit:** mobile LCP is about 3–3.5s under Lighthouse's slow-4G simulation, because the page is rendered client-side, so text paints after the 76 KB (gzip) JS bundle runs. The next step would be build-time prerendering (for example `vite-plugin-ssr`/`vike` or `react-snap`). That is a larger architectural change and was left for the church to decide.
+
+### Page weight (first homepage visit, cache disabled, measured over DevTools protocol)
+
+| | Before compression | After |
+|---|---|---|
+| Mobile (390px @3x): total | 751 KB | **342 KB** |
+| Mobile: images | 507 KB | **98 KB** |
+| Desktop (1440px @2x): total | 1,254 KB | **410 KB** |
+| Desktop: images | 1,017 KB | **171 KB** |
+
+What changed:
+- AVIF with WebP fallback, re-encoded from the originals.
+- Right-sized widths.
+- The faces strip only downloads when the visitor is within 800px of it.
+- The below-fold photo dropped from a 314 KB 1152px file to an 88 KB 800px AVIF.
+- Palette PNG icons.
+- No italic-font preload.
+
+Fonts (150 KB) are now the largest item.
 
 ## 5. SEO
 

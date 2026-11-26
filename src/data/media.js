@@ -25,7 +25,7 @@ export const recordings = raw.map(([id, date, title, kind]) => ({
   date,
   title,
   kind,
-  thumb: `/assets/church/media/yt-${id}-640.webp`,
+  thumb: `/assets/church/media/yt-${id}-480.webp`,
 }));
 
 export const recordingKinds = [
@@ -38,10 +38,10 @@ export const recordingKinds = [
 
 // 4-column grid; spans are chosen so the 6 images tile a 4x4 block exactly.
 export const gallery = [
-  { src: "/assets/church/congregation/special-programme-group-photo", widths: [768, 1280], alt: "Members in green-and-white uniforms gathered with church leaders at a 2026 programme", span: "col-span-2 row-span-2" },
+  { src: "/assets/church/congregation/special-programme-group-photo", widths: [640, 1024, 1600], alt: "Members in green-and-white uniforms gathered with church leaders at a 2026 programme", span: "col-span-2 row-span-2" },
   { src: "/assets/church/services/minister-teaching-at-pulpit", widths: [414], alt: "A minister teaching from the pulpit", span: "row-span-2" },
   { src: "/assets/church/worship/young-minister-with-microphone", widths: [414], alt: "A young minister speaking during service", span: "row-span-2" },
-  { src: "/assets/church/services/thanksgiving-dance-celebration", widths: [640, 1200], alt: "Members dancing joyfully to the front during thanksgiving", span: "col-span-2 row-span-2" },
+  { src: "/assets/church/services/thanksgiving-dance-celebration", widths: [640, 1024], alt: "Members dancing joyfully to the front during thanksgiving", span: "col-span-2 row-span-2" },
   { src: "/assets/church/ministries/uniformed-youth-award-b", widths: [414], alt: "A uniformed young member receiving a certificate", span: "row-span-2" },
   { src: "/assets/church/ministries/children-in-prayer", widths: [414], alt: "Children praying with eyes closed", span: "row-span-2" },
 ];

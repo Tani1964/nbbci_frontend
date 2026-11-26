@@ -4,7 +4,7 @@ import { PiPlayFill, PiMagnifyingGlass, PiYoutubeLogo, PiBroadcast, PiPlaylist }
 import { embeds, socials } from "../data/church";
 import { gallery, recordingKinds, recordings } from "../data/media";
 import { usePageMeta, useReveal } from "../lib/hooks";
-import { ButtonLink, Embed, PageHeader, Picture, SectionHeading } from "../components/ui";
+import { ButtonLink, Embed, PageHeader, Photo, Picture, SectionHeading } from "../components/ui";
 
 const fmt = (iso) => new Date(`${iso}T12:00`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 
@@ -25,7 +25,7 @@ function Player({ video, playlist, autoplay }) {
       />
     );
   }
-  return <img src={video.thumb} alt="" className="absolute inset-0 h-full w-full object-cover" />;
+  return <Photo src={video.thumb} loading="eager" className="absolute inset-0 h-full w-full object-cover" />;
 }
 
 export default function Media() {
@@ -126,7 +126,7 @@ export default function Media() {
                   <li key={r.id} data-reveal>
                     <button type="button" onClick={() => play(r)} className="group block w-full text-left" aria-label={`Play ${r.title}, ${fmt(r.date)}`}>
                       <div className="relative aspect-video overflow-hidden rounded-sm bg-paper-2">
-                        <img src={r.thumb} alt="" loading="lazy" decoding="async" className="h-full w-full object-cover transition-transform duration-[1.2s] ease-soft group-hover:scale-[1.04]" />
+                        <Photo src={r.thumb} className="h-full w-full object-cover transition-transform duration-[1.2s] ease-soft group-hover:scale-[1.04]" />
                         {active && <span className="absolute left-3 top-3 rounded-full bg-plum px-3 py-1 text-xs font-semibold text-plum-ink">Now playing</span>}
                       </div>
                       <p className="mt-4 text-sm text-ink-2">{fmt(r.date)} · {recordingKinds.find((k) => k.id === r.kind)?.label}</p>

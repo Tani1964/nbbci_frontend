@@ -32,7 +32,7 @@ function ThemeToggle({ className = "" }) {
 function Wordmark({ light }) {
   return (
     <Link to="/" className="group flex items-center gap-3">
-      <img src="/assets/church/brand/nbbc-logo-320.webp" alt="" width="44" height="44" className="h-10 w-10 shrink-0 rounded-full bg-white md:h-11 md:w-11" />
+      <img src="/assets/church/brand/nbbc-logo-96.webp" alt="" width="44" height="44" className="h-10 w-10 shrink-0 rounded-full bg-white md:h-11 md:w-11" />
       <span className="leading-none">
         <span className={`block font-display text-[1.15rem] tracking-[-0.01em] md:text-[1.3rem] ${light ? "text-cream" : "text-ink"}`}>New Birth Baptist Church</span>
         <span className={`mt-1 block text-[0.6875rem] font-semibold uppercase tracking-[0.2em] ${light ? "text-cream/75" : "text-ink-2"}`}>Ikorodu · Lagos</span>
@@ -47,7 +47,12 @@ export default function SiteHeader() {
   const isHome = pathname === "/" || pathname === "/home";
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [cinematic] = useState(headerShouldAnimate);
+  const [cinematic, setCinematic] = useState(headerShouldAnimate);
+  useEffect(() => {
+    const off = () => setCinematic(false);
+    window.addEventListener("nbbc-intro-skip", off);
+    return () => window.removeEventListener("nbbc-intro-skip", off);
+  }, []);
   const menuBtn = useRef(null);
   const panel = useRef(null);
 
