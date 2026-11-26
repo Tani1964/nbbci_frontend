@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Original photo exports (optimised copies live in public/assets/church)
+nbbci_images/
