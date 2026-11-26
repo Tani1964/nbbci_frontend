@@ -1,20 +1,14 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
-import theme from './theme.js'
-import { ThemeProvider } from './context/ThemeContext.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./fonts.css";
+import "./index.css";
+import App from "./App.jsx";
+import { ThemeProvider } from "./lib/theme.jsx";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-    <ChakraProvider theme={theme}>
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
-    </ChakraProvider>
-  </StrictMode>,
-)
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </StrictMode>
+);
